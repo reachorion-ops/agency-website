@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Project Inquiry | Reach Orion</title>
+  <meta name="description" content="Initiate a project inquiry with Reach Orion. Get an architectural assessment, scope estimation, and direct technical consultation within 24 hours.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231D1D1F'/><path d='M16 6L19 13L26 16L19 19L16 26L13 19L6 16L13 13Z' fill='%230071E3'/><circle cx='16' cy='16' r='3' fill='%230F766E'/></svg>">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Reach Orion Home">
+        <div class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9Z" fill="#0071E3" stroke="#0071E3"/>
+            <circle cx="12" cy="12" r="2.5" fill="#0F766E"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Reach Orion</span>
+          <span class="brand-tag">B2B Web Studio</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link">Work</a>
+        <a href="case-studies.html" class="nav-link">Case Studies</a>
+        <a href="services.html" class="nav-link">Services &amp; Process</a>
+        <a href="index.html#estimator" class="nav-link">Estimator</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-cta-group">
+        <a href="contact.html" class="btn btn-secondary btn-sm">Book Call</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <span>Scope Project</span>
+          <span class="btn-icon-right">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- PAGE HERO -->
+    <section class="section" style="padding-bottom: var(--space-8);">
+      <div class="container">
+        <div class="section-badge">Direct Partner Access &bull; 24h Response SLA</div>
+        <h1 style="max-width: 800px; margin-bottom: var(--space-4);">Start a conversation with our technical team.</h1>
+        <p class="text-lead" style="max-width: 680px;">
+          Whether you need a full headless CMS migration, a high-converting SaaS rebrand, or a sub-second Core Web Vitals optimization audit, we are ready to build.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT & ESTIMATOR WRAPPER -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        
+        <!-- Attached Scope Banner (appears if passed from estimator) -->
+        <div id="estimator-attached-banner" style="display: none; background: #f0fdf4; border: 1px solid rgba(15, 118, 110, 0.4); border-radius: 8px; padding: 16px 20px; margin-bottom: 32px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span class="badge-teal">Estimator Scope Attached</span>
+              <span id="attached-scope-text" style="font-size: 0.85rem; font-weight: 700; color: var(--color-darkgrey);"></span>
+            </div>
+            <a href="index.html#estimator" style="font-size: 0.8rem; color: var(--color-vividblue); font-weight: 600;">Edit Scope in Estimator &rarr;</a>
+          </div>
+        </div>
+
+        <div class="grid-2" style="align-items: start; gap: var(--space-12);">
+          
+          <!-- Inquiry Form Column -->
+          <div class="card" style="padding: var(--space-10);">
+            <div style="margin-bottom: var(--space-6);">
+              <h2 style="font-size: 1.5rem; margin-bottom: 6px;">Project Inquiry Form</h2>
+              <p class="text-muted" style="font-size: 0.85rem;">Tell us about your company, current stack, and objectives.</p>
+            </div>
+
+            <form id="inquiry-form" novalidate>
+              
+              <div class="grid-2" style="gap: var(--space-4);">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name *</label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Work Email *</label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="sarah@company.com" required>
+                </div>
+              </div>
+
+              <div class="grid-2" style="gap: var(--space-4);">
+                <div class="form-group">
+                  <label for="contact-company" class="form-label">Company &amp; Current Site</label>
+                  <input type="text" id="contact-company" name="company" class="form-input" placeholder="Company Name & URL">
+                </div>
+                <div class="form-group">
+                  <label for="contact-project-type" class="form-label">Primary Objective *</label>
+                  <select id="contact-project-type" name="projectType" class="form-select" required>
+                    <option value="" disabled selected>Select project category...</option>
+                    <option value="headless-cms">Headless CMS Rebuild (Sanity / Contentful)</option>
+                    <option value="saas-portal">B2B SaaS Web &amp; Product Platform</option>
+                    <option value="design-system">Enterprise Design System &amp; Tokens</option>
+                    <option value="full-rebuild">Full Enterprise Suite Rebrand</option>
+                    <option value="cwv-audit">Core Web Vitals &amp; Performance Audit</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid-2" style="gap: var(--space-4);">
+                <div class="form-group">
+                  <label for="contact-budget" class="form-label">Target Investment Range</label>
+                  <select id="contact-budget" name="budget" class="form-select">
+                    <option value="tier-standard">$15,000 – $25,000</option>
+                    <option value="tier-growth">$25,000 – $40,000</option>
+                    <option value="tier-enterprise">$40,000 – $75,000+</option>
+                    <option value="tier-custom">Configured via Estimator</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="contact-timeline" class="form-label">Desired Launch Target</label>
+                  <select id="contact-timeline" name="timeline" class="form-select">
+                    <option value="4-6-weeks">Express (4–6 Weeks)</option>
+                    <option value="8-12-weeks" selected>Standard (8–12 Weeks)</option>
+                    <option value="q1-target">Upcoming Quarter Launch</option>
+                    <option value="flexible">Flexible / Planning Phase</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-brief" class="form-label">Project Details &amp; Goals *</label>
+                <textarea id="contact-brief" name="brief" class="form-textarea" placeholder="Tell us about your current bottlenecks, target metrics, team members, and any preferred technology stack..." required></textarea>
+              </div>
+
+              <div style="margin-bottom: var(--space-6); font-size: 0.8rem; color: rgba(var(--rgb-darkgrey), 0.7);">
+                <label style="display: flex; align-items: flex-start; gap: 8px; cursor: pointer;">
+                  <input type="checkbox" checked required style="accent-color: var(--color-vividblue); margin-top: 3px;">
+                  <span>I agree to receive a technical scoping response and NDA from Reach Orion. We respect your inbox and never sell data.</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                <span>Submit Technical Scoping Request</span>
+                <span class="btn-icon-right">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </button>
+
+            </form>
+          </div>
+
+          <!-- Studio Information & Direct Booking -->
+          <div>
+            
+            <div class="card" style="margin-bottom: var(--space-6);">
+              <span class="badge-teal" style="margin-bottom: 12px;">Immediate Calendar Booking</span>
+              <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Need an immediate technical consultation?</h3>
+              <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 16px;">
+                If your project is already spec'd or you have a critical upcoming release deadline, book a direct 30-minute video session with our engineering partner.
+              </p>
+              <a href="mailto:calendar@reachorion.com?subject=Technical%20Consultation%20Request" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: center;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>Request 30-Min Architecture Session</span>
+              </a>
+            </div>
+
+            <div class="card" style="margin-bottom: var(--space-6);">
+              <h4 style="margin-bottom: 12px;">Studio Direct Coordinates</h4>
+              
+              <div style="display: flex; flex-direction: column; gap: 14px; font-size: 0.9rem;">
+                <div>
+                  <div style="font-weight: 700; color: var(--color-darkgrey);">General Inquiries</div>
+                  <a href="mailto:inquire@reachorion.com" style="color: var(--color-vividblue); font-weight: 600;">inquire@reachorion.com</a>
+                </div>
+
+                <div>
+                  <div style="font-weight: 700; color: var(--color-darkgrey);">Security &amp; Mutual NDA</div>
+                  <a href="mailto:legal@reachorion.com" style="color: var(--color-vividblue); font-weight: 600;">legal@reachorion.com</a>
+                </div>
+
+                <div>
+                  <div style="font-weight: 700; color: var(--color-darkgrey);">Studio Locations</div>
+                  <div class="text-muted" style="font-size: 0.85rem;">San Francisco: 548 Market St, Suite 71200</div>
+                  <div class="text-muted" style="font-size: 0.85rem;">London: 100 Bishopsgate, Level 18</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLA Card -->
+            <div style="background: var(--color-lightblue); border: 1px solid var(--color-lightgrey); border-radius: var(--radius-lg); padding: 24px;">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--color-teal);"></span>
+                <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: var(--color-teal); letter-spacing: 0.05em;">Our Response Commitment</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--color-darkgrey); line-height: 1.6;">
+                We respect your time. Every technical scoping inquiry is reviewed personally by a principal engineer within 24 business hours with an initial feasibility assessment.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SUCCESS CONFIRMATION MODAL -->
+  <dialog id="contact-success-dialog" class="case-study-dialog" aria-labelledby="success-modal-title">
+    <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #FFFFFF; width: 90%; max-width: 520px; border-radius: 16px; border: 1px solid var(--color-lightgrey); box-shadow: var(--shadow-elevated); padding: 36px; text-align: center;">
+      <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(15, 118, 110, 0.12); color: var(--color-teal); display: inline-flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h3 id="success-modal-title" style="font-size: 1.5rem; margin-bottom: 10px;">Inquiry Successfully Received</h3>
+      <p class="text-muted" style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 24px;">
+        Thank you for reaching out to Reach Orion. Our engineering director has received your project parameters and will prepare a tailored technical scoping proposal within 24 business hours.
+      </p>
+      <div style="display: flex; gap: 12px; justify-content: center;">
+        <button type="button" class="btn btn-secondary btn-sm" onclick="document.getElementById('contact-success-dialog').close();">Close Window</button>
+        <a href="portfolio.html" class="btn btn-primary btn-sm">Explore Client Work</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" aria-label="Reach Orion">
+            <div class="brand-mark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9Z" fill="#0071E3" stroke="#0071E3"/>
+                <circle cx="12" cy="12" r="2.5" fill="#0F766E"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">Reach Orion</span>
+              <span class="brand-tag">B2B Web Studio</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            A boutique B2B CMS &amp; SaaS web engineering studio. We build high-converting, sub-second web platforms for fast-scaling technology companies.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="portfolio.html" class="footer-nav-link">Verified Work</a></li>
+            <li><a href="case-studies.html" class="footer-nav-link">In-Depth Case Studies</a></li>
+            <li><a href="services.html" class="footer-nav-link">Services &amp; Process</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Contact &amp; Estimator</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Expertise</div>
+          <ul class="footer-nav-list">
+            <li><a href="services.html#headless" class="footer-nav-link">Headless CMS Engineering</a></li>
+            <li><a href="services.html#saas" class="footer-nav-link">High-Conversion SaaS Sites</a></li>
+            <li><a href="services.html#design-systems" class="footer-nav-link">Enterprise Design Systems</a></li>
+            <li><a href="services.html#cwv" class="footer-nav-link">Core Web Vitals Optimization</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Studio Inquiries</div>
+          <ul class="footer-nav-list">
+            <li class="text-muted" style="font-size: 0.85rem;">San Francisco &bull; London &bull; Remote</li>
+            <li style="margin-top: 6px;"><a href="mailto:inquire@reachorion.com" class="footer-nav-link" style="font-weight: 700; color: var(--color-vividblue);">inquire@reachorion.com</a></li>
+            <li class="text-muted" style="font-size: 0.75rem; margin-top: 8px;">Qualified inquiries receive proposals within 24 business hours.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Reach Orion Studio. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#" class="footer-nav-link">Privacy Policy</a>
+          <a href="#" class="footer-nav-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/estimator.js"></script>
+</body>
+</html>

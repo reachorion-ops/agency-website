@@ -1,0 +1,18 @@
+{
+  "name": "reach-orion-website",
+  "version": "1.0.0",
+  "description": "High-Performance B2B Headless CMS & SaaS Web Studio",
+  "scripts": {
+    "dev": "npx live-server --port=8080",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "agency",
+    "headless-cms",
+    "b2b",
+    "saas",
+    "web-studio"
+  ],
+  "author": "Reach Orion",
+  "license": "UNLICENSED"
+}
