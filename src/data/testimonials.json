@@ -1,0 +1,68 @@
+[
+  {
+    "id": "t1",
+    "quote": "Reach Orion liberated our global editorial team. Migrating our luxury catalog to a custom Sanity headless architecture reduced our campaign launch cycle from three weeks to four hours. The aesthetic rigor matches our high-fashion brand.",
+    "author": "Éléonore Vance",
+    "role": "Chief Digital Officer",
+    "company": "Maison Vaneau Paris",
+    "location": "Paris, France",
+    "cmsStack": "Sanity + Next.js Edge",
+    "keyMetric": "85% Faster Deployment",
+    "date": "October 2026",
+    "industry": "Luxury & Haute Horlogerie",
+    "avatarInitials": "EV"
+  },
+  {
+    "id": "t2",
+    "quote": "Most web agencies default to cookie-cutter WordPress or bloated templates. Reach Orion engineered a bespoke Payload 3.0 system that handles our multi-terabyte architectural archival assets with instantaneous sub-100ms global render times.",
+    "author": "Julian Richter",
+    "role": "Managing Partner & Principal",
+    "company": "Richter & Kraft Architekten",
+    "location": "Zurich, Switzerland",
+    "cmsStack": "Payload CMS + Cloudflare Edge",
+    "keyMetric": "68ms Worldwide TTFB",
+    "date": "September 2026",
+    "industry": "Spatial & Architectural Design",
+    "avatarInitials": "JR"
+  },
+  {
+    "id": "t3",
+    "quote": "The engineering discipline Reach Orion brought to our Contentful enterprise migration was flawless. Zero downtime during peak Black Friday traffic, and our content creators finally have instant real-time previews across twelve international storefronts.",
+    "author": "Siddharth Nair",
+    "role": "VP of Technology",
+    "company": "Aura Labs Direct",
+    "location": "London / Singapore",
+    "cmsStack": "Contentful Enterprise + React",
+    "keyMetric": "4.2x Traffic Resilience",
+    "date": "November 2026",
+    "industry": "D2C Commerce & Lifestyle",
+    "avatarInitials": "SN"
+  },
+  {
+    "id": "t4",
+    "quote": "Their minimalist aesthetic sense is peerless. Reach Orion delivered an experience that feels closer to an Apple product release or an art gallery catalogue than a typical corporate site. Our bounce rate plummeted immediately.",
+    "author": "Clara Lindqvist",
+    "role": "Global Brand Director",
+    "company": "Nordic Kinetic Studio",
+    "location": "Stockholm, Sweden",
+    "cmsStack": "Strapi Headless + Custom Engine",
+    "keyMetric": "99.4% Google PageSpeed",
+    "date": "August 2026",
+    "industry": "Industrial Design & Audio",
+    "avatarInitials": "CL"
+  },
+  {
+    "id": "t5",
+    "quote": "As a brand-new agency, Reach Orion operates with the velocity and hunger of founders and the architectural craftsmanship of elite engineering veterans. They are now our exclusive CMS infrastructure partner.",
+    "author": "Marcus Sterling",
+    "role": "Founder & CEO",
+    "company": "Sterling & Holt Capital",
+    "location": "New York, NY",
+    "cmsStack": "Decoupled Headless Matrix",
+    "keyMetric": "+42% Conversion Rate",
+    "date": "November 2026",
+    "industry": "Private Equity & Advisory",
+    "avatarInitials": "MS"
+  }
+]
+
