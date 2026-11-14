@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrandLogo } from './BrandLogo';
 
 export const BrandManifesto: React.FC = () => {
   return (
@@ -33,7 +32,7 @@ export const BrandManifesto: React.FC = () => {
               Legacy monolithic platforms lock your content, design, and hosting into a singular, fragile database. Every redesign breaks formatting; every plugin update threatens downtime; every editorial change requires developer intervention.
             </p>
             <p className="text-neutral-600 leading-relaxed text-sm sm:text-base">
-              At <span className="inline-flex items-center gap-1.5 text-[#1D1D1F] font-bold"><BrandLogo theme="light" className="w-4 h-4 shrink-0" />Reach Orion</span>, we decouple your content engine from your frontend interface. Your editors work in bespoke, intuitive workspaces (Sanity, Payload, Contentful), while your visitors experience sub-second, Apple-grade rendering built with React and edge networks.
+              At <strong className="font-bold text-[#1D1D1F]">Reach Orion</strong>, we decouple your content engine from your frontend interface. Your editors work in bespoke, intuitive workspaces (Sanity, Payload, Contentful), while your visitors experience sub-second, Apple-grade rendering built with React and edge networks.
             </p>
           </div>
 
