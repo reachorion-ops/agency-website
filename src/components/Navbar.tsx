@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
-import { AGENCY_SPECS } from '../data/agencyData';
 import { BrandWordmark } from './BrandWordmark';
 
 interface NavbarProps {
@@ -29,12 +28,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
 
   return (
     <>
-      {/* Floating Precision Capsule Header (Uniform Mathematical Gapping) */}
+      {/* Floating Precision Capsule Header (Uniform Mathematical Gapping, No Q1/Q2 pill) */}
       <header className="fixed top-5 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
         
-        {/* Desktop Navigation Capsule: Perfectly Consistent Gapping Throughout */}
+        {/* Desktop Navigation Capsule */}
         <div
-          className={`pointer-events-auto hidden md:inline-flex items-center gap-7 px-7 py-2.5 rounded-full border transition-all duration-300 shadow-2xl select-none ${
+          className={`pointer-events-auto hidden md:inline-flex items-center gap-8 px-7 py-2.5 rounded-full border transition-all duration-300 shadow-2xl select-none ${
             scrolled
               ? 'bg-[#1D1D1F]/90 backdrop-blur-xl border-white/20 shadow-black/60'
               : 'bg-[#1D1D1F]/80 backdrop-blur-md border-white/15'
@@ -48,11 +47,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
           >
             <BrandWordmark
               theme="dark"
-              className="h-5 lg:h-6 w-auto transition-transform duration-200 group-hover:scale-105"
+              className="h-5 lg:h-5.5 w-auto transition-transform duration-200 group-hover:scale-105"
             />
           </a>
 
-          {/* 2. Nav Items with the exact same gap (gap-7) between every link */}
+          {/* 2. Nav Items with the exact same gap (gap-8) between every link */}
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -64,18 +63,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
             </a>
           ))}
 
-          {/* 3. Studio Availability Beacon (exact gap-7 spacing) */}
-          <div className="hidden xl:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-editorial-mono text-[#F5F5F7] whitespace-nowrap">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0F766E] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0F766E]"></span>
-            </span>
-            <span className="tracking-wider uppercase text-neutral-300">
-              Q1/Q2 COMMISSIONS
-            </span>
-          </div>
-
-          {/* 4. CTA Button (exact gap-7 spacing, compact rounded pill) */}
+          {/* 3. CTA Button (Direct gap-8 spacing, clean rounded pill) */}
           <button
             onClick={onOpenInquiry}
             className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white hover:bg-[#F5F5F7] text-[#1D1D1F] text-xs font-bold tracking-wider uppercase transition-all duration-200 shadow-sm hover:shadow active:scale-95 whitespace-nowrap"
@@ -94,7 +82,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
           }`}
         >
           <a href="#" className="flex items-center" aria-label="Reach Orion Home">
-            <BrandWordmark theme="dark" className="h-5 w-auto" />
+            <BrandWordmark theme="dark" className="h-4.5 w-auto" />
           </a>
 
           <div className="flex items-center gap-2.5">
@@ -119,9 +107,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div className="md:hidden fixed inset-x-4 top-20 z-50 bg-[#1D1D1F]/95 backdrop-blur-xl border border-white/15 rounded-2xl p-6 shadow-2xl flex flex-col gap-4 animate-in fade-in slide-in-from-top-2 duration-200">
-          <div className="flex items-center justify-between pb-3 border-b border-white/10 text-xs font-editorial-mono text-[#0F766E]">
+          <div className="flex items-center justify-between pb-3 border-b border-white/10">
             <BrandWordmark theme="dark" className="h-4.5 w-auto" />
-            <span className="text-neutral-400">EST. {AGENCY_SPECS.foundedYear}</span>
+            <button
+              onClick={() => setMobileMenuOpen(false)}
+              className="p-1 text-white hover:text-[#0071E3]"
+              aria-label="Close Menu"
+            >
+              <X className="w-5 h-5" />
+            </button>
           </div>
 
           <div className="flex flex-col gap-3">

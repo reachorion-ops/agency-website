@@ -15,8 +15,8 @@
   body {
     background-color: var(--brand-dark);
     color: var(--brand-dark);
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
-    letter-spacing: -0.015em;
+    font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.01em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -70,6 +70,33 @@
 
 .hairline-border-light {
   border-color: #D9D9D9;
+}
+
+/* Astronomical / Horological Rotating Ring Animations */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverseSlow {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 22s linear infinite;
+}
+
+.animate-spin-reverse-slow {
+  animation: spinReverseSlow 36s linear infinite;
 }
 
 /* High contrast typography helpers */

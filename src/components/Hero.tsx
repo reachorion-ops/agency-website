@@ -1,7 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, Zap } from 'lucide-react';
-import { BrandWordmark } from './BrandWordmark';
-import { BrandLogo } from './BrandLogo';
+import { HeroMetricsOdometer } from './RollingOdometer';
 
 interface HeroProps {
   onOpenInquiry: () => void;
@@ -9,7 +8,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
   return (
-    <section className="relative bg-[#1D1D1F] text-white pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden border-b border-white/10">
+    <section className="relative bg-[#1D1D1F] text-white min-h-screen flex flex-col justify-center pt-28 pb-16 md:pt-32 md:pb-20 overflow-hidden border-b border-white/10">
       {/* Background Architectural Geometry (Minimal hairline grid, strictly no AI glow slop) */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03]">
         <div className="w-full h-full" style={{
@@ -18,69 +17,101 @@ export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
         }} />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 w-full">
         
         {/* Top Metric Bar & Circular CTA (Matching Reference 1 composition) */}
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-12 border-b border-white/10">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-10 border-b border-white/10">
           
-          {/* Triad of Agency Specs (Inspired by Reference 1: *480, *230, *120) */}
-          <div className="grid grid-cols-3 gap-6 sm:gap-12 text-left">
-            <div>
-              <div className="text-xl sm:text-2xl font-extrabold tracking-tight font-editorial-mono text-white">
-                *100
-              </div>
-              <div className="text-[10px] sm:text-xs tracking-widest text-[#D9D9D9]/70 uppercase mt-0.5">
-                Core Web Vitals
-              </div>
-            </div>
-            <div>
-              <div className="text-xl sm:text-2xl font-extrabold tracking-tight font-editorial-mono text-white">
-                *0.18s
-              </div>
-              <div className="text-[10px] sm:text-xs tracking-widest text-[#D9D9D9]/70 uppercase mt-0.5">
-                Global Edge TTFB
-              </div>
-            </div>
-            <div>
-              <div className="text-xl sm:text-2xl font-extrabold tracking-tight font-editorial-mono text-white">
-                *100%
-              </div>
-              <div className="text-[10px] sm:text-xs tracking-widest text-[#D9D9D9]/70 uppercase mt-0.5">
-                Headless Decoupled
-              </div>
-            </div>
-          </div>
+          {/* Triad of Agency Specs (Synchronized Master Odometer Roll) */}
+          <HeroMetricsOdometer />
 
-          {/* Luxury Circular Magnetic Button (Directly inspired by Reference 1's "GET IN TOUCH" circle) */}
-          <button
-            onClick={onOpenInquiry}
-            className="group relative self-end md:self-auto w-28 h-28 sm:w-32 sm:h-32 rounded-full border border-white/30 bg-white/5 hover:bg-white text-white hover:text-[#1D1D1F] flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-2xl backdrop-blur-sm"
-          >
-            <span className="text-[11px] sm:text-xs font-black tracking-widest uppercase text-center leading-tight">
-              Get In<br />Touch
-            </span>
-            <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 mt-1 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-          </button>
+          {/* Luxury Circular Magnetic Button with Moving Dotted Orbit & Precision Astronomical Reticle */}
+          <div className="relative self-end md:self-auto flex items-center justify-center group">
+            
+            {/* 1. Outer Astronomical Cardinal Compass Ring (Faint stationary ring with N, S, E, W ticks) */}
+            <div className="absolute -inset-3.5 sm:-inset-4 pointer-events-none flex items-center justify-center">
+              <svg
+                viewBox="0 0 152 152"
+                className="w-full h-full text-white/10 group-hover:text-white/20 transition-colors duration-500"
+              >
+                {/* Outer guide track */}
+                <circle cx="76" cy="76" r="72" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="2 12" />
+                {/* Cardinal ticks */}
+                <line x1="76" y1="0" x2="76" y2="5" stroke="currentColor" strokeWidth="1.5" />
+                <line x1="76" y1="147" x2="76" y2="152" stroke="currentColor" strokeWidth="1.5" />
+                <line x1="0" y1="76" x2="5" y2="76" stroke="currentColor" strokeWidth="1.5" />
+                <line x1="147" y1="76" x2="152" y2="76" stroke="currentColor" strokeWidth="1.5" />
+              </svg>
+            </div>
+
+            {/* 2. Interactive Circular Button with Moving Dotted Orbit */}
+            <button
+              onClick={onOpenInquiry}
+              className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-white/5 hover:bg-white text-white hover:text-[#1D1D1F] flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-2xl backdrop-blur-md z-10"
+              aria-label="Get In Touch — Initiate Consultation"
+            >
+              {/* Moving Dotted Border Ring (Continuous 360° GPU rotation with blue orbital beacon) */}
+              <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
+                <svg
+                  viewBox="0 0 120 120"
+                  className="w-full h-full animate-spin-slow group-hover:[animation-duration:7s] transition-all"
+                  style={{ willChange: 'transform' }}
+                >
+                  {/* Stationary subtle hairline track */}
+                  <circle
+                    cx="60"
+                    cy="60"
+                    r="58"
+                    fill="none"
+                    stroke="rgba(255,255,255,0.12)"
+                    strokeWidth="1"
+                  />
+                  {/* The Moving Dotted Orbit Ring (36 crisp micro-dots evenly distributed every 10°) */}
+                  <circle
+                    cx="60"
+                    cy="60"
+                    r="58"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeDasharray="0 10.12"
+                    className="text-white/40 group-hover:text-[#0071E3] transition-colors duration-300"
+                  />
+                  {/* Luminous Orbital Satellite Beacon */}
+                  <circle
+                    cx="60"
+                    cy="2"
+                    r="2.5"
+                    fill="#0071E3"
+                    className="group-hover:scale-125 transition-transform origin-[60px_2px]"
+                  />
+                  <circle
+                    cx="60"
+                    cy="2"
+                    r="5"
+                    fill="#0071E3"
+                    opacity="0.35"
+                    className="animate-pulse"
+                  />
+                </svg>
+              </div>
+
+              {/* Center Typography & Arrow */}
+              <span className="text-[11px] sm:text-xs font-black tracking-widest uppercase text-center leading-tight transition-colors duration-300">
+                Get In<br />Touch
+              </span>
+              <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 mt-1 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+            </button>
+          </div>
         </div>
 
-        {/* Massive Monumental Wordmark (SVG vector conversion of official logo asset) */}
+        {/* Massive Monumental Headline (Preserved Plus Jakarta Sans font with 0.8px letter spacing) */}
         <div className="pt-10 pb-12 sm:pt-14 sm:pb-16">
-          <div className="flex items-center gap-3 mb-4">
-            <BrandLogo theme="dark" className="w-6 h-6 sm:w-7 sm:h-7 shrink-0" />
-            <span className="text-[11px] sm:text-xs font-editorial-mono text-[#0071E3] tracking-widest uppercase font-bold">
-              EST. 2026 // OFFICIAL CMS ARCHITECTURE STUDIO
-            </span>
-          </div>
-
-          <div className="py-2">
-            <BrandWordmark
-              theme="dark"
-              className="w-full max-w-4xl h-auto"
-            />
-            <h1 className="sr-only">Reach Orion — Headless CMS & High Performance Architecture</h1>
-          </div>
-
-          <div className="mt-6 flex items-center justify-between text-xs sm:text-sm font-editorial-mono text-[#D9D9D9]/60 tracking-widest uppercase">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-headline font-black tracking-[0.8px] uppercase leading-[0.88] select-none break-words text-white">
+            Reach Orion
+          </h1>
+          <div className="mt-4 flex items-center justify-between text-xs sm:text-sm font-editorial-mono text-[#D9D9D9]/60 tracking-widest uppercase">
             <span>[ ARCHITECTURE STUDIO ]</span>
             <span>HEADLESS CMS SPECIALISTS</span>
             <span className="hidden sm:inline">GLOBAL COMMISSION ARCHIVE</span>
@@ -144,7 +175,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
         </div>
 
         {/* Trust & Modern Stack Bar (Clean hairline badges, strictly no AI pills) */}
-        <div className="mt-16 pt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-6 text-xs font-editorial-mono text-[#D9D9D9]/60">
+        <div className="mt-14 pt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-6 text-xs font-editorial-mono text-[#D9D9D9]/60">
           <div className="flex items-center gap-2 text-white font-bold">
             <Zap className="w-4 h-4 text-[#0071E3]" />
             <span>CERTIFIED ARCHITECTURES</span>

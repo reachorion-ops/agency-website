@@ -18,14 +18,24 @@ export default {
       },
       fontFamily: {
         sans: [
-          'SF Pro Display',
+          '"Nunito Sans"',
           '-apple-system',
           'BlinkMacSystemFont',
-          'Inter',
-          'system-ui',
           'sans-serif'
         ],
+        headline: [
+          '"Plus Jakarta Sans"',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'sans-serif'
+        ],
+        serif: [
+          'Bitter',
+          'Georgia',
+          'serif'
+        ],
         mono: [
+          '"JetBrains Mono"',
           'SF Mono',
           'ui-monospace',
           'Menlo',
@@ -35,6 +45,7 @@ export default {
         ]
       },
       letterSpacing: {
+        headline: '0.8px',
         tighter: '-0.04em',
         tight: '-0.02em',
         widest: '0.15em',

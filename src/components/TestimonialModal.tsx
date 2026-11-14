@@ -65,7 +65,7 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
         {/* Full Unabridged Quote */}
         <div className="mt-8 relative p-6 bg-[#F5F5F7] border border-[#D9D9D9]">
           <Quote className="w-8 h-8 text-neutral-300 absolute -top-4 -left-2" />
-          <blockquote className="text-base sm:text-lg font-medium text-[#1D1D1F] leading-relaxed relative z-10 italic">
+          <blockquote className="text-base sm:text-lg font-serif italic text-[#1D1D1F] leading-relaxed relative z-10">
             "{testimonial.quote}"
           </blockquote>
         </div>
