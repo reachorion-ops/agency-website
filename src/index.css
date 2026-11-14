@@ -91,12 +91,65 @@
   }
 }
 
+/* Accelerated Cosmic & CTA Animations */
 .animate-spin-slow {
   animation: spinSlow 22s linear infinite;
 }
 
+.animate-spin-cta {
+  animation: spinSlow 8.5s linear infinite;
+}
+
 .animate-spin-reverse-slow {
   animation: spinReverseSlow 36s linear infinite;
+}
+
+/* Micro Cosmic Animations */
+@keyframes floatDriftFast {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(1.5px, -2px);
+  }
+}
+
+@keyframes starTwinkleFast {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes thrusterPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.08, 1.18);
+    opacity: 1;
+  }
+}
+
+.animate-float-drift-fast {
+  animation: floatDriftFast 1.8s ease-in-out infinite;
+}
+
+.animate-star-twinkle-fast-1 {
+  animation: starTwinkleFast 1.2s ease-in-out infinite;
+}
+
+.animate-star-twinkle-fast-2 {
+  animation: starTwinkleFast 1.6s ease-in-out infinite 0.6s;
+}
+
+.animate-thruster-pulse {
+  animation: thrusterPulse 0.8s ease-in-out infinite;
 }
 
 /* High contrast typography helpers */
