@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowUp } from 'lucide-react';
 import { AGENCY_SPECS } from '../data/agencyData';
+import { BrandWordmark } from './BrandWordmark';
+import { BrandLogo } from './BrandLogo';
 
 export const Footer: React.FC = () => {
   const [times, setTimes] = useState({
@@ -59,14 +61,13 @@ export const Footer: React.FC = () => {
           
           {/* Brand Col */}
           <div className="md:col-span-5 space-y-4">
-            <div className="text-2xl font-black uppercase tracking-tight text-white">
-              Reach Orion
-            </div>
+            <BrandWordmark theme="dark" className="h-7 sm:h-8 w-auto mb-2" />
             <p className="text-xs sm:text-sm text-[#D9D9D9] max-w-sm leading-relaxed">
               {AGENCY_SPECS.mission}
             </p>
-            <div className="pt-2 text-xs font-editorial-mono text-[#0F766E]">
-              EST. {AGENCY_SPECS.foundedYear} • ZERO MONOLITHIC LOCK-IN
+            <div className="pt-2 text-xs font-editorial-mono text-[#0F766E] flex items-center gap-2">
+              <BrandLogo theme="dark" className="w-4 h-4 shrink-0" />
+              <span>EST. {AGENCY_SPECS.foundedYear} • ZERO MONOLITHIC LOCK-IN</span>
             </div>
           </div>
 
@@ -97,11 +98,9 @@ export const Footer: React.FC = () => {
 
         </div>
 
-        {/* Massive Editorial Footer Wordmark */}
-        <div className="pt-12 pb-8 overflow-hidden select-none">
-          <div className="text-6xl sm:text-8xl md:text-9xl font-black uppercase tracking-tighter text-white/[0.07] leading-none whitespace-nowrap">
-            REACH ORION
-          </div>
+        {/* Massive Editorial Footer Wordmark Watermark */}
+        <div className="pt-12 pb-8 overflow-hidden select-none flex justify-center opacity-10 hover:opacity-20 transition-opacity duration-300">
+          <BrandWordmark theme="dark" className="w-full max-w-4xl h-auto" />
         </div>
 
         {/* Bottom Legal & Back to Top */}

@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowUpRight, Zap } from 'lucide-react';
+import { BrandWordmark } from './BrandWordmark';
+import { BrandLogo } from './BrandLogo';
 
 interface HeroProps {
   onOpenInquiry: () => void;
@@ -61,12 +63,24 @@ export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
           </button>
         </div>
 
-        {/* Massive Monumental Headline (Directly echoing Reference 1 "BLUEMINT STUDIO") */}
+        {/* Massive Monumental Wordmark (SVG vector conversion of official logo asset) */}
         <div className="pt-10 pb-12 sm:pt-14 sm:pb-16">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter uppercase leading-[0.88] select-none break-words">
-            Reach Orion
-          </h1>
-          <div className="mt-3 flex items-center justify-between text-xs sm:text-sm font-editorial-mono text-[#D9D9D9]/60 tracking-widest uppercase">
+          <div className="flex items-center gap-3 mb-4">
+            <BrandLogo theme="dark" className="w-6 h-6 sm:w-7 sm:h-7 shrink-0" />
+            <span className="text-[11px] sm:text-xs font-editorial-mono text-[#0071E3] tracking-widest uppercase font-bold">
+              EST. 2026 // OFFICIAL CMS ARCHITECTURE STUDIO
+            </span>
+          </div>
+
+          <div className="py-2">
+            <BrandWordmark
+              theme="dark"
+              className="w-full max-w-4xl h-auto"
+            />
+            <h1 className="sr-only">Reach Orion — Headless CMS & High Performance Architecture</h1>
+          </div>
+
+          <div className="mt-6 flex items-center justify-between text-xs sm:text-sm font-editorial-mono text-[#D9D9D9]/60 tracking-widest uppercase">
             <span>[ ARCHITECTURE STUDIO ]</span>
             <span>HEADLESS CMS SPECIALISTS</span>
             <span className="hidden sm:inline">GLOBAL COMMISSION ARCHIVE</span>

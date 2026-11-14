@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowUpRight, Menu, X, Sparkles } from 'lucide-react';
+import { ArrowUpRight, Menu, X } from 'lucide-react';
 import { AGENCY_SPECS } from '../data/agencyData';
+import { BrandWordmark } from './BrandWordmark';
 
 interface NavbarProps {
   onOpenInquiry: () => void;
@@ -39,17 +40,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
               : 'bg-[#1D1D1F]/80 backdrop-blur-md border-white/15'
           }`}
         >
-          {/* 1. Brand Monogram + Wordmark */}
+          {/* 1. Official SVG Brand Wordmark */}
           <a
             href="#"
-            className="inline-flex items-center gap-2.5 text-white group whitespace-nowrap"
+            className="inline-flex items-center text-white group whitespace-nowrap"
+            aria-label="Reach Orion Home"
           >
-            <div className="w-7 h-7 rounded-full bg-white flex items-center justify-center text-[#1D1D1F] font-black text-[11px] tracking-tight transition-transform group-hover:scale-105 shadow-sm">
-              RO
-            </div>
-            <span className="font-extrabold tracking-tight text-xs lg:text-sm uppercase transition-colors group-hover:text-[#0071E3] whitespace-nowrap">
-              Reach Orion
-            </span>
+            <BrandWordmark
+              theme="dark"
+              className="h-5 lg:h-6 w-auto transition-transform duration-200 group-hover:scale-105"
+            />
           </a>
 
           {/* 2. Nav Items with the exact same gap (gap-7) between every link */}
@@ -93,13 +93,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
               : 'bg-[#1D1D1F]/80 backdrop-blur-md border-white/15'
           }`}
         >
-          <a href="#" className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded-full bg-white flex items-center justify-center text-[#1D1D1F] font-black text-[11px]">
-              RO
-            </div>
-            <span className="text-white font-extrabold text-xs tracking-tight uppercase">
-              Reach Orion
-            </span>
+          <a href="#" className="flex items-center" aria-label="Reach Orion Home">
+            <BrandWordmark theme="dark" className="h-5 w-auto" />
           </a>
 
           <div className="flex items-center gap-2.5">
@@ -125,10 +120,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
       {mobileMenuOpen && (
         <div className="md:hidden fixed inset-x-4 top-20 z-50 bg-[#1D1D1F]/95 backdrop-blur-xl border border-white/15 rounded-2xl p-6 shadow-2xl flex flex-col gap-4 animate-in fade-in slide-in-from-top-2 duration-200">
           <div className="flex items-center justify-between pb-3 border-b border-white/10 text-xs font-editorial-mono text-[#0F766E]">
-            <span className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-[#0F766E] animate-pulse"></span>
-              <span>ACCEPTING COMMISSIONS</span>
-            </span>
+            <BrandWordmark theme="dark" className="h-4.5 w-auto" />
             <span className="text-neutral-400">EST. {AGENCY_SPECS.foundedYear}</span>
           </div>
 

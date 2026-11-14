@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowUpRight, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
 import { AGENCY_SPECS } from '../data/agencyData';
+import { BrandLogo } from './BrandLogo';
 
 interface ProjectInquiryProps {
   initialCms?: string;
@@ -70,9 +71,12 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
           {/* Left Column: Agency Advisory & Direct Line */}
           <div className="lg:col-span-5 space-y-8">
             <div className="p-8 bg-[#F5F5F7] border border-[#D9D9D9] space-y-6">
-              <div className="flex items-center gap-2 text-xs font-bold font-editorial-mono text-[#0F766E] uppercase">
-                <ShieldCheck className="w-4 h-4" />
-                <span>EXECUTIVE CONCIERGE PROTOCOL</span>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2 text-xs font-bold font-editorial-mono text-[#0F766E] uppercase">
+                  <ShieldCheck className="w-4 h-4" />
+                  <span>EXECUTIVE CONCIERGE PROTOCOL</span>
+                </div>
+                <BrandLogo theme="light" className="w-5 h-5 shrink-0" />
               </div>
               <h3 className="text-2xl font-bold uppercase tracking-tight text-[#1D1D1F]">
                 Direct Principal Access
