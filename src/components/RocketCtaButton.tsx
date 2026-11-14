@@ -8,43 +8,40 @@ interface RocketCtaButtonProps {
 /**
  * RocketCtaButton:
  * Luxury interactive circular CTA button inspired by agency portfolio art direction.
- * - Brisk continuous rotating perimeter text path: "START A PROJECT •" (pure white, never restarts/buffers)
- * - Noticeable hover scale-up ("make it big")
- * - Dynamic zero-g floating rocket with thruster flame & cosmic celestial particles
- * - 100% smooth GPU-accelerated CSS animations with zero glitch or buffering on hover
+ * - Layer 1: Solid high-contrast circular button body with hairline border and depth lighting
+ * - Layer 2: Dedicated interior celestial canvas with animated floating rocket & twinkling stars
+ * - Layer 3: Independent, razor-sharp rotating perimeter text ring layer (400x400 high-precision coordinate space)
+ * - 100% crisp typography: No backdrop-filter blurring, no overflow-hidden rasterization clipping
+ * - Continuous buttery GPU rotation that never buffers or restarts on hover
  */
 export const RocketCtaButton: React.FC<RocketCtaButtonProps> = ({ onClick, className = '' }) => {
-  // Geometry constants:
-  // Circle radius r = 52.5 inside a 130x130 viewBox (Circumference = 2 * PI * 52.5 = 329.87)
-  const r = 52.5;
-  const circumference = 329.87;
+  // Geometry constants for 400x400 high-precision text ring:
+  // Center: (200, 200), Radius: 161.5 (Ratio ~80.75% matching button perimeter)
+  // Circumference = 2 * PI * 161.5 = 1014.73
+  const r = 161.5;
+  const circumference = 1014.73;
 
   return (
     <div className={`relative self-end md:self-auto flex items-center justify-center group z-10 hover:z-20 ${className}`}>
       {/* Outer ambient cosmic halo on hover */}
-      <div className="absolute -inset-3 rounded-full bg-[#0071E3]/0 group-hover:bg-[#0071E3]/20 blur-2xl transition-all duration-500 pointer-events-none" />
+      <div className="absolute -inset-4 rounded-full bg-[#0071E3]/0 group-hover:bg-[#0071E3]/25 blur-2xl transition-all duration-500 pointer-events-none" />
 
       {/* Interactive Circular CTA Button */}
       <button
         onClick={onClick}
-        className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full bg-[#1D1D1F]/90 hover:bg-[#1D1D1F] border border-white/20 hover:border-white/50 flex items-center justify-center transition-all duration-300 ease-out transform hover:scale-120 sm:hover:scale-125 active:scale-95 shadow-2xl backdrop-blur-xl select-none cursor-pointer overflow-hidden"
+        className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full bg-[#1D1D1F] border border-white/20 hover:border-white/50 flex items-center justify-center transition-transform duration-300 ease-out transform hover:scale-120 sm:hover:scale-125 active:scale-95 shadow-2xl select-none cursor-pointer focus:outline-none"
         aria-label="Start A Project — Initiate Commission"
       >
-        {/* Subtle radial glass background spotlight */}
-        <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-white/[0.02] via-white/[0.05] to-transparent pointer-events-none" />
+        {/* Layer 1: Subtle radial glass highlight */}
+        <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-white/[0.03] via-transparent to-white/[0.08] pointer-events-none" />
 
+        {/* Layer 2: Dedicated Interior Celestial Canvas (Stars & Floating Rocket Ship) */}
         <svg
           viewBox="0 0 130 130"
-          className="w-full h-full relative z-10 pointer-events-none"
+          className="w-full h-full absolute inset-0 pointer-events-none select-none"
+          style={{ shapeRendering: 'geometricPrecision' }}
         >
           <defs>
-            {/* Clockwise circular path for perimeter text */}
-            <path
-              id="startProjectCirclePath"
-              d={`M 65, ${65 - r} a ${r},${r} 0 1,1 0,${2 * r} a ${r},${r} 0 1,1 0,${-2 * r}`}
-              fill="none"
-            />
-
             {/* Thruster core gradient */}
             <linearGradient id="rocketThrusterGlow" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#0071E3" stopOpacity="0.85" />
@@ -53,7 +50,7 @@ export const RocketCtaButton: React.FC<RocketCtaButtonProps> = ({ onClick, class
             </linearGradient>
           </defs>
 
-          {/* 1. Celestial Sparkles & Floating Particles (Accelerated lively space background) */}
+          {/* Celestial Sparkles & Floating Particles (Twinkling cosmic dust) */}
           <g>
             {/* Sparkle Star 1 (Top Center) */}
             <path
@@ -99,13 +96,13 @@ export const RocketCtaButton: React.FC<RocketCtaButtonProps> = ({ onClick, class
             <circle cx="43" cy="84" r="1.2" fill="white" opacity="0.4" />
           </g>
 
-          {/* 2. Vector Rocket Ship with Zero-g Drift & Butter-Smooth Hover Lift (No Restart/Glitch) */}
+          {/* Vector Rocket Ship with Zero-g Drift & Butter-Smooth Hover Lift */}
           <g className="transition-transform duration-300 ease-out group-hover:translate-x-1.5 group-hover:-translate-y-1.5">
             <g className="animate-float-drift-fast">
               {/* Rotated Rocket Body & Wings (Angled at 45° towards top-right launch) */}
               <g transform="translate(65, 65) rotate(45) translate(-65, -65)">
                 
-                {/* Outer Thruster Flame Plume with Accelerated Pulse */}
+                {/* Outer Thruster Flame Plume */}
                 <path
                   d="M 61.5 77 C 56.5 87, 61.5 96, 65 101 C 68.5 96, 73.5 87, 68.5 77 Z"
                   fill="url(#rocketThrusterGlow)"
@@ -174,29 +171,49 @@ export const RocketCtaButton: React.FC<RocketCtaButtonProps> = ({ onClick, class
               </g>
             </g>
           </g>
+        </svg>
 
-          {/* 3. Brisk Continuous Rotating Perimeter Text Path: Constant Speed, Always Pure White */}
-          <g
-            className="animate-spin-cta"
-            style={{ transformOrigin: '65px 65px' }}
+        {/* Layer 3: Dedicated Separated Layer for Ultra-Crisp Rotating Perimeter Text Ring */}
+        <svg
+          viewBox="0 0 400 400"
+          className="w-full h-full absolute inset-0 animate-spin-cta pointer-events-none select-none"
+          style={{
+            overflow: 'visible',
+            textRendering: 'geometricPrecision',
+            shapeRendering: 'geometricPrecision',
+            transformOrigin: '50% 50%',
+          }}
+        >
+          <defs>
+            {/* Clockwise circular path for perimeter text with high-resolution coordinates */}
+            <path
+              id="startProjectCirclePath"
+              d={`M 200, ${200 - r} a ${r},${r} 0 1,1 0,${2 * r} a ${r},${r} 0 1,1 0,${-2 * r}`}
+              fill="none"
+            />
+          </defs>
+
+          <text
+            fontFamily="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+            fontSize="18.5"
+            fontWeight="800"
+            fill="#FFFFFF"
+            letterSpacing="3"
+            className="uppercase"
+            style={{
+              textRendering: 'geometricPrecision',
+              WebkitFontSmoothing: 'antialiased',
+              MozOsxFontSmoothing: 'grayscale',
+            }}
           >
-            <text
-              fontFamily="'Plus Jakarta Sans', -apple-system, sans-serif"
-              fontSize="6.4"
-              fontWeight="800"
-              fill="#FFFFFF"
-              letterSpacing="1.15"
-              className="uppercase"
+            <textPath
+              href="#startProjectCirclePath"
+              textLength={circumference.toFixed(1)}
+              lengthAdjust="spacing"
             >
-              <textPath
-                href="#startProjectCirclePath"
-                textLength={circumference.toFixed(1)}
-                lengthAdjust="spacing"
-              >
-                START A PROJECT • START A PROJECT • START A PROJECT • 
-              </textPath>
-            </text>
-          </g>
+              START A PROJECT • START A PROJECT • START A PROJECT • 
+            </textPath>
+          </text>
         </svg>
       </button>
     </div>
