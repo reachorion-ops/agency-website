@@ -35,8 +35,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
         <div
           className={`pointer-events-auto hidden md:inline-flex items-center gap-7 lg:gap-8 px-7 py-2.5 rounded-full border transition-all duration-300 select-none relative ${
             scrolled
-              ? 'bg-[#1D1D1F]/80 backdrop-blur-xl backdrop-saturate-150 border-white/15 shadow-xl shadow-black/20'
-              : 'bg-[#1D1D1F]/60 backdrop-blur-xl backdrop-saturate-150 border-white/10 shadow-lg shadow-black/15'
+              ? 'bg-[#1D1D1F]/85 backdrop-blur-2xl backdrop-saturate-[180%] backdrop-brightness-[1.18] backdrop-contrast-[105%] border-white/15 shadow-xl shadow-black/20'
+              : 'bg-[#1D1D1F]/70 backdrop-blur-2xl backdrop-saturate-[180%] backdrop-brightness-[1.18] backdrop-contrast-[105%] border-white/10 shadow-lg shadow-black/15'
           }`}
         >
           {/* 1. Official SVG Brand Wordmark */}
@@ -79,8 +79,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
         <div
           className={`pointer-events-auto md:hidden w-full max-w-sm flex items-center justify-between px-5 py-2.5 rounded-full border transition-all duration-300 relative select-none ${
             scrolled
-              ? 'bg-[#1D1D1F]/80 backdrop-blur-xl backdrop-saturate-150 border-white/15 shadow-xl shadow-black/20'
-              : 'bg-[#1D1D1F]/60 backdrop-blur-xl backdrop-saturate-150 border-white/10 shadow-lg shadow-black/15'
+              ? 'bg-[#1D1D1F]/85 backdrop-blur-2xl backdrop-saturate-[180%] backdrop-brightness-[1.18] backdrop-contrast-[105%] border-white/15 shadow-xl shadow-black/20'
+              : 'bg-[#1D1D1F]/70 backdrop-blur-2xl backdrop-saturate-[180%] backdrop-brightness-[1.18] backdrop-contrast-[105%] border-white/10 shadow-lg shadow-black/15'
           }`}
         >
           <a href="#" className="flex items-center" aria-label="Reach Orion Home">
