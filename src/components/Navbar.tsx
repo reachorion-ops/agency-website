@@ -33,10 +33,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
         
         {/* Desktop Navigation Capsule */}
         <div
-          className={`pointer-events-auto hidden md:inline-flex items-center gap-7 lg:gap-8 px-7 py-2.5 rounded-full border transition-all duration-300 select-none relative ${
+          className={`pointer-events-auto hidden md:inline-flex items-center gap-8 lg:gap-10 px-8 py-3 lg:px-9 lg:py-3.5 rounded-full border transition-all duration-300 select-none relative ${
             scrolled
-              ? 'bg-[#1D1D1F]/50 backdrop-blur-xl backdrop-saturate-150 border-white/15 shadow-xl shadow-black/20'
-              : 'bg-[#1D1D1F]/30 backdrop-blur-xl backdrop-saturate-150 border-white/10 shadow-lg shadow-black/15'
+              ? 'bg-[#1D1D1F]/80 backdrop-blur-2xl backdrop-saturate-150 border-white/20 shadow-2xl shadow-black/30'
+              : 'bg-[#1D1D1F]/60 backdrop-blur-2xl backdrop-saturate-150 border-white/15 shadow-xl shadow-black/20'
           }`}
         >
           {/* 1. Official SVG Brand Wordmark */}
@@ -52,15 +52,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
           </a>
 
           {/* 2. Nav Items */}
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1.5">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="text-[11px] lg:text-xs font-semibold tracking-widest text-neutral-300 hover:text-white transition-all duration-200 uppercase whitespace-nowrap px-3 py-1.5 rounded-full hover:bg-white/[0.07] relative group"
+                className="text-[11px] lg:text-xs font-semibold tracking-widest text-neutral-300 hover:text-white transition-all duration-200 uppercase whitespace-nowrap px-4 py-2 rounded-full hover:bg-white/[0.08] relative group"
               >
                 {link.label}
-                <span className="absolute bottom-0.5 left-3 right-3 h-[1.5px] bg-[#0071E3] scale-x-0 transition-transform duration-200 group-hover:scale-x-100 rounded-full" />
+                <span className="absolute bottom-1 left-4 right-4 h-[1.5px] bg-[#0071E3] scale-x-0 transition-transform duration-200 group-hover:scale-x-100 rounded-full" />
               </a>
             ))}
           </div>
@@ -68,7 +68,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
           {/* 3. CTA Button */}
           <button
             onClick={onOpenInquiry}
-            className="group/btn inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white hover:bg-[#F5F5F7] text-[#1D1D1F] text-xs font-bold tracking-wider uppercase transition-all duration-200 shadow-md hover:shadow-lg active:scale-95 whitespace-nowrap"
+            className="group/btn inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white hover:bg-[#F5F5F7] text-[#1D1D1F] text-xs font-bold tracking-wider uppercase transition-all duration-200 shadow-md hover:shadow-lg active:scale-95 whitespace-nowrap"
           >
             <span>Inquire</span>
             <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
@@ -77,20 +77,20 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
 
         {/* Mobile Navigation Capsule (< 768px) */}
         <div
-          className={`pointer-events-auto md:hidden w-full max-w-sm flex items-center justify-between px-5 py-2.5 rounded-full border transition-all duration-300 relative select-none ${
+          className={`pointer-events-auto md:hidden w-full max-w-sm flex items-center justify-between px-6 py-3.5 rounded-full border transition-all duration-300 relative select-none ${
             scrolled
-              ? 'bg-[#1D1D1F]/50 backdrop-blur-xl backdrop-saturate-150 border-white/15 shadow-xl shadow-black/20'
-              : 'bg-[#1D1D1F]/30 backdrop-blur-xl backdrop-saturate-150 border-white/10 shadow-lg shadow-black/15'
+              ? 'bg-[#1D1D1F]/80 backdrop-blur-2xl backdrop-saturate-150 border-white/20 shadow-2xl shadow-black/30'
+              : 'bg-[#1D1D1F]/60 backdrop-blur-2xl backdrop-saturate-150 border-white/15 shadow-xl shadow-black/20'
           }`}
         >
           <a href="#" className="flex items-center" aria-label="Reach Orion Home">
             <BrandWordmark theme="light" className="h-4.5 w-auto" />
           </a>
 
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-3">
             <button
               onClick={onOpenInquiry}
-              className="px-3 py-1 rounded-full bg-white text-[#1D1D1F] text-[11px] font-bold tracking-wider uppercase shadow-sm active:scale-95 transition-transform"
+              className="px-4 py-1.5 rounded-full bg-white text-[#1D1D1F] text-[11px] font-bold tracking-wider uppercase shadow-sm active:scale-95 transition-transform"
             >
               Inquire
             </button>
