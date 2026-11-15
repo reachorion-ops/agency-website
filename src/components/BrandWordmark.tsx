@@ -7,11 +7,13 @@ interface BrandWordmarkProps {
 }
 
 export const BrandWordmark: React.FC<BrandWordmarkProps> = ({
-  theme = 'dark',
+  theme = 'light',
   className = 'h-6 w-auto',
   wordGap = 24,
 }) => {
-  const textColor = theme === 'dark' ? '#FFFFFF' : '#1D1D1F';
+  // 'light' theme: Light-colored wordmark (#FFFFFF) for dark-themed backgrounds (e.g. Footer, Navbar)
+  // 'dark' theme: Dark-colored wordmark (#1D1D1F) for light-themed backgrounds
+  const textColor = theme === 'dark' ? '#1D1D1F' : '#FFFFFF';
   const blueColor = '#0071E3';
   const totalWidth = 817 + wordGap;
 

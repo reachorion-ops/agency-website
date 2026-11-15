@@ -25,7 +25,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
         {/* Header */}
         <div className="flex items-center justify-between pb-6 border-b border-white/10">
           <div className="flex items-center gap-2 text-xs font-bold font-editorial-mono text-[#0071E3] uppercase">
-            <BrandLogo theme="dark" className="w-4 h-4 shrink-0" />
+            <BrandLogo theme="light" className="w-4 h-4 shrink-0" />
             <span>{caseStudy.index}</span>
             <span className="text-white/40">•</span>
             <span className="text-white">{caseStudy.cmsEngine}</span>

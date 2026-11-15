@@ -46,7 +46,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
             aria-label="Reach Orion Home"
           >
             <BrandWordmark
-              theme="dark"
+              theme="light"
               className="h-5 lg:h-5.5 w-auto transition-transform duration-200 group-hover:scale-105"
             />
           </a>
@@ -82,7 +82,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
           }`}
         >
           <a href="#" className="flex items-center" aria-label="Reach Orion Home">
-            <BrandWordmark theme="dark" className="h-4.5 w-auto" />
+            <BrandWordmark theme="light" className="h-4.5 w-auto" />
           </a>
 
           <div className="flex items-center gap-2.5">
@@ -108,7 +108,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
       {mobileMenuOpen && (
         <div className="md:hidden fixed inset-x-4 top-20 z-50 bg-[#1D1D1F]/95 backdrop-blur-xl border border-white/15 rounded-2xl p-6 shadow-2xl flex flex-col gap-4 animate-in fade-in slide-in-from-top-2 duration-200">
           <div className="flex items-center justify-between pb-3 border-b border-white/10">
-            <BrandWordmark theme="dark" className="h-4.5 w-auto" />
+            <BrandWordmark theme="light" className="h-4.5 w-auto" />
             <button
               onClick={() => setMobileMenuOpen(false)}
               className="p-1 text-white hover:text-[#0071E3]"

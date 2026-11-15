@@ -3,6 +3,7 @@ import { ArrowUp } from 'lucide-react';
 import { AGENCY_SPECS } from '../data/agencyData';
 import { BrandWordmark } from './BrandWordmark';
 import { BrandLogo } from './BrandLogo';
+import wordmarkLightSvg from '../assets/wordmark-light.svg';
 
 export const Footer: React.FC = () => {
   const [times, setTimes] = useState({
@@ -61,12 +62,16 @@ export const Footer: React.FC = () => {
           
           {/* Brand Col */}
           <div className="md:col-span-5 space-y-4">
-            <BrandWordmark theme="dark" className="h-7 sm:h-8 w-auto mb-2" />
+            <img
+              src={wordmarkLightSvg}
+              alt="Reach Orion Wordmark"
+              className="h-7 sm:h-8 w-auto mb-2"
+            />
             <p className="text-xs sm:text-sm text-[#D9D9D9] max-w-sm leading-relaxed">
               {AGENCY_SPECS.mission}
             </p>
             <div className="pt-2 text-xs font-editorial-mono text-[#0F766E] flex items-center gap-2">
-              <BrandLogo theme="dark" className="w-4 h-4 shrink-0" />
+              <BrandLogo theme="light" className="w-4 h-4 shrink-0" />
               <span>EST. {AGENCY_SPECS.foundedYear} • ZERO MONOLITHIC LOCK-IN</span>
             </div>
           </div>
@@ -98,9 +103,13 @@ export const Footer: React.FC = () => {
 
         </div>
 
-        {/* Massive Editorial Footer Wordmark Watermark */}
-        <div className="pt-12 pb-8 overflow-hidden select-none flex justify-center opacity-10 hover:opacity-20 transition-opacity duration-300">
-          <BrandWordmark theme="dark" className="w-full max-w-4xl h-auto" />
+        {/* Massive Editorial Footer Wordmark */}
+        <div className="pt-12 pb-8 overflow-hidden select-none flex justify-center">
+          <img
+            src={wordmarkLightSvg}
+            alt="Reach Orion Wordmark"
+            className="w-full max-w-4xl h-auto"
+          />
         </div>
 
         {/* Bottom Legal & Back to Top */}

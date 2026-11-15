@@ -88,16 +88,16 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
               )}
             </div>
 
-            <div className="mt-6 pt-3 border-t border-white/10 flex items-center justify-between">
-              <span className="text-xs font-editorial-mono text-[#0F766E]">
+            <div className="mt-6 pt-4 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+              <span className="text-xs font-editorial-mono text-[#0F766E] font-medium">
                 {SERVICES_CAPABILITIES[0].editorialImpact}
               </span>
               <button
                 onClick={() => onSelectService(SERVICES_CAPABILITIES[0].title)}
-                className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-white hover:text-[#0071E3] transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white hover:bg-[#0071E3] text-[#1D1D1F] hover:text-white border border-white hover:border-[#0071E3] text-xs font-bold uppercase tracking-wider transition-all duration-200 active:scale-95 shadow-sm group/btn shrink-0"
               >
                 <span>Select Architecture</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
               </button>
             </div>
           </div>
@@ -155,16 +155,16 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
               )}
             </div>
 
-            <div className="mt-6 pt-3 border-t border-[#D9D9D9] flex items-center justify-between">
+            <div className="mt-6 pt-4 border-t border-[#D9D9D9] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
               <span className="text-xs font-editorial-mono text-[#0F766E] font-medium">
                 {SERVICES_CAPABILITIES[1].editorialImpact}
               </span>
               <button
                 onClick={() => onSelectService(SERVICES_CAPABILITIES[1].title)}
-                className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#1D1D1F] hover:text-[#0071E3] transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1D1D1F] hover:bg-[#0071E3] text-white border border-[#1D1D1F] hover:border-[#0071E3] text-xs font-bold uppercase tracking-wider transition-all duration-200 active:scale-95 shadow-sm group/btn shrink-0"
               >
                 <span>Select Frontend</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
               </button>
             </div>
           </div>
@@ -222,16 +222,16 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
               )}
             </div>
 
-            <div className="mt-6 pt-3 border-t border-[#D9D9D9] flex items-center justify-between">
+            <div className="mt-6 pt-4 border-t border-[#D9D9D9] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
               <span className="text-xs font-editorial-mono text-[#0F766E] font-medium">
                 {SERVICES_CAPABILITIES[2].editorialImpact}
               </span>
               <button
                 onClick={() => onSelectService(SERVICES_CAPABILITIES[2].title)}
-                className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#1D1D1F] hover:text-[#0071E3] transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1D1D1F] hover:bg-[#0071E3] text-white border border-[#1D1D1F] hover:border-[#0071E3] text-xs font-bold uppercase tracking-wider transition-all duration-200 active:scale-95 shadow-sm group/btn shrink-0"
               >
                 <span>Select Edge</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
               </button>
             </div>
           </div>
@@ -289,16 +289,16 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
               )}
             </div>
 
-            <div className="mt-6 pt-3 border-t border-white/10 flex items-center justify-between">
-              <span className="text-xs font-editorial-mono text-[#0F766E]">
+            <div className="mt-6 pt-4 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+              <span className="text-xs font-editorial-mono text-[#0F766E] font-medium">
                 {SERVICES_CAPABILITIES[3].editorialImpact}
               </span>
               <button
                 onClick={() => onSelectService(SERVICES_CAPABILITIES[3].title)}
-                className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-white hover:text-[#0071E3] transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white hover:bg-[#0071E3] text-[#1D1D1F] hover:text-white border border-white hover:border-[#0071E3] text-xs font-bold uppercase tracking-wider transition-all duration-200 active:scale-95 shadow-sm group/btn shrink-0"
               >
                 <span>Select Migration</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
               </button>
             </div>
           </div>

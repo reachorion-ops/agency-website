@@ -25,7 +25,7 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
         {/* Top Bar */}
         <div className="flex items-center justify-between pb-6 border-b border-[#D9D9D9]">
           <div className="flex items-center gap-2 text-xs font-bold font-editorial-mono text-[#0071E3] uppercase">
-            <BrandLogo theme="light" className="w-4 h-4 shrink-0" />
+            <BrandLogo theme="dark" className="w-4 h-4 shrink-0" />
             <ShieldCheck className="w-4 h-4 text-[#0F766E]" />
             <span>VERIFIED COMMISSION ARCHIVE // {testimonial.id.toUpperCase()}</span>
           </div>

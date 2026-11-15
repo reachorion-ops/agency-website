@@ -6,10 +6,12 @@ interface BrandLogoProps {
 }
 
 export const BrandLogo: React.FC<BrandLogoProps> = ({
-  theme = 'dark',
+  theme = 'light',
   className = 'w-7 h-7',
 }) => {
-  const circleColor = theme === 'dark' ? '#FFFFFF' : '#1D1D1F';
+  // 'light' theme: Light-colored logo mark (#FFFFFF) for dark-themed backgrounds
+  // 'dark' theme: Dark-colored logo mark (#1D1D1F) for light-themed backgrounds
+  const circleColor = theme === 'dark' ? '#1D1D1F' : '#FFFFFF';
   const arrowColor = '#0071E3';
 
   return (

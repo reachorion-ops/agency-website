@@ -76,7 +76,7 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
                   <ShieldCheck className="w-4 h-4" />
                   <span>EXECUTIVE CONCIERGE PROTOCOL</span>
                 </div>
-                <BrandLogo theme="light" className="w-5 h-5 shrink-0" />
+                <BrandLogo theme="dark" className="w-5 h-5 shrink-0" />
               </div>
               <h3 className="text-xl sm:text-2xl font-bold uppercase tracking-tight text-[#1D1D1F]">
                 Direct Principal Access
