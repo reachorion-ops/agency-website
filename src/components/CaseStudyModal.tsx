@@ -112,17 +112,13 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
 
         {/* Viewport Frame: Live 3D Mode vs High-Res Screenshot */}
         {isLive3DMode && caseStudy.interactiveDemoUrl ? (
-          <div className="mt-4 relative aspect-[16/10] w-full overflow-hidden border border-[#CCFF00]/40 bg-black shadow-2xl">
+          <div className="mt-4 relative aspect-[16/10] w-full overflow-hidden border border-[#CCFF00]/30 bg-black shadow-2xl">
             <iframe
               src={caseStudy.interactiveDemoUrl}
               title={`${caseStudy.client} Live 3D Experience`}
               className="w-full h-full border-0"
               loading="lazy"
             />
-            <div className="absolute top-3 left-3 bg-black/85 backdrop-blur-md px-3 py-1.5 text-[10px] font-editorial-mono text-[#CCFF00] border border-[#CCFF00]/40 flex items-center gap-2 select-none pointer-events-none">
-              <span className="w-2 h-2 rounded-full bg-[#CCFF00] animate-ping" />
-              <span>INTERACTIVE WEBGL CANVAS • DRAG TO ROTATE 3D VORTEX</span>
-            </div>
           </div>
         ) : (
           <div className="mt-4 border border-white/10 bg-black/60 overflow-hidden shadow-2xl">
