@@ -131,6 +131,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     badge: "LIVE 3D WEBGL ENGINE",
     hasInteractive3D: true,
     interactiveDemoUrl: "/demos/aranya/index.html",
+    interactiveLabel: "✦ Live 3D WebGL Vortex",
     metrics: [
       { label: "TOTAL SCALE", value: "1.8M SQ.FT" },
       { label: "GLOBAL MAISONS", value: "240+" },
@@ -187,6 +188,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     scope: "Payload CMS 3.0 + React 18 Edge + MahaRERA Encrypted Telemetry",
     cmsEngine: "Payload CMS 3.0",
     badge: "MAHARERA P51900048291",
+    hasInteractive3D: true,
+    interactiveDemoUrl: "/demos/quarter/index.html",
+    interactiveLabel: "✦ Live Waterfront Experience",
     metrics: [
       { label: "STARTING PRICE", value: "₹14.50 CR*" },
       { label: "DENSITY", value: "2 / FLOOR" },
@@ -231,6 +235,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     scope: "Contentful Enterprise + Vector CAD Blueprint Engine",
     cmsEngine: "Contentful Enterprise",
     badge: "VECTOR CAD EXPLORER",
+    hasInteractive3D: true,
+    interactiveDemoUrl: "/demos/rotunda/index.html",
+    interactiveLabel: "✦ Live Vector CAD Gallerie",
     metrics: [
       { label: "CANOPY APEX", value: "44.5 METRES" },
       { label: "HOUSES ACTIVE", value: "140+" },

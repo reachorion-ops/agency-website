@@ -45,6 +45,7 @@ export interface CaseStudy {
   accent: string;
   hasInteractive3D?: boolean;
   interactiveDemoUrl?: string;
+  interactiveLabel?: string;
   badge?: string;
   views?: CaseStudyView[];
   narrative?: string;

@@ -87,7 +87,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
                 }`}
               >
                 <Sparkles className="w-3.5 h-3.5 animate-pulse" />
-                <span>✦ Live 3D WebGL Canvas</span>
+                <span>{caseStudy.interactiveLabel || '✦ Live Interactive Experience'}</span>
               </button>
             )}
 
