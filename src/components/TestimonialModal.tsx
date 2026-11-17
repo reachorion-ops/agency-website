@@ -2,6 +2,7 @@ import React from 'react';
 import { X, Quote, ShieldCheck, CheckCircle2, ArrowUpRight, MapPin, Calendar, Layers } from 'lucide-react';
 import { Testimonial } from '../types';
 import { BrandLogo } from './BrandLogo';
+import { StarRating } from './StarRating';
 
 interface TestimonialModalProps {
   testimonial: Testimonial | null;
@@ -53,6 +54,9 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
             <p className="text-xs sm:text-sm text-neutral-600 font-medium">
               {testimonial.role} — <span className="text-[#1D1D1F] font-bold">{testimonial.company}</span>
             </p>
+            <div className="mt-2 flex items-center gap-3">
+              <StarRating rating={testimonial.rating} showScore size="md" />
+            </div>
             <div className="flex items-center gap-3 mt-1.5 text-xs text-neutral-500 font-editorial-mono">
               <span className="flex items-center gap-1">
                 <MapPin className="w-3 h-3" /> {testimonial.location}

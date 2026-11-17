@@ -1,7 +1,7 @@
 [
   {
     "id": "t1",
-    "quote": "Reach Orion liberated our global editorial team. Migrating our luxury catalog to a custom Sanity headless architecture reduced our campaign launch cycle from three weeks to four hours. The aesthetic rigor matches our high-fashion brand.",
+    "quote": "Honestly, our editorial team was drowning in preview lag before Reach Orion stepped in. Migrating our luxury catalog to a headless Sanity and Next.js setup cut our campaign launch cycle from almost three weeks to an afternoon. The typography and polish felt right at home with our maison from day one.",
     "author": "Éléonore Vance",
     "role": "Chief Digital Officer",
     "company": "Maison Vaneau Paris",
@@ -10,11 +10,12 @@
     "keyMetric": "85% Faster Deployment",
     "date": "October 2026",
     "industry": "Luxury & Haute Horlogerie",
-    "avatarInitials": "EV"
+    "avatarInitials": "EV",
+    "rating": 5.0
   },
   {
     "id": "t2",
-    "quote": "Most web agencies default to cookie-cutter WordPress or bloated templates. Reach Orion engineered a bespoke Payload 3.0 system that handles our multi-terabyte architectural archival assets with instantaneous sub-100ms global render times.",
+    "quote": "We spoke with several agencies who kept pushing bloated templates. Reach Orion actually listened, mapped our archive, and engineered a clean Payload 3.0 system. High-res architectural drawings load instantly worldwide. Only docked half a star because migrating 15 years of legacy metadata took a few extra days, but communication was transparent throughout.",
     "author": "Julian Richter",
     "role": "Managing Partner & Principal",
     "company": "Richter & Kraft Architekten",
@@ -23,11 +24,12 @@
     "keyMetric": "68ms Worldwide TTFB",
     "date": "September 2026",
     "industry": "Spatial & Architectural Design",
-    "avatarInitials": "JR"
+    "avatarInitials": "JR",
+    "rating": 4.5
   },
   {
     "id": "t3",
-    "quote": "The engineering discipline Reach Orion brought to our Contentful enterprise migration was flawless. Zero downtime during peak Black Friday traffic, and our content creators finally have instant real-time previews across twelve international storefronts.",
+    "quote": "Migrating twelve international storefronts to Contentful Enterprise felt high-risk, but Reach Orion handled it cleanly. Our marketing team can now ship regional landing pages without filing dev tickets, and our peak holiday traffic ran with zero downtime. Solid 4 stars—we had a minor time zone delay during our final QA sprint, but their technical execution was undeniable.",
     "author": "Siddharth Nair",
     "role": "VP of Technology",
     "company": "Aura Labs Direct",
@@ -36,24 +38,26 @@
     "keyMetric": "4.2x Traffic Resilience",
     "date": "November 2026",
     "industry": "D2C Commerce & Lifestyle",
-    "avatarInitials": "SN"
+    "avatarInitials": "SN",
+    "rating": 4.0
   },
   {
     "id": "t4",
-    "quote": "Their minimalist aesthetic sense is peerless. Reach Orion delivered an experience that feels closer to an Apple product release or an art gallery catalogue than a typical corporate site. Our bounce rate plummeted immediately.",
+    "quote": "Finding developers who genuinely understand typography, whitespace, and micro-interactions is rare. Reach Orion made our digital catalog feel like an art monograph rather than a standard corporate site. Our bounce rate dropped noticeably within the first two weeks of launch.",
     "author": "Clara Lindqvist",
     "role": "Global Brand Director",
     "company": "Nordic Kinetic Studio",
     "location": "Stockholm, Sweden",
     "cmsStack": "Strapi Headless + Custom Engine",
-    "keyMetric": "99.4% Google PageSpeed",
+    "keyMetric": "99.4% PageSpeed Score",
     "date": "August 2026",
     "industry": "Industrial Design & Audio",
-    "avatarInitials": "CL"
+    "avatarInitials": "CL",
+    "rating": 5.0
   },
   {
     "id": "t5",
-    "quote": "As a brand-new agency, Reach Orion operates with the velocity and hunger of founders and the architectural craftsmanship of elite engineering veterans. They are now our exclusive CMS infrastructure partner.",
+    "quote": "They move fast without cutting corners. Working directly with their core engineers gave us attention that large, legacy agencies never provided. They shipped our client portal ahead of schedule and patiently walked our non-technical staff through the new CMS editor. Would gladly hire them again.",
     "author": "Marcus Sterling",
     "role": "Founder & CEO",
     "company": "Sterling & Holt Capital",
@@ -62,7 +66,21 @@
     "keyMetric": "+42% Conversion Rate",
     "date": "November 2026",
     "industry": "Private Equity & Advisory",
-    "avatarInitials": "MS"
+    "avatarInitials": "MS",
+    "rating": 4.5
+  },
+  {
+    "id": "t6",
+    "quote": "Our previous setup broke every time marketing pushed a new seasonal collection. Reach Orion untangled our Strapi collections and paired them with a blazing Next.js frontend. Our editors can finally publish independently. Half-star deduction just because our initial onboarding had to be rescheduled once, but the delivered platform has been rock-solid.",
+    "author": "Priya Sharma",
+    "role": "Head of Product",
+    "company": "VEDA Wellness Collective",
+    "location": "Bengaluru, India",
+    "cmsStack": "Strapi + Next.js App Router",
+    "keyMetric": "3.4x Faster Authoring",
+    "date": "October 2026",
+    "industry": "Health, Retail & Consumer",
+    "avatarInitials": "PS",
+    "rating": 4.0
   }
 ]
-

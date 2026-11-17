@@ -10,6 +10,7 @@ export interface Testimonial {
   date: string;
   industry: string;
   avatarInitials: string;
+  rating: number;
 }
 
 export interface ServiceCapability {
