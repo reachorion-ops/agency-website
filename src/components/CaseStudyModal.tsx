@@ -35,6 +35,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
       onClick={onClose}
     >
       <div
+        data-modal-scroll="true"
         className="relative w-full max-w-4xl bg-[#1D1D1F] text-white border border-white/20 shadow-2xl p-5 sm:p-8 md:p-10 max-h-[94vh] overflow-y-auto animate-modal-in"
         onClick={(e) => e.stopPropagation()}
       >

@@ -12,12 +12,16 @@ import { ProjectInquiry } from './components/ProjectInquiry';
 import { Footer } from './components/Footer';
 import { CaseStudyModal } from './components/CaseStudyModal';
 import { CaseStudy } from './types';
+import { useSpacebarScroll } from './hooks/useSpacebarScroll';
 
 export function App() {
   const [selectedCase, setSelectedCase] = useState<CaseStudy | null>(null);
   const [inquiryTargetCms, setInquiryTargetCms] = useState<string>('');
   const [inquiryTargetService, setInquiryTargetService] = useState<string>('');
   const [inquiryTargetBudget, setInquiryTargetBudget] = useState<string>('');
+
+  // Enable silky-smooth, consistent spacebar navigation across the agency site & modals
+  useSpacebarScroll();
 
   const scrollToInquiry = (serviceName?: string, cmsStack?: string, budgetRange?: string) => {
     if (cmsStack) setInquiryTargetCms(cmsStack);
