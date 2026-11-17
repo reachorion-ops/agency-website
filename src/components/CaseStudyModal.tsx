@@ -35,7 +35,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-4xl bg-[#1D1D1F] text-white border border-white/20 shadow-2xl p-5 sm:p-8 md:p-10 max-h-[94vh] overflow-y-auto"
+        className="relative w-full max-w-4xl bg-[#1D1D1F] text-white border border-white/20 shadow-2xl p-5 sm:p-8 md:p-10 max-h-[94vh] overflow-y-auto animate-modal-in"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header Bar */}
@@ -82,11 +82,11 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
                 onClick={() => setIsLive3DMode(true)}
                 className={`px-3.5 py-1.5 text-xs font-editorial-mono font-bold uppercase transition-all flex items-center gap-1.5 ${
                   isLive3DMode
-                    ? 'bg-[#CCFF00] text-black shadow-lg font-black'
-                    : 'bg-[#CCFF00]/15 text-[#CCFF00] border border-[#CCFF00]/40 hover:bg-[#CCFF00]/30'
+                    ? 'bg-white text-black shadow-lg font-black'
+                    : 'bg-white/10 text-neutral-300 border border-white/20 hover:bg-white/20 hover:text-white'
                 }`}
               >
-                <Sparkles className="w-3.5 h-3.5 animate-pulse" />
+                <Sparkles className="w-3.5 h-3.5 animate-pulse text-[#0071E3]" />
                 <span>{caseStudy.interactiveLabel || '✦ Live Interactive Experience'}</span>
               </button>
             )}
@@ -110,12 +110,12 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
           </div>
         )}
 
-        {/* Viewport Frame: Live 3D Mode vs High-Res Screenshot */}
+        {/* Viewport Frame: Live Mode vs High-Res Screenshot */}
         {isLive3DMode && caseStudy.interactiveDemoUrl ? (
-          <div className="mt-4 relative aspect-[16/10] w-full overflow-hidden border border-[#CCFF00]/30 bg-black shadow-2xl">
+          <div className="mt-4 relative aspect-[16/10] w-full overflow-hidden border border-white/20 bg-black shadow-2xl">
             <iframe
               src={caseStudy.interactiveDemoUrl}
-              title={`${caseStudy.client} Live 3D Experience`}
+              title={`${caseStudy.client} Live Experience`}
               className="w-full h-full border-0"
               loading="lazy"
             />

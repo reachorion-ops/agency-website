@@ -23,7 +23,7 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-2xl bg-[#FFFFFF] text-[#1D1D1F] border border-[#D9D9D9] shadow-2xl p-5 sm:p-8 md:p-10 max-h-[92vh] overflow-y-auto"
+        className="relative w-full max-w-2xl bg-[#FFFFFF] text-[#1D1D1F] border border-[#D9D9D9] shadow-2xl p-5 sm:p-8 md:p-10 max-h-[92vh] overflow-y-auto animate-modal-in"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Bar */}

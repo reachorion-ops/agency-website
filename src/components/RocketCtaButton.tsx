@@ -29,7 +29,7 @@ export const RocketCtaButton: React.FC<RocketCtaButtonProps> = ({ onClick, class
       {/* Interactive Circular CTA Button (Supersampled from 256px base for native vector sharpness) */}
       <button
         onClick={onClick}
-        className="absolute w-56 h-56 sm:w-64 sm:h-64 rounded-full bg-[#1D1D1F] border border-white/20 hover:border-white/50 flex items-center justify-center transition-all duration-400 ease-out transform scale-[0.64] sm:scale-[0.69] group-hover:scale-105 sm:group-hover:scale-110 active:scale-[0.60] shadow-2xl select-none cursor-pointer focus:outline-none"
+        className="absolute w-56 h-56 sm:w-64 sm:h-64 rounded-full bg-[#1D1D1F] border border-white/20 hover:border-white/50 flex items-center justify-center transition-transform transition-colors duration-300 ease-out transform scale-[0.64] sm:scale-[0.69] group-hover:scale-105 sm:group-hover:scale-110 active:scale-[0.60] shadow-2xl select-none cursor-pointer focus:outline-none will-change-transform"
         aria-label="Start A Project — Initiate Commission"
       >
         {/* Layer 1: Glass depth lighting spotlight */}

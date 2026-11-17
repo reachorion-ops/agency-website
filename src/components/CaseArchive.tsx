@@ -140,9 +140,10 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   <span className="text-neutral-500">•</span>
                   <span className="text-white font-medium">{CASE_STUDIES[1].cmsEngine}</span>
                 </div>
-                <span className="text-[10px] font-editorial-mono text-neutral-400 uppercase tracking-widest">
-                  MUMBAI
-                </span>
+                <div className="flex items-center gap-1.5 px-2 py-0.5 bg-[#0071E3]/15 border border-[#0071E3]/40 text-[#0071E3] text-[10px] font-bold tracking-wider uppercase">
+                  <Sparkles className="w-3 h-3 animate-pulse" />
+                  <span>LIVE WATERFRONT</span>
+                </div>
               </div>
 
               {/* Dark-Glass Browser Mockup Frame */}
@@ -174,8 +175,8 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none" />
 
                   <div className="absolute bottom-2.5 right-2.5 z-10">
-                    <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-black/85 backdrop-blur-md border border-[#0071E3]/50 text-white text-[10px] font-bold font-editorial-mono uppercase tracking-wider group-hover:bg-[#0071E3] transition-colors">
-                      <span>Dossier</span>
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-black/85 backdrop-blur-md border border-[#0071E3]/50 text-white text-[10px] font-bold font-editorial-mono uppercase tracking-wider group-hover:bg-[#0071E3] transition-colors">
+                      <span>Explore Live View</span>
                       <ArrowUpRight className="w-3 h-3" />
                     </span>
                   </div>
@@ -216,9 +217,10 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   <span className="text-neutral-500">•</span>
                   <span className="text-white font-medium">{CASE_STUDIES[2].cmsEngine}</span>
                 </div>
-                <span className="text-[10px] font-editorial-mono text-neutral-400 uppercase tracking-widest">
-                  CAD ENGINE
-                </span>
+                <div className="flex items-center gap-1.5 px-2 py-0.5 bg-[#DC2626]/15 border border-[#DC2626]/40 text-[#DC2626] text-[10px] font-bold tracking-wider uppercase">
+                  <Sparkles className="w-3 h-3 animate-pulse" />
+                  <span>LIVE VECTOR CAD</span>
+                </div>
               </div>
 
               {/* Dark-Glass Browser Mockup Frame */}
@@ -250,8 +252,8 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none" />
 
                   <div className="absolute bottom-2.5 right-2.5 z-10">
-                    <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-black/85 backdrop-blur-md border border-[#DC2626]/50 text-white text-[10px] font-bold font-editorial-mono uppercase tracking-wider group-hover:bg-[#DC2626] transition-colors">
-                      <span>Dossier</span>
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-black/85 backdrop-blur-md border border-[#DC2626]/50 text-white text-[10px] font-bold font-editorial-mono uppercase tracking-wider group-hover:bg-[#DC2626] transition-colors">
+                      <span>Explore CAD Blueprint</span>
                       <ArrowUpRight className="w-3 h-3" />
                     </span>
                   </div>
