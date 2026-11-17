@@ -25,6 +25,13 @@ export interface ServiceCapability {
   layoutSpan: 'wide' | 'narrow';
 }
 
+export interface CaseStudyView {
+  id: string;
+  label: string;
+  image: string;
+  description: string;
+}
+
 export interface CaseStudy {
   id: string;
   index: string;
@@ -36,6 +43,13 @@ export interface CaseStudy {
   image: string;
   aspect: string;
   accent: string;
+  liveDomain?: string;
+  hasInteractive3D?: boolean;
+  interactiveDemoUrl?: string;
+  badge?: string;
+  views?: CaseStudyView[];
+  narrative?: string;
+  architecturalHighlights?: string[];
 }
 
 export interface ArchitectureComparison {

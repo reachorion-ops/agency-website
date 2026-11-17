@@ -122,49 +122,147 @@ export const ARCHITECTURE_COMPARISONS: ArchitectureComparison[] = [
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
-    id: "case-vaneau",
+    id: "case-aranya",
     index: "01 / ARCHIVE",
-    client: "Maison Vaneau",
-    discipline: "Haute Couture & Fine Jewelry",
-    scope: "Sanity Headless Flagship + Next.js Edge",
+    client: "The Aranya Promenade",
+    discipline: "Biophilic Luxury Retail Sanctuary & Haute Horlogerie",
+    scope: "Sanity Studio v3 + Next.js App Router + 3D WebGL Vortex Canvas",
     cmsEngine: "Sanity Studio v3",
+    liveDomain: "thearanya-promenade.in",
+    badge: "LIVE 3D WEBGL ENGINE",
+    hasInteractive3D: true,
+    interactiveDemoUrl: "/demos/aranya/index.html",
     metrics: [
-      { label: "GLOBAL TTFB", value: "72ms" },
-      { label: "CHECKOUT SPEED", value: "+340%" }
+      { label: "TOTAL SCALE", value: "1.8M SQ.FT" },
+      { label: "GLOBAL MAISONS", value: "240+" },
+      { label: "EDGE LCP", value: "<0.8s" }
     ],
-    image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1200&auto=format&fit=crop",
+    image: "/archive/aranya/hero.png",
     aspect: "tall",
-    accent: "#1D1D1F"
+    accent: "#CCFF00",
+    views: [
+      {
+        id: "hero",
+        label: "01 // Hero & 3D Vortex",
+        image: "/archive/aranya/hero.png",
+        description: "Interactive architectural vortex hero with live WebGL canvas, glassmorphic navigation, and high-fashion serif typography."
+      },
+      {
+        id: "directory",
+        label: "02 // Maisons & Ateliers Directory",
+        image: "/archive/aranya/directory.png",
+        description: "Multi-tier flagship repertory with real-time category filtering (Bottega Veneta, Cartier, Rolex, Sabyasachi, Raw Mango)."
+      },
+      {
+        id: "tiers",
+        label: "03 // Spatial Tiers & Biophilic Zones",
+        image: "/archive/aranya/tiers.png",
+        description: "Biophilic architectural level mapping and multi-level spatial zone specifications across Bengaluru's luxury corridor."
+      },
+      {
+        id: "architecture",
+        label: "04 // Living Glass Canopy",
+        image: "/archive/aranya/architecture.png",
+        description: "65-meter living glass canopy architectural specifications and daylight dispersion engineering."
+      }
+    ],
+    narrative: "An ultra-luxury biophilic commercial sanctuary in Bengaluru spanning 1.8M sq.ft along the Outer Ring Road luxury corridor. Reach Orion engineered a decoupled Sanity Studio v3 backend with real-time atelier inventory and an interactive WebGL 3D vortex hero that dynamically responds to cursor movement and scroll velocity.",
+    architecturalHighlights: [
+      "Decoupled Sanity Studio v3 with structured maison & atelier schemas",
+      "Real-time client-side tier filtering with zero database latency",
+      "Interactive WebGL vortex canvas with 60 FPS hardware acceleration",
+      "Edge-cached Next.js App Router frontend delivering <0.8s LCP worldwide"
+    ]
   },
   {
-    id: "case-richter",
+    id: "case-quarter",
     index: "02 / ARCHIVE",
-    client: "Richter & Kraft",
-    discipline: "Contemporary Architecture Studio",
-    scope: "Payload 3.0 Decoupled Digital Monograph",
-    cmsEngine: "Payload CMS",
+    client: "QUARTER",
+    discipline: "Ultra-Luxury Waterfront Sky Residences",
+    scope: "Payload CMS 3.0 + React 18 Edge + MahaRERA Encrypted Telemetry",
+    cmsEngine: "Payload CMS 3.0",
+    liveDomain: "quarter-worli.com",
+    badge: "MAHARERA P51900048291",
     metrics: [
-      { label: "ASSET RENDERING", value: "0.18s" },
-      { label: "CONVERSION", value: "+54%" }
+      { label: "STARTING PRICE", value: "₹14.50 CR*" },
+      { label: "DENSITY", value: "2 / FLOOR" },
+      { label: "EDGE TTFB", value: "68ms" }
     ],
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+    image: "/archive/quarter/hero.png",
     aspect: "wide",
-    accent: "#0071E3"
+    accent: "#0071E3",
+    views: [
+      {
+        id: "hero",
+        label: "01 // Sea Face Facade",
+        image: "/archive/quarter/hero.png",
+        description: "Moody architectural dusk hero overlooking Worli Sea Face with integrated private inspection scheduling."
+      },
+      {
+        id: "metrics",
+        label: "02 // Development Scale",
+        image: "/archive/quarter/metrics.png",
+        description: "Interactive development scale telemetry (2.4 ha estate, 3 iconic sky towers, 48 units, 128 EV bays)."
+      },
+      {
+        id: "residences",
+        label: "03 // Sky Residence Interiors",
+        image: "/archive/quarter/residences.png",
+        description: "High-resolution architectural interior details and floorplate specifications."
+      }
+    ],
+    narrative: "An exclusive waterfront residential enclave at Worli Sea Face, Mumbai. Engineered for high net-worth buyers with seamless private visit scheduling, MahaRERA encrypted compliance docs, and sub-70ms global asset loading for international buyers in Dubai, London, and Singapore.",
+    architecturalHighlights: [
+      "Self-hosted Payload CMS 3.0 with role-based sales team permissions",
+      "Instant lead ingestion and encrypted CRM synchronization",
+      "Optimized WebP/AVIF architectural photography delivery",
+      "Edge network delivery ensuring 68ms global response times"
+    ]
   },
   {
-    id: "case-aura",
+    id: "case-rotunda",
     index: "03 / ARCHIVE",
-    client: "Aura Kinematics",
-    discipline: "High-Fidelity Audio Engineering",
-    scope: "Contentful Enterprise + Kinetic Web Experience",
-    cmsEngine: "Contentful",
+    client: "The Rotunda Royale",
+    discipline: "Commercial Flagship Gallerie & Haute Horlogerie",
+    scope: "Contentful Enterprise + Vector CAD Blueprint Engine",
+    cmsEngine: "Contentful Enterprise",
+    liveDomain: "rotunda-royale.com",
+    badge: "VECTOR CAD EXPLORER",
     metrics: [
-      { label: "CORE WEB VITALS", value: "100%" },
-      { label: "MOBILE BOUNCE", value: "-46%" }
+      { label: "CANOPY APEX", value: "44.5 METRES" },
+      { label: "HOUSES ACTIVE", value: "140+" },
+      { label: "CORE VITALS", value: "100%" }
     ],
-    image: "https://images.unsplash.com/photo-1546776310-eef45dd6d63c?q=80&w=1200&auto=format&fit=crop",
+    image: "/archive/rotunda/hero.png",
     aspect: "square",
-    accent: "#0F766E"
+    accent: "#DC2626",
+    views: [
+      {
+        id: "hero",
+        label: "01 // Pritzker Masterplan",
+        image: "/archive/rotunda/hero.png",
+        description: "Monolithic luxury masterplan housing 140+ storied houses across 192,000 m² of low-iron structural glass and French limestone."
+      },
+      {
+        id: "cad",
+        label: "02 // Interactive CAD Blueprint",
+        image: "/archive/rotunda/cad-floorplan.png",
+        description: "Live spatial vector rendering of the monumental rotunda colonnade with interactive suite inspection (Cartier, Patek Philippe, Rolex, Chanel, Audemars Piguet)."
+      },
+      {
+        id: "specs",
+        label: "03 // Structural Engineering Specs",
+        image: "/archive/rotunda/specs.png",
+        description: "EN 1143-1 Class III+ vault security grades, 9,400 m² glazing envelope, acoustic diffusion telemetry."
+      }
+    ],
+    narrative: "A Pritzker-laureate commercial masterplan housing 140+ heritage luxury houses, Michelin gastronomy salons, and high-security private banking suites. Features a custom vector CAD floorplan engine that lets prospective tenants inspect architectural dimensions, glazed frontages, and concierge lines.",
+    architecturalHighlights: [
+      "Interactive vector CAD floorplan explorer with live suite selection",
+      "Contentful Enterprise headless schema for real-time leasing status",
+      "Strict structural compliance and telemetry display integration",
+      "Zero-CLS layout stability with 100% Core Web Vitals score"
+    ]
   }
 ];
 
