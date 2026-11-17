@@ -50,14 +50,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight leading-tight text-white">
               We Architect Decoupled Web Experiences That Grow Your Enterprise
             </h2>
-            <div className="pt-2">
+            <div className="pt-2 flex flex-wrap items-center gap-3">
               <button
                 onClick={onOpenInquiry}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-[#0071E3] text-white hover:bg-blue-600 text-xs font-bold tracking-widest uppercase transition-all duration-200 border border-[#0071E3]"
               >
-                <span>Initiate Consultation</span>
+                <span>Book A Discovery Call</span>
                 <ArrowUpRight className="w-4 h-4" />
               </button>
+              <a
+                href="#packages"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-transparent text-white hover:bg-white/10 text-xs font-bold tracking-widest uppercase transition-all duration-200 border border-white/20"
+              >
+                <span>View Packages</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
             </div>
           </div>
 

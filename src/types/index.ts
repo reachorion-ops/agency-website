@@ -54,3 +54,15 @@ export interface ProjectInquiryData {
   brief: string;
 }
 
+export interface PricingPackage {
+  id: string;
+  name: string;
+  badge?: string;
+  subtitle?: string;
+  price: string;
+  timeline: string;
+  features: string[];
+  ctaText: string;
+  highlighted?: boolean;
+}
+

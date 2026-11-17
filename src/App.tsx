@@ -7,6 +7,7 @@ import { ArchitectureComparator } from './components/ArchitectureComparator';
 import { CaseArchive } from './components/CaseArchive';
 import { KineticTestimonials } from './components/KineticTestimonials';
 import { ProcessDocket } from './components/ProcessDocket';
+import { PricingPackages } from './components/PricingPackages';
 import { ProjectInquiry } from './components/ProjectInquiry';
 import { Footer } from './components/Footer';
 import { CaseStudyModal } from './components/CaseStudyModal';
@@ -16,10 +17,12 @@ export function App() {
   const [selectedCase, setSelectedCase] = useState<CaseStudy | null>(null);
   const [inquiryTargetCms, setInquiryTargetCms] = useState<string>('');
   const [inquiryTargetService, setInquiryTargetService] = useState<string>('');
+  const [inquiryTargetBudget, setInquiryTargetBudget] = useState<string>('');
 
-  const scrollToInquiry = (serviceName?: string, cmsStack?: string) => {
+  const scrollToInquiry = (serviceName?: string, cmsStack?: string, budgetRange?: string) => {
     if (cmsStack) setInquiryTargetCms(cmsStack);
     if (serviceName) setInquiryTargetService(serviceName);
+    if (budgetRange) setInquiryTargetBudget(budgetRange);
 
     const inquirySection = document.getElementById('inquiry');
     if (inquirySection) {
@@ -55,10 +58,16 @@ export function App() {
         {/* 6-Week Architectural Protocol */}
         <ProcessDocket />
 
+        {/* Simple Packages. Clear Pricing. (Aligned strictly to Proposal) */}
+        <PricingPackages
+          onSelectPackage={(pkgName, budget) => scrollToInquiry(pkgName, undefined, budget)}
+        />
+
         {/* Bespoke Project Inquiry & Commission Form */}
         <ProjectInquiry
           initialCms={inquiryTargetCms}
           initialService={inquiryTargetService}
+          initialBudget={inquiryTargetBudget}
         />
       </main>
 

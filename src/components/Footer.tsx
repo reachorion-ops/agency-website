@@ -86,6 +86,7 @@ export const Footer: React.FC = () => {
             <div><a href="#archive" className="hover:text-[#0071E3] transition-colors">SELECTED COMMISSIONS</a></div>
             <div><a href="#testimonials" className="hover:text-[#0071E3] transition-colors">VERIFIED TESTIMONIALS</a></div>
             <div><a href="#methodology" className="hover:text-[#0071E3] transition-colors">6-WEEK PROTOCOL</a></div>
+            <div><a href="#packages" className="hover:text-[#0071E3] transition-colors">PACKAGES & PRICING</a></div>
             <div><a href="#inquiry" className="hover:text-[#0071E3] transition-colors">INITIATE INQUIRY</a></div>
           </div>
 

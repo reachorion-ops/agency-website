@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowUpRight, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
 import { AGENCY_SPECS } from '../data/agencyData';
 import { BrandLogo } from './BrandLogo';
@@ -6,21 +6,44 @@ import { BrandLogo } from './BrandLogo';
 interface ProjectInquiryProps {
   initialCms?: string;
   initialService?: string;
+  initialBudget?: string;
 }
 
 export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
   initialCms = '',
   initialService = '',
+  initialBudget = '',
 }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     organization: '',
     cmsPreference: initialCms || 'Sanity.io',
-    budgetRange: '$30k – $60k',
-    timeline: 'Q1 / Q2 2026',
+    budgetRange: initialBudget || 'Prior (From $1,500 / ₹1.25L)',
+    timeline: '1–3 weeks',
     brief: initialService ? `Inquiring about ${initialService} architecture.` : '',
   });
+
+  useEffect(() => {
+    if (initialCms) {
+      setFormData((prev) => ({ ...prev, cmsPreference: initialCms }));
+    }
+  }, [initialCms]);
+
+  useEffect(() => {
+    if (initialBudget) {
+      setFormData((prev) => ({ ...prev, budgetRange: initialBudget }));
+    }
+  }, [initialBudget]);
+
+  useEffect(() => {
+    if (initialService) {
+      setFormData((prev) => ({
+        ...prev,
+        brief: `Inquiring about ${initialService} package / architecture.`,
+      }));
+    }
+  }, [initialService]);
 
   const [submitted, setSubmitted] = useState(false);
   const [dossierRef, setDossierRef] = useState('');
@@ -34,9 +57,9 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
   ];
 
   const budgetOptions = [
-    '$15k – $30k',
-    '$30k – $60k',
-    '$60k – $120k+',
+    'Essential (From $600 / ₹50k)',
+    'Prior (From $1,500 / ₹1.25L)',
+    'Custom Quote (Flexible)',
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -172,12 +195,13 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
                   </div>
                 </div>
 
-                {/* Target Budget Tiers */}
+                {/* Target Budget & Package Tiers */}
                 <div className="space-y-2">
-                  <label className="text-xs font-black tracking-wider uppercase font-editorial-mono text-[#1D1D1F]">
-                    02 // Target Investment Budget
+                  <label className="text-xs font-black tracking-wider uppercase font-editorial-mono text-[#1D1D1F] flex items-center justify-between">
+                    <span>02 // Select Package / Investment Target</span>
+                    <span className="text-neutral-400 font-normal text-[10px]">(INR / USD accepted)</span>
                   </label>
-                  <div className="grid grid-cols-3 gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                     {budgetOptions.map((b) => (
                       <button
                         type="button"
@@ -185,7 +209,7 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
                         onClick={() => setFormData({ ...formData, budgetRange: b })}
                         className={`p-2.5 text-center text-xs font-editorial-mono transition-all border ${
                           formData.budgetRange === b
-                            ? 'bg-[#0071E3] text-white border-[#0071E3] font-bold'
+                            ? 'bg-[#0071E3] text-white border-[#0071E3] font-bold shadow-sm'
                             : 'bg-[#F5F5F7] text-neutral-700 border-[#D9D9D9] hover:border-neutral-400'
                         }`}
                       >

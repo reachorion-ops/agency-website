@@ -1,20 +1,22 @@
-import { ServiceCapability, CaseStudy, ArchitectureComparison } from '../types';
+import { ServiceCapability, CaseStudy, ArchitectureComparison, PricingPackage } from '../types';
 
 export const AGENCY_SPECS = {
   name: "Reach Orion",
   legal: "Reach Orion Agency Ltd.",
   foundedYear: "2026",
-  status: "ACCEPTING Q1/Q2 2026 COMMISSIONS",
+  status: "OPEN / ACCEPTING NEW PROJECTS",
   focus: "Bespoke Headless CMS & High-Performance Web Architectures",
   mission: "We engineer lightning-fast digital flagship experiences by decoupling content management from modern frontend rendering. No bloat. No monolithic lag.",
-  contactEmail: "concierge@reachorion.com",
-  inquiriesEmail: "commissions@reachorion.com",
+  contactEmail: "reachorion.official@gmail.com",
+  inquiriesEmail: "reachorion.official@gmail.com",
+  web: "reachorion.net",
   location: "New York • Zurich • London",
+  delivery: "Global / India and International clients / INR and USD billing",
   metrics: [
-    { label: "CORE WEB VITALS", value: "100/100", note: "Sub-second LCP globally" },
-    { label: "STACK DECOUPLING", value: "100%", note: "Zero monolithic lock-in" },
-    { label: "CACHE HIT RATIO", value: "99.8%", note: "Edge network delivery" },
-    { label: "EDITORIAL VELOCITY", value: "6.4X", note: "Instantaneous publishing" },
+    { label: "CORE WEB VITALS", value: "90+", note: "Lighthouse target score" },
+    { label: "LARGEST PAINT (LCP)", value: "<0.9s", note: "LCP performance target" },
+    { label: "TTFB RESPONSE", value: "<400ms", note: "Edge network delivery" },
+    { label: "HOSTING UPTIME", value: "99.9%", note: "High availability guarantee" },
   ]
 };
 
@@ -196,4 +198,113 @@ export const PROCESS_STAGES = [
     deliverable: "Live Production Flagship + Handover Dossier"
   }
 ];
+
+export const PRICING_PACKAGES: PricingPackage[] = [
+  {
+    id: "essential",
+    name: "ESSENTIAL",
+    subtitle: "LANDING PAGE / CMS MVP",
+    price: "From $600",
+    timeline: "≈ ₹50,000 / 1–2 weeks",
+    features: [
+      "5 pages, landing page or CMS MVP",
+      "Proven CMS with custom theme",
+      "Responsive build, SEO + AIO basics",
+      "Analytics and basic security",
+      "1 revision round, 14-day support"
+    ],
+    ctaText: "CHOOSE ESSENTIAL",
+    highlighted: false
+  },
+  {
+    id: "prior",
+    name: "PRIOR",
+    badge: "RECOMMENDED",
+    price: "From $1,500",
+    timeline: "≈ ₹1,25,000 / 2–3 weeks",
+    features: [
+      "14 pages and templates",
+      "Headless or custom CMS build",
+      "Roles and editorial workflow",
+      "Up to 2 API integrations",
+      "Speed, SEO + AIO optimization",
+      "2 revision rounds, 30-day support"
+    ],
+    ctaText: "CHOOSE PRIOR",
+    highlighted: true
+  },
+  {
+    id: "custom",
+    name: "CUSTOM",
+    price: "Custom quote",
+    timeline: "Scoped after discovery / flexible",
+    features: [
+      "Multi-site or multi-language",
+      "SaaS-grade dashboards and APIs",
+      "SSO, compliance and SLAs",
+      "Dedicated team and MVP roadmap",
+      "Free discovery workshop"
+    ],
+    ctaText: "REQUEST A QUOTE",
+    highlighted: false
+  }
+];
+
+export const PACKAGE_INCLUSIONS = [
+  {
+    title: "Full source-code ownership",
+    desc: "100% IP transfer on payment, zero vendor lock-in."
+  },
+  {
+    title: "Staging environment",
+    desc: "Modular, secure, tested code on a live staging link you can preview."
+  },
+  {
+    title: "Documentation and training",
+    desc: "Bespoke editorial handover videos, schema docs, and team walk-throughs."
+  },
+  {
+    title: "IP transfer on payment",
+    desc: "All design assets, code repos, and CMS rights belong strictly to you."
+  }
+];
+
+export const WHY_CHOOSE_ORION = [
+  {
+    id: "01",
+    title: "Business-first engineering",
+    desc: "Every feature maps to a goal you can measure."
+  },
+  {
+    id: "02",
+    title: "Sprint-Based Execution",
+    desc: "Short sprints with a working demo every week."
+  },
+  {
+    id: "03",
+    title: "Transparent communication",
+    desc: "Weekly demos and one point of contact."
+  },
+  {
+    id: "04",
+    title: "Global-ready collaboration",
+    desc: "Overlap hours, INR / USD billing, NDAs."
+  },
+  {
+    id: "05",
+    title: "Secure by default",
+    desc: "Hardened builds, backups and monitoring."
+  },
+  {
+    id: "06",
+    title: "Handover that sticks",
+    desc: "Docs, training and an optional care plan."
+  }
+];
+
+export const PRICING_FOOTNOTE = {
+  taxNote: "INDICATIVE STARTING PRICES, EXCL. APPLICABLE TAXES (CURRENTLY GST-EXEMPT UNDER MSME THRESHOLD)",
+  billingTerms: "BILLING 40% KICKOFF, 40% STAGING, 20% LAUNCH",
+  acronymNote: "AIO = AI OPTIMIZATION"
+};
 
