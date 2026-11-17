@@ -128,7 +128,6 @@ export const CASE_STUDIES: CaseStudy[] = [
     discipline: "Biophilic Luxury Retail Sanctuary & Haute Horlogerie",
     scope: "Sanity Studio v3 + Next.js App Router + 3D WebGL Vortex Canvas",
     cmsEngine: "Sanity Studio v3",
-    liveDomain: "thearanya-promenade.in",
     badge: "LIVE 3D WEBGL ENGINE",
     hasInteractive3D: true,
     interactiveDemoUrl: "/demos/aranya/index.html",
@@ -181,7 +180,6 @@ export const CASE_STUDIES: CaseStudy[] = [
     discipline: "Ultra-Luxury Waterfront Sky Residences",
     scope: "Payload CMS 3.0 + React 18 Edge + MahaRERA Encrypted Telemetry",
     cmsEngine: "Payload CMS 3.0",
-    liveDomain: "quarter-worli.com",
     badge: "MAHARERA P51900048291",
     metrics: [
       { label: "STARTING PRICE", value: "₹14.50 CR*" },
@@ -226,7 +224,6 @@ export const CASE_STUDIES: CaseStudy[] = [
     discipline: "Commercial Flagship Gallerie & Haute Horlogerie",
     scope: "Contentful Enterprise + Vector CAD Blueprint Engine",
     cmsEngine: "Contentful Enterprise",
-    liveDomain: "rotunda-royale.com",
     badge: "VECTOR CAD EXPLORER",
     metrics: [
       { label: "CANOPY APEX", value: "44.5 METRES" },

@@ -43,7 +43,6 @@ export interface CaseStudy {
   image: string;
   aspect: string;
   accent: string;
-  liveDomain?: string;
   hasInteractive3D?: boolean;
   interactiveDemoUrl?: string;
   badge?: string;

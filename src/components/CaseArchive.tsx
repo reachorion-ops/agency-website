@@ -60,8 +60,8 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                 </div>
                 <div className="flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-black/50 border border-white/10 text-neutral-400 text-[10px]">
                   <Lock className="w-2.5 h-2.5 text-[#0F766E]" />
-                  <span className="truncate max-w-[140px] sm:max-w-[200px] text-neutral-300 font-medium">
-                    https://{CASE_STUDIES[0].liveDomain}
+                  <span className="truncate max-w-[140px] sm:max-w-[200px] text-neutral-300 font-medium tracking-wider uppercase">
+                    CONFIDENTIAL ARCHIVE // COMM-01
                   </span>
                 </div>
                 <div className="text-[10px] text-neutral-500 font-bold uppercase hidden sm:block">
@@ -155,8 +155,8 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   </div>
                   <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-black/50 border border-white/10 text-neutral-400 text-[9px]">
                     <Lock className="w-2 h-2 text-[#0F766E]" />
-                    <span className="truncate max-w-[130px] text-neutral-300 font-medium">
-                      https://{CASE_STUDIES[1].liveDomain}
+                    <span className="truncate max-w-[150px] text-neutral-300 font-medium tracking-wider uppercase">
+                      CONFIDENTIAL ARCHIVE // COMM-02
                     </span>
                   </div>
                   <span className="text-[9px] text-[#0071E3] font-bold uppercase">
@@ -231,8 +231,8 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   </div>
                   <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-black/50 border border-white/10 text-neutral-400 text-[9px]">
                     <Lock className="w-2 h-2 text-[#0F766E]" />
-                    <span className="truncate max-w-[130px] text-neutral-300 font-medium">
-                      https://{CASE_STUDIES[2].liveDomain}
+                    <span className="truncate max-w-[150px] text-neutral-300 font-medium tracking-wider uppercase">
+                      CONFIDENTIAL ARCHIVE // COMM-03
                     </span>
                   </div>
                   <span className="text-[9px] text-[#DC2626] font-bold uppercase">
