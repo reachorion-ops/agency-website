@@ -163,6 +163,12 @@ export const CASE_STUDIES: CaseStudy[] = [
         label: "04 // Living Glass Canopy",
         image: "/archive/aranya/architecture.png",
         description: "65-meter living glass canopy architectural specifications and daylight dispersion engineering."
+      },
+      {
+        id: "leasing",
+        label: "05 // Maison Placement & Retail Partnerships",
+        image: "/archive/aranya/leasing.png",
+        description: "Retailer partnerships and Phase II allocation inquiry for international luxury fashion houses, fine watchmakers, and double-height duplex flagship suites."
       }
     ],
     narrative: "An ultra-luxury biophilic commercial sanctuary in Bengaluru spanning 1.8M sq.ft along the Outer Ring Road luxury corridor. Reach Orion engineered a decoupled Sanity Studio v3 backend with real-time atelier inventory and an interactive WebGL 3D vortex hero that dynamically responds to cursor movement and scroll velocity.",
