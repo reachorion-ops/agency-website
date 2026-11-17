@@ -76,15 +76,20 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-10 border-b border-[#D9D9D9]">
           <div>
-            <span className="text-xs font-bold tracking-widest text-[#0071E3] font-editorial-mono uppercase">
-              // 06 COMMISSION INITIATION
-            </span>
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-xs font-bold tracking-widest text-[#0071E3] font-editorial-mono uppercase">
+                // 07 NEXT STEPS & DISCOVERY
+              </span>
+              <span className="inline-block px-2 py-0.5 text-[10px] font-bold font-editorial-mono uppercase bg-[#0F766E] text-white">
+                ACCEPTING NEW PROJECTS
+              </span>
+            </div>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight uppercase mt-2">
-              Start A Commission
+              Let's build your CMS together.
             </h2>
           </div>
-          <div className="text-xs font-editorial-mono text-neutral-500 max-w-sm">
-            WE ACCEPT A MAXIMUM OF FOUR CLIENT COMMISSIONS PER QUARTER TO ENSURE UNCOMPROMISING ARCHITECTURAL EXCELLENCE.
+          <div className="text-xs font-editorial-mono text-neutral-600 max-w-sm">
+            BOOK A FREE 30-MINUTE DISCOVERY CALL. WE'LL REVIEW YOUR GOALS AND SEND A SCOPED PLAN AND FIXED QUOTE WITHIN 48 HOURS.
           </div>
         </div>
 
@@ -97,29 +102,33 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2 text-xs font-bold font-editorial-mono text-[#0F766E] uppercase">
                   <ShieldCheck className="w-4 h-4" />
-                  <span>EXECUTIVE CONCIERGE PROTOCOL</span>
+                  <span>DIRECT PRINCIPAL DISCOVERY</span>
                 </div>
                 <BrandLogo theme="dark" className="w-5 h-5 shrink-0" />
               </div>
               <h3 className="text-xl sm:text-2xl font-bold uppercase tracking-tight text-[#1D1D1F]">
-                Direct Principal Access
+                Scoped Plan & Quote in 48 Hours
               </h3>
               <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-                Every project at Reach Orion is personally led by a Principal Architectural Engineer. No mid-level account managers. No junior handoffs.
+                Book a free 30-minute discovery call. We'll examine your CMS goals, editorial requirements, and integrations, and send you a scoped roadmap with fixed milestone pricing.
               </p>
 
               <div className="pt-3 border-t border-[#D9D9D9] space-y-2.5 text-xs font-editorial-mono">
                 <div>
-                  <span className="text-neutral-400">DIRECT INQUIRIES:</span>
-                  <div className="text-[#1D1D1F] font-bold mt-0.5">{AGENCY_SPECS.inquiriesEmail}</div>
+                  <span className="text-neutral-400">EMAIL:</span>
+                  <div className="text-[#1D1D1F] font-bold mt-0.5">{AGENCY_SPECS.contactEmail}</div>
                 </div>
                 <div>
-                  <span className="text-neutral-400">GLOBAL HUBS:</span>
-                  <div className="text-[#1D1D1F] font-bold mt-0.5">{AGENCY_SPECS.location}</div>
+                  <span className="text-neutral-400">WEB:</span>
+                  <div className="text-[#0071E3] font-bold mt-0.5">{AGENCY_SPECS.web}</div>
                 </div>
                 <div>
-                  <span className="text-neutral-400">RESPONSE SLA:</span>
-                  <div className="text-[#0071E3] font-bold mt-0.5">&lt; 12 Hours Guaranteed</div>
+                  <span className="text-neutral-400">DELIVERY & BILLING:</span>
+                  <div className="text-[#1D1D1F] font-bold mt-0.5">India & Global Clients / INR & USD</div>
+                </div>
+                <div>
+                  <span className="text-neutral-400">MILESTONE TERMS:</span>
+                  <div className="text-[#0F766E] font-bold mt-0.5">40% Kickoff / 40% Staging / 20% Launch</div>
                 </div>
               </div>
             </div>
@@ -129,9 +138,9 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
               <Sparkles className="w-4 h-4 text-[#0071E3] shrink-0 mt-0.5" />
               <div className="text-xs text-neutral-600 leading-relaxed">
                 <strong className="text-[#1D1D1F] font-bold uppercase block mb-0.5">
-                  The 100/100 Core Web Vitals Warranty
+                  Production Performance & IP Warranty
                 </strong>
-                We guarantee your production build satisfies Google Core Web Vitals across all global nodes upon launch, or we refine at studio expense.
+                Every package includes full source-code ownership, live staging demos, comprehensive team training, and guaranteed Core Web Vitals optimization.
               </div>
             </div>
           </div>
@@ -280,13 +289,13 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
                 {/* Submit Action */}
                 <div className="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <span className="text-[10px] text-neutral-500 font-editorial-mono">
-                    ✦ STRICT CONFIDENTIALITY & NDA PROTECTED
+                    ✦ NDAS • OVERLAP HOURS • FIXED QUOTE WITHIN 48 HOURS
                   </span>
                   <button
                     type="submit"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#1D1D1F] hover:bg-[#0071E3] text-white text-xs font-bold tracking-widest uppercase transition-colors"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#0071E3] hover:bg-blue-600 text-white text-xs font-bold tracking-widest uppercase transition-colors"
                   >
-                    <span>Transmit Dossier</span>
+                    <span>Book Discovery Call</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </button>
                 </div>

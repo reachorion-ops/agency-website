@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, Check, ShieldCheck } from 'lucide-react';
-import { PRICING_PACKAGES, PACKAGE_INCLUSIONS, PRICING_FOOTNOTE } from '../data/agencyData';
+import { PRICING_PACKAGES, PACKAGE_INCLUSIONS, PRICING_FOOTNOTE, WHY_CHOOSE_ORION } from '../data/agencyData';
 
 interface PricingPackagesProps {
   onSelectPackage: (packageName: string, budgetRange: string) => void;
@@ -145,7 +145,7 @@ export const PricingPackages: React.FC<PricingPackagesProps> = ({ onSelectPackag
 
         {/* Included in Every Package (Strictly Page 7 of Proposal) */}
         <div className="mt-8 pt-8 border-t border-[#D9D9D9]">
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-8 border-b border-[#D9D9D9]">
             <div className="shrink-0 flex items-center gap-2.5">
               <ShieldCheck className="w-5 h-5 text-[#0F766E]" />
               <span className="text-xs font-bold tracking-widest font-editorial-mono uppercase text-[#1D1D1F]">
@@ -171,7 +171,41 @@ export const PricingPackages: React.FC<PricingPackagesProps> = ({ onSelectPackag
           </div>
         </div>
 
+        {/* Why Teams Choose Reach Orion (Strictly Page 7 of Proposal) */}
+        <div className="mt-12">
+          <div className="mb-6 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+            <div>
+              <span className="text-xs font-bold tracking-widest text-[#0071E3] font-editorial-mono uppercase">
+                // 06 CORE PRINCIPLES
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-[#1D1D1F] mt-1">
+                Why teams choose Reach Orion.
+              </h3>
+            </div>
+            <div className="text-xs font-editorial-mono text-neutral-500">
+              PRAGMATIC EXECUTION • GLOBAL STANDARDS • PROVEN VELOCITY
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#D9D9D9] border border-[#D9D9D9]">
+            {WHY_CHOOSE_ORION.map((reason) => (
+              <div key={reason.id} className="bg-[#FFFFFF] p-6 space-y-2 hover:bg-[#F5F5F7] transition-colors">
+                <span className="text-xs font-bold font-editorial-mono text-[#0071E3]">
+                  [ {reason.id} ]
+                </span>
+                <h4 className="text-sm font-bold text-[#1D1D1F]">
+                  {reason.title}
+                </h4>
+                <p className="text-xs text-neutral-600 leading-relaxed">
+                  {reason.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </section>
   );
 };
+

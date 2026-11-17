@@ -22,66 +22,66 @@ export const AGENCY_SPECS = {
 
 export const SERVICES_CAPABILITIES: ServiceCapability[] = [
   {
-    id: "headless-architecture",
-    code: "01 // ARCHITECTURE",
-    title: "Headless CMS Engineering",
-    tagline: "Unshackle content operations from monolithic templates with bespoke decoupled pipelines.",
-    cmsPlatforms: ["Sanity.io", "Payload CMS 3.0", "Contentful Enterprise", "Strapi 5"],
+    id: "websites-platforms",
+    code: "01 // WEBSITES & PLATFORMS",
+    title: "Websites & Editorial Platforms",
+    tagline: "Fast, SEO + AIO-ready and built to convert with clean, modern component architectures.",
+    cmsPlatforms: ["Sanity.io", "Payload CMS 3.0", "Next.js App Router", "React 18"],
     deliverables: [
-      "Custom structured schema modeling tailored to editorial teams",
-      "Real-time visual previews across multi-device viewports",
-      "Omnichannel content syndication (Web, Mobile, Kiosk, API)",
-      "Zero-downtime database migration from legacy platforms"
+      "Responsive, accessible interfaces built on a reusable component library",
+      "Dynamic visual live preview and structured schema modeling",
+      "Core Web Vitals tuning (<0.9s LCP, <400ms TTFB response)",
+      "SEO + AIO (AI Optimization) structured data and global CDN"
     ],
-    editorialImpact: "Average 82% reduction in editorial publish latency.",
+    editorialImpact: "Instantaneous publishing velocity with zero monolithic lag.",
     theme: "dark",
     layoutSpan: "wide"
   },
   {
-    id: "luxury-frontend",
-    code: "02 // CRAFTSMANSHIP",
-    title: "Editorial Frontend Flagships",
-    tagline: "Apple and luxury-grade interactive web experiences crafted with mathematical precision.",
-    cmsPlatforms: ["React", "Next.js App Router", "Tailwind CSS", "Framer Motion"],
+    id: "saas-mvps",
+    code: "02 // PRODUCT ENGINEERING",
+    title: "SaaS MVPs & App Frontends",
+    tagline: "From validated idea to first paying users in weeks with agile sprint execution.",
+    cmsPlatforms: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase / Payload"],
     deliverables: [
-      "Micro-interactions & fluid 60fps kinetic motion design",
-      "Swiss typographical hierarchy with responsive viewport scaling",
-      "Accessible WCAG AAA compliance built-in from day one",
-      "Custom luxury e-commerce & portfolio interaction models"
+      "Rapid sprint-based delivery with weekly working demos",
+      "SaaS-grade dashboards, user authentication, and billing flows",
+      "Third-party API integrations (CRM, payments, email, analytics)",
+      "Clean, modular codebase with 100% full IP ownership"
     ],
-    editorialImpact: "Aesthetic distinction that elevates brand valuation.",
+    editorialImpact: "Fast-track your product to market without architectural debt.",
     theme: "light",
     layoutSpan: "narrow"
   },
   {
-    id: "performance-optimization",
-    code: "03 // PERFORMANCE",
-    title: "Sub-Second Global Edge Delivery",
-    tagline: "Architected for global prestige brands where every 100 milliseconds directly impacts conversion.",
-    cmsPlatforms: ["Cloudflare Workers", "Vercel Edge", "AWS CloudFront", "Fastly"],
+    id: "cms-architecture",
+    code: "03 // ARCHITECTURE & APIS",
+    title: "Headless CMS & Integrations",
+    tagline: "Headless, traditional or hybrid. Content modelling, roles and bespoke editorial workflows.",
+    cmsPlatforms: ["Sanity.io", "Payload 3.0", "Contentful Enterprise", "Strapi 5"],
     deliverables: [
-      "Sub-150ms First Contentful Paint across 45+ worldwide regions",
-      "Dynamic Incremental Static Regeneration (ISR) on content updates",
-      "Automated WebP/AVIF asset pipelines with responsive art direction",
-      "Stale-While-Revalidate edge caching strategies"
+      "Custom content modeling tailored to your team's publishing needs",
+      "CRM, payments, analytics, search, and custom third-party APIs",
+      "Role-based access control, security hardening, and backups",
+      "Omnichannel content syndication across web, mobile, and APIs"
     ],
-    editorialImpact: "Flawless resilience during high-stakes editorial drops.",
+    editorialImpact: "Your team publishes with ease and confidence every time.",
     theme: "dark",
     layoutSpan: "narrow"
   },
   {
-    id: "migration-audit",
-    code: "04 // TRANSFORMATION",
-    title: "Monolith to Headless Migration",
-    tagline: "Surgically liberate your legacy WordPress, Drupal, or monolithic stack into a headless ecosystem.",
-    cmsPlatforms: ["Automated Scrapers", "GraphQL / REST Adapters", "Payload Importers", "Sanity CLI"],
+    id: "migration-support",
+    code: "04 // MIGRATION & SUPPORT",
+    title: "Migration, Hardening & Support",
+    tagline: "Replace brittle monolithic templates with clean, decoupled architecture: fast and future-proof.",
+    cmsPlatforms: ["WordPress Importers", "Automated Scrapers", "GraphQL / REST Adapters", "Cloudflare"],
     deliverables: [
-      "100% preservation of historical SEO URLs and structured meta graph",
-      "Content deduplication and relational schema restructuring",
-      "Custom authoring interfaces customized to editorial workflows",
-      "Comprehensive staff training and architectural handover dockets"
+      "Zero-downtime database and asset migration from legacy CMS",
+      "100% preservation of SEO ranking URLs and structured meta graph",
+      "GDPR-ready data handling, access controls, and uptime monitoring",
+      "Team training, video walkthroughs, and proactive maintenance"
     ],
-    editorialImpact: "Zero drop in organic search rankings during transition.",
+    editorialImpact: "Clean handover with zero vendor lock-in and guaranteed uptime.",
     theme: "light",
     layoutSpan: "wide"
   }
@@ -171,31 +171,31 @@ export const CASE_STUDIES: CaseStudy[] = [
 export const PROCESS_STAGES = [
   {
     number: "01",
-    phase: "SCHEMA ARCHITECTURE & CONTENT AUDIT",
-    duration: "Week 01",
-    description: "We deconstruct your content taxonomy into atomic, reusable entities. We eliminate monolithic sprawl and establish strict typed schemas in Sanity, Payload, or Contentful.",
-    deliverable: "Schema Blueprint & Interactive Content Graph"
+    phase: "DISCOVER",
+    duration: "Day 01–02",
+    description: "Workshops on goals, audience, content model and integrations. We map the editorial workflow before any code.",
+    deliverable: "Requirements and Sitemap"
   },
   {
     number: "02",
-    phase: "HIGH-FASHION DESIGN & MICRO-MOTION",
-    duration: "Week 02 — 03",
-    description: "We craft an editorial design language inspired by luxury Swiss and Milanese editorial design. Mathematical typography scales, bespoke layout rhythm, and subtle tactile haptics.",
-    deliverable: "Design System Tokens & 60fps Prototype"
+    phase: "DESIGN",
+    duration: "Day 03–05",
+    description: "UX flows, a reusable UI system and a clickable prototype, validated and refined directly with your team.",
+    deliverable: "Approved Clickable Prototype"
   },
   {
     number: "03",
-    phase: "HEADLESS INTEGRATION & EDGE HARNESS",
-    duration: "Week 04 — 05",
-    description: "Building the high-performance React/Next.js frontend. Wiring real-time preview webhooks, automated asset transformations, and edge ISR invalidation pipelines.",
-    deliverable: "Staging Sandbox & Authoring Studio"
+    phase: "DEVELOP",
+    duration: "Day 06–12",
+    description: "Agile sprints with weekly demos. Modular, secure, tested code on a live staging link you can preview.",
+    deliverable: "Working CMS on Staging"
   },
   {
     number: "04",
-    phase: "GLOBAL EDGE DEPLOYMENT & 100/100 AUDIT",
-    duration: "Week 06",
-    description: "Zero-downtime cutover. Comprehensive Lighthouse Core Web Vitals profiling across all global geographic edge nodes, SEO canonical verification, and team training.",
-    deliverable: "Live Production Flagship + Handover Dossier"
+    phase: "LAUNCH & GROW",
+    duration: "Day 13–15",
+    description: "Content migration, QA, go-live cutover, team training videos and ongoing maintenance support.",
+    deliverable: "Live Site & Complete Handover"
   }
 ];
 

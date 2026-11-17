@@ -21,14 +21,14 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
         <div className="pb-10 border-b border-white/10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div>
             <div className="text-xs font-bold tracking-widest text-[#0071E3] font-editorial-mono uppercase mb-2">
-              // 01 CORE CAPABILITIES & DISCIPLINES
+              // 02 SCOPE OF SERVICES & CAPABILITIES
             </div>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tighter uppercase leading-[0.95]">
-              How Can // We Engineer For You
+              Everything your CMS needs, under one roof.
             </h2>
           </div>
           <div className="text-xs font-editorial-mono text-[#D9D9D9]/70 text-left sm:text-right">
-            MODERN CMS ARCHITECTURE • DECOUPLED STACKS • SUB-SECOND VELOCITY
+            HEADLESS • TRADITIONAL • HYBRID • WEBSITES • SAAS MVPS • SEO + AIO
           </div>
         </div>
 
@@ -303,6 +303,29 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
             </div>
           </div>
 
+        </div>
+
+        {/* Core Technology Stack Bar (Direct from Proposal Page 4) */}
+        <div className="mt-8 p-4 bg-white/5 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 font-editorial-mono text-xs">
+          <div className="flex items-center gap-2 text-[#0071E3] font-bold">
+            <span className="px-2 py-0.5 bg-[#0071E3] text-white text-[10px] uppercase font-bold tracking-wider">
+              STACK
+            </span>
+            <span className="text-white/80">PRODUCTION ENGINES</span>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[#D9D9D9]/80 text-[11px] uppercase tracking-wider">
+            <span>SANITY.IO</span>
+            <span>•</span>
+            <span>PAYLOAD 3.0</span>
+            <span>•</span>
+            <span>CONTENTFUL</span>
+            <span>•</span>
+            <span>STRAPI 5</span>
+            <span>•</span>
+            <span>NEXT.JS APP ROUTER</span>
+            <span>•</span>
+            <span>REACT 18</span>
+          </div>
         </div>
 
       </div>

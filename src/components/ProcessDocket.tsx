@@ -11,19 +11,35 @@ export const ProcessDocket: React.FC = () => {
         <div className="pb-10 border-b border-white/10 flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <div className="text-xs font-bold tracking-widest text-[#0071E3] font-editorial-mono uppercase mb-2">
-              // 05 ARCHITECTURAL METHODOLOGY
+              // 04 APPROACH & TIMELINE
             </div>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tighter uppercase leading-[0.95]">
-              How We Ship // The 6-Week Protocol
+              From brief to launch in four clear phases.
             </h2>
           </div>
           <div className="text-xs font-editorial-mono text-[#D9D9D9]/70 max-w-sm">
-            RIGID TIMELINES. ZERO COMPROMISE ON TECHNICAL RIGOR. FROM SCHEMA DRAFTING TO SUB-SECOND GLOBAL EDGE CUTOVER.
+            A TIMELINE YOU CAN PLAN AROUND. SCOPED IN FOCUSED SPRINTS WITH WEEKLY DEMOS AND ZERO VENDOR LOCK-IN.
+          </div>
+        </div>
+
+        {/* Value Pills Bar (Direct from Proposal Page 3) */}
+        <div className="py-4 border-b border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs font-editorial-mono text-neutral-300">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#0F766E]" />
+            <span>Scoped in focused sprints</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#0071E3]" />
+            <span>Weekly demos and a shared board</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#0F766E]" />
+            <span>Clean handover, no lock-in</span>
           </div>
         </div>
 
         {/* Process Timeline Docket (Clean, compact balanced rows) */}
-        <div className="mt-8 divide-y divide-white/10 border-y border-white/10">
+        <div className="divide-y divide-white/10 border-b border-white/10">
           {PROCESS_STAGES.map((stage) => (
             <div
               key={stage.number}
@@ -55,7 +71,7 @@ export const ProcessDocket: React.FC = () => {
               <div className="md:col-span-3 md:text-right flex flex-col md:items-end justify-between self-stretch">
                 <div>
                   <span className="text-[10px] font-bold tracking-widest uppercase font-editorial-mono text-neutral-400">
-                    STAGE ARTIFACT:
+                    OUTPUT:
                   </span>
                   <div className="text-xs font-bold text-white font-editorial-mono mt-0.5">
                     {stage.deliverable}
@@ -68,6 +84,28 @@ export const ProcessDocket: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Package Delivery Durations (Direct from Proposal Page 5) */}
+        <div className="mt-8 p-4 bg-white/5 border border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-editorial-mono">
+          <div className="flex items-center gap-3">
+            <span className="px-2 py-0.5 bg-[#0F766E]/20 text-[#0F766E] font-bold border border-[#0F766E]/40 text-[10px] uppercase">
+              ESSENTIAL
+            </span>
+            <span className="text-white font-bold">1–2 WEEKS</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="px-2 py-0.5 bg-[#0071E3]/20 text-[#0071E3] font-bold border border-[#0071E3]/40 text-[10px] uppercase">
+              PRIOR (RECOMMENDED)
+            </span>
+            <span className="text-white font-bold">2–3 WEEKS</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="px-2 py-0.5 bg-white/10 text-neutral-300 font-bold border border-white/20 text-[10px] uppercase">
+              CUSTOM
+            </span>
+            <span className="text-white font-bold">SCOPED AFTER DISCOVERY</span>
+          </div>
         </div>
 
       </div>

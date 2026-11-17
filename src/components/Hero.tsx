@@ -35,10 +35,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
           <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-headline font-black tracking-[0.8px] uppercase leading-[0.88] select-none break-words text-white">
             Reach Orion
           </h1>
-          <div className="mt-4 flex items-center justify-between text-xs sm:text-sm font-editorial-mono text-[#D9D9D9]/60 tracking-widest uppercase">
-            <span>[ ARCHITECTURE STUDIO ]</span>
-            <span>HEADLESS CMS SPECIALISTS</span>
-            <span className="hidden sm:inline">GLOBAL COMMISSION ARCHIVE</span>
+          <div className="mt-4 flex items-center justify-between text-xs sm:text-sm font-editorial-mono text-[#D9D9D9]/70 tracking-widest uppercase">
+            <span>[ IT DEVELOPMENT STUDIO ]</span>
+            <span>HEADLESS CMS • WEBSITES • SAAS MVPS</span>
+            <span className="hidden sm:inline">GLOBAL DELIVERY • INR & USD</span>
           </div>
         </div>
 
@@ -47,9 +47,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
           
           {/* Left Column: Bold Editorial Statement */}
           <div className="lg:col-span-6 space-y-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight leading-tight text-white">
-              We Architect Decoupled Web Experiences That Grow Your Enterprise
+            <div className="inline-block px-2.5 py-0.5 text-[10px] font-bold font-editorial-mono uppercase tracking-widest bg-[#0071E3]/20 border border-[#0071E3]/40 text-[#0071E3]">
+              CMS DEVELOPMENT PROPOSAL // 2026
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white">
+              A CMS that grows as fast as you do.
             </h2>
+            <p className="text-sm sm:text-base text-neutral-300 font-medium">
+              Custom CMS platforms, websites and SaaS MVPs, engineered for teams in India and worldwide.
+            </p>
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <button
                 onClick={onOpenInquiry}
@@ -71,33 +77,41 @@ export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
           {/* Right Column: Narrative & Metrics */}
           <div className="lg:col-span-6 space-y-8">
             <p className="text-sm sm:text-base text-[#D9D9D9] leading-relaxed font-normal">
-              A specialized digital agency delivering bespoke headless CMS architectures, high-performance web flagships, and sub-second global edge delivery. We replace brittle, monolithic templates with decoupled editorial pipelines that empower content teams and captivate audiences.
+              Reach Orion is an IT development studio delivering headless CMS platforms, websites and SaaS MVPs. We replace brittle monolithic templates with clean, decoupled architecture: fast to launch, simple for your team to manage and ready to scale.
             </p>
 
-            {/* Micro Stats Row */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-6 border-t border-white/10">
+            {/* Micro Stats Row (Proposal Targets) */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-white/10">
               <div>
                 <div className="text-2xl sm:text-3xl font-extrabold text-white font-editorial-mono">
-                  99.8%
+                  90+
                 </div>
-                <div className="text-[11px] tracking-wider text-[#D9D9D9]/70 uppercase mt-1">
-                  Uptime Resilience
+                <div className="text-[10px] tracking-wider text-[#D9D9D9]/70 uppercase mt-1">
+                  Lighthouse Score
                 </div>
               </div>
               <div>
                 <div className="text-2xl sm:text-3xl font-extrabold text-white font-editorial-mono">
-                  6.4X
+                  &lt;0.9s
                 </div>
-                <div className="text-[11px] tracking-wider text-[#D9D9D9]/70 uppercase mt-1">
-                  Publish Velocity
+                <div className="text-[10px] tracking-wider text-[#D9D9D9]/70 uppercase mt-1">
+                  Largest Paint (LCP)
                 </div>
               </div>
-              <div className="col-span-2 sm:col-span-1">
+              <div>
                 <div className="text-2xl sm:text-3xl font-extrabold text-[#0071E3] font-editorial-mono">
-                  &lt;100ms
+                  &lt;400ms
                 </div>
-                <div className="text-[11px] tracking-wider text-[#D9D9D9]/70 uppercase mt-1">
-                  Interactive Latency
+                <div className="text-[10px] tracking-wider text-[#D9D9D9]/70 uppercase mt-1">
+                  TTFB Response
+                </div>
+              </div>
+              <div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-[#0F766E] font-editorial-mono">
+                  99.9%
+                </div>
+                <div className="text-[10px] tracking-wider text-[#D9D9D9]/70 uppercase mt-1">
+                  Hosting Uptime
                 </div>
               </div>
             </div>
