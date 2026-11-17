@@ -106,44 +106,58 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
 
       </header>
 
-      {/* Mobile Drawer */}
+      {/* Mobile Drawer Backdrop & Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-x-4 top-20 z-50 bg-[#1D1D1F]/90 backdrop-blur-xl border border-white/15 rounded-2xl p-6 shadow-2xl flex flex-col gap-4 animate-in fade-in slide-in-from-top-2 duration-200">
-          <div className="flex items-center justify-between pb-3 border-b border-white/10">
-            <BrandWordmark theme="light" className="h-4.5 w-auto" />
+        <>
+          <div
+            className="md:hidden fixed inset-0 z-40 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200"
+            onClick={() => setMobileMenuOpen(false)}
+            aria-hidden="true"
+          />
+          <div className="md:hidden fixed inset-x-4 top-20 z-50 bg-[#1D1D1F]/95 backdrop-blur-2xl border border-white/15 rounded-2xl p-6 shadow-2xl flex flex-col gap-4 animate-in fade-in slide-in-from-top-2 duration-200">
+            <div className="flex items-center justify-between pb-3 border-b border-white/10">
+              <BrandWordmark theme="light" className="h-4.5 w-auto" />
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-1.5 text-white hover:text-[#0071E3] rounded-full hover:bg-white/10"
+                aria-label="Close Menu"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="flex flex-col gap-3 py-1">
+              {navLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-sm font-bold tracking-widest text-white hover:text-[#0071E3] transition-colors py-1.5 uppercase"
+                >
+                  {link.label}
+                </a>
+              ))}
+              <a
+                href="#packages"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-sm font-bold tracking-widest text-[#0071E3] hover:text-blue-400 transition-colors py-1.5 uppercase"
+              >
+                PACKAGES & PRICING
+              </a>
+            </div>
+
             <button
-              onClick={() => setMobileMenuOpen(false)}
-              className="p-1 text-white hover:text-[#0071E3]"
-              aria-label="Close Menu"
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenInquiry();
+              }}
+              className="w-full flex items-center justify-center gap-2 py-3.5 rounded-full bg-[#0071E3] text-white text-xs font-bold tracking-widest uppercase mt-2 hover:bg-blue-600 transition-colors shadow-md active:scale-95"
             >
-              <X className="w-5 h-5" />
+              <span>Book Discovery Call</span>
+              <ArrowUpRight className="w-4 h-4" />
             </button>
           </div>
-
-          <div className="flex flex-col gap-3">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-sm font-bold tracking-widest text-white hover:text-[#0071E3] transition-colors py-1 uppercase"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-
-          <button
-            onClick={() => {
-              setMobileMenuOpen(false);
-              onOpenInquiry();
-            }}
-            className="w-full flex items-center justify-center gap-2 py-3 rounded-full bg-[#0071E3] text-white text-xs font-bold tracking-widest uppercase mt-2 hover:bg-blue-600 transition-colors"
-          >
-            <span>Start A Commission</span>
-            <ArrowUpRight className="w-4 h-4" />
-          </button>
-        </div>
+        </>
       )}
     </>
   );

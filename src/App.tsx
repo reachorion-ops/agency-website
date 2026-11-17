@@ -31,7 +31,7 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#1D1D1F] text-[#1D1D1F] flex flex-col font-sans selection:bg-[#0071E3] selection:text-white">
+    <div className="min-h-screen bg-[#1D1D1F] text-[#1D1D1F] flex flex-col font-sans selection:bg-[#0071E3] selection:text-white overflow-x-hidden w-full">
       {/* Navigation */}
       <Navbar onOpenInquiry={() => scrollToInquiry()} />
 

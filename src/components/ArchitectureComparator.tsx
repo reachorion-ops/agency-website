@@ -24,8 +24,8 @@ export const ArchitectureComparator: React.FC = () => {
           </p>
         </div>
 
-        {/* Live Interactive Comparison Matrix */}
-        <div className="mt-8 overflow-x-auto border border-[#D9D9D9]">
+        {/* Desktop Comparison Table (Hidden on Mobile) */}
+        <div className="mt-8 hidden md:block overflow-x-auto border border-[#D9D9D9]">
           <table className="w-full text-left border-collapse min-w-[700px]">
             <thead>
               <tr className="border-b border-[#D9D9D9] bg-[#F5F5F7]">
@@ -85,6 +85,47 @@ export const ArchitectureComparator: React.FC = () => {
               ))}
             </tbody>
           </table>
+        </div>
+
+        {/* Mobile Comparison Cards (Native Stacked Flow for <768px Viewports) */}
+        <div className="mt-6 md:hidden space-y-4">
+          {ARCHITECTURE_COMPARISONS.map((comp, idx) => (
+            <div
+              key={idx}
+              className="border border-[#D9D9D9] bg-[#FFFFFF] p-5 space-y-4 shadow-sm"
+            >
+              <div className="flex items-center justify-between pb-2 border-b border-[#D9D9D9]">
+                <span className="text-xs font-black font-editorial-mono text-[#0071E3]">
+                  0{idx + 1} // {comp.feature}
+                </span>
+                <span className="text-[10px] font-editorial-mono text-[#0F766E] font-bold">
+                  ✦ {comp.highlight}
+                </span>
+              </div>
+
+              {/* Reach Orion Way */}
+              <div className="p-3.5 bg-blue-50/60 border border-blue-200/60 space-y-1">
+                <div className="flex items-center gap-2 text-xs font-bold font-editorial-mono text-[#0071E3] uppercase">
+                  <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  <span>Reach Orion Standard</span>
+                </div>
+                <p className="text-xs text-[#1D1D1F] font-medium leading-relaxed pl-5">
+                  {comp.reachOrionWay}
+                </p>
+              </div>
+
+              {/* Legacy Monolith */}
+              <div className="p-3.5 bg-[#F5F5F7] border border-[#D9D9D9] space-y-1">
+                <div className="flex items-center gap-2 text-xs font-bold font-editorial-mono text-neutral-500 uppercase">
+                  <X className="w-3.5 h-3.5 stroke-[2.5]" />
+                  <span>Legacy Monolith</span>
+                </div>
+                <p className="text-xs text-neutral-600 leading-relaxed pl-5">
+                  {comp.legacyMonolith}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Selected Dimension Deep-Dive Callout */}

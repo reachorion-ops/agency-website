@@ -17,9 +17,12 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
   if (!caseStudy) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-md animate-in fade-in duration-200"
+      onClick={onClose}
+    >
       <div
-        className="relative w-full max-w-3xl bg-[#1D1D1F] text-white border border-white/20 shadow-2xl p-6 sm:p-10 max-h-[90vh] overflow-y-auto"
+        className="relative w-full max-w-3xl bg-[#1D1D1F] text-white border border-white/20 shadow-2xl p-5 sm:p-8 md:p-10 max-h-[92vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}

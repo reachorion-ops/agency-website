@@ -56,17 +56,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
             <p className="text-sm sm:text-base text-neutral-300 font-medium">
               Custom CMS platforms, websites and SaaS MVPs, engineered for teams in India and worldwide.
             </p>
-            <div className="pt-2 flex flex-wrap items-center gap-3">
+            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
               <button
                 onClick={onOpenInquiry}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#0071E3] text-white hover:bg-blue-600 text-xs font-bold tracking-widest uppercase transition-all duration-200 border border-[#0071E3]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-3 bg-[#0071E3] text-white hover:bg-blue-600 text-xs font-bold tracking-widest uppercase transition-all duration-200 border border-[#0071E3] active:scale-95 shadow-sm"
               >
                 <span>Book A Discovery Call</span>
                 <ArrowUpRight className="w-4 h-4" />
               </button>
               <a
                 href="#packages"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-transparent text-white hover:bg-white/10 text-xs font-bold tracking-widest uppercase transition-all duration-200 border border-white/20"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-3 bg-transparent text-white hover:bg-white/10 text-xs font-bold tracking-widest uppercase transition-all duration-200 border border-white/20 active:scale-95"
               >
                 <span>View Packages</span>
                 <ArrowUpRight className="w-4 h-4" />

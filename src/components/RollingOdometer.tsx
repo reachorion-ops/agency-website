@@ -157,11 +157,11 @@ export const HeroMetricsOdometer: React.FC = () => {
   const digitStrip = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
   return (
-    <div className="grid grid-cols-3 gap-6 sm:gap-12 text-left select-none">
+    <div className="grid grid-cols-3 gap-2.5 xs:gap-4 sm:gap-8 md:gap-12 text-left select-none w-full max-w-xl">
       
       {/* 1. Metric: Core Web Vitals (*100) */}
       <div className="group cursor-default">
-        <div className="flex items-baseline text-xl sm:text-2xl font-extrabold tracking-tight font-editorial-mono text-white leading-none">
+        <div className="flex items-baseline text-lg sm:text-2xl font-extrabold tracking-tight font-editorial-mono text-white leading-none">
           <span ref={m1Ast} className="transition-colors duration-300 mr-0.5 text-white/60">
             *
           </span>
@@ -213,7 +213,7 @@ export const HeroMetricsOdometer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="text-[10px] sm:text-xs tracking-widest text-[#D9D9D9]/70 uppercase mt-1">
+        <div className="text-[9px] xs:text-[10px] sm:text-xs tracking-wider sm:tracking-widest text-[#D9D9D9]/70 uppercase mt-1 truncate">
           Core Web Vitals
         </div>
         <div className="w-full max-w-[120px] h-[1.5px] bg-white/10 rounded-full overflow-hidden mt-2 relative">
@@ -227,7 +227,7 @@ export const HeroMetricsOdometer: React.FC = () => {
 
       {/* 2. Metric: Global Edge TTFB (*0.18s) */}
       <div className="group cursor-default">
-        <div className="flex items-baseline text-xl sm:text-2xl font-extrabold tracking-tight font-editorial-mono text-white leading-none">
+        <div className="flex items-baseline text-lg sm:text-2xl font-extrabold tracking-tight font-editorial-mono text-white leading-none">
           <span ref={m2Ast} className="transition-colors duration-300 mr-0.5 text-white/60">
             *
           </span>
@@ -268,7 +268,7 @@ export const HeroMetricsOdometer: React.FC = () => {
           </div>
           <span className="text-white transition-colors duration-300 ml-0.5">s</span>
         </div>
-        <div className="text-[10px] sm:text-xs tracking-widest text-[#D9D9D9]/70 uppercase mt-1">
+        <div className="text-[9px] xs:text-[10px] sm:text-xs tracking-wider sm:tracking-widest text-[#D9D9D9]/70 uppercase mt-1 truncate">
           Global Edge TTFB
         </div>
         <div className="w-full max-w-[120px] h-[1.5px] bg-white/10 rounded-full overflow-hidden mt-2 relative">
@@ -282,7 +282,7 @@ export const HeroMetricsOdometer: React.FC = () => {
 
       {/* 3. Metric: Headless Decoupled (*100%) */}
       <div className="group cursor-default">
-        <div className="flex items-baseline text-xl sm:text-2xl font-extrabold tracking-tight font-editorial-mono text-white leading-none">
+        <div className="flex items-baseline text-lg sm:text-2xl font-extrabold tracking-tight font-editorial-mono text-white leading-none">
           <span ref={m3Ast} className="transition-colors duration-300 mr-0.5 text-white/60">
             *
           </span>
@@ -335,7 +335,7 @@ export const HeroMetricsOdometer: React.FC = () => {
           </div>
           <span className="text-white transition-colors duration-300 ml-0.5">%</span>
         </div>
-        <div className="text-[10px] sm:text-xs tracking-widest text-[#D9D9D9]/70 uppercase mt-1">
+        <div className="text-[9px] xs:text-[10px] sm:text-xs tracking-wider sm:tracking-widest text-[#D9D9D9]/70 uppercase mt-1 truncate">
           Headless Decoupled
         </div>
         <div className="w-full max-w-[120px] h-[1.5px] bg-white/10 rounded-full overflow-hidden mt-2 relative">

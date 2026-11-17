@@ -153,7 +153,7 @@ export const PricingPackages: React.FC<PricingPackagesProps> = ({ onSelectPackag
               </span>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
               {PACKAGE_INCLUSIONS.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-2.5">
                   <Check className="w-4 h-4 text-[#0071E3] shrink-0 mt-0.5" />

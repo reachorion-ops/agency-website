@@ -22,7 +22,7 @@ export const RocketCtaButton: React.FC<RocketCtaButtonProps> = ({ onClick, class
   const circumference = 1319.47;
 
   return (
-    <div className={`relative self-end md:self-auto w-36 h-36 sm:w-44 sm:h-44 flex items-center justify-center group z-10 hover:z-30 ${className}`}>
+    <div className={`relative self-center sm:self-end md:self-auto w-36 h-36 sm:w-44 sm:h-44 flex items-center justify-center group z-10 hover:z-30 ${className}`}>
       {/* Outer ambient cosmic halo on hover */}
       <div className="absolute -inset-8 rounded-full bg-[#0071E3]/0 group-hover:bg-[#0071E3]/30 blur-3xl transition-all duration-500 pointer-events-none" />
 

@@ -17,9 +17,12 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
   if (!testimonial) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
+      onClick={onClose}
+    >
       <div
-        className="relative w-full max-w-2xl bg-[#FFFFFF] text-[#1D1D1F] border border-[#D9D9D9] shadow-2xl p-6 sm:p-10 max-h-[90vh] overflow-y-auto"
+        className="relative w-full max-w-2xl bg-[#FFFFFF] text-[#1D1D1F] border border-[#D9D9D9] shadow-2xl p-5 sm:p-8 md:p-10 max-h-[92vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Bar */}

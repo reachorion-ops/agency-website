@@ -240,7 +240,7 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
                       placeholder="e.g. Jean-Luc Moreau"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full p-2.5 bg-[#F5F5F7] border border-[#D9D9D9] text-[#1D1D1F] text-xs focus:outline-none focus:border-[#0071E3] focus:bg-white transition-colors"
+                      className="w-full p-3 sm:p-2.5 bg-[#F5F5F7] border border-[#D9D9D9] text-[#1D1D1F] text-base sm:text-xs focus:outline-none focus:border-[#0071E3] focus:bg-white transition-colors"
                     />
                   </div>
 
@@ -254,7 +254,7 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
                       placeholder="e.g. j.moreau@brand.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full p-2.5 bg-[#F5F5F7] border border-[#D9D9D9] text-[#1D1D1F] text-xs focus:outline-none focus:border-[#0071E3] focus:bg-white transition-colors"
+                      className="w-full p-3 sm:p-2.5 bg-[#F5F5F7] border border-[#D9D9D9] text-[#1D1D1F] text-base sm:text-xs focus:outline-none focus:border-[#0071E3] focus:bg-white transition-colors"
                     />
                   </div>
                 </div>
@@ -268,7 +268,7 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
                     placeholder="e.g. Atelier Vaneau Paris"
                     value={formData.organization}
                     onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
-                    className="w-full p-2.5 bg-[#F5F5F7] border border-[#D9D9D9] text-[#1D1D1F] text-xs focus:outline-none focus:border-[#0071E3] focus:bg-white transition-colors"
+                    className="w-full p-3 sm:p-2.5 bg-[#F5F5F7] border border-[#D9D9D9] text-[#1D1D1F] text-base sm:text-xs focus:outline-none focus:border-[#0071E3] focus:bg-white transition-colors"
                   />
                 </div>
 
@@ -282,7 +282,7 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
                     placeholder="Describe your current CMS stack, challenges, and target launch timeline..."
                     value={formData.brief}
                     onChange={(e) => setFormData({ ...formData, brief: e.target.value })}
-                    className="w-full p-2.5 bg-[#F5F5F7] border border-[#D9D9D9] text-[#1D1D1F] text-xs focus:outline-none focus:border-[#0071E3] focus:bg-white transition-colors resize-none"
+                    className="w-full p-3 sm:p-2.5 bg-[#F5F5F7] border border-[#D9D9D9] text-[#1D1D1F] text-base sm:text-xs focus:outline-none focus:border-[#0071E3] focus:bg-white transition-colors resize-none"
                   />
                 </div>
 
@@ -293,7 +293,7 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
                   </span>
                   <button
                     type="submit"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#0071E3] hover:bg-blue-600 text-white text-xs font-bold tracking-widest uppercase transition-colors"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-3 bg-[#0071E3] hover:bg-blue-600 text-white text-xs font-bold tracking-widest uppercase transition-colors shadow-sm active:scale-95"
                   >
                     <span>Book Discovery Call</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />

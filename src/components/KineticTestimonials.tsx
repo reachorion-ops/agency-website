@@ -88,18 +88,18 @@ export const KineticTestimonials: React.FC<KineticTestimonialsProps> = ({ onInqu
       {/* The Minimalist Kinetic Stream */}
       <div className="mt-10 relative w-full overflow-hidden py-4">
         
-        {/* Edge Vignettes */}
-        <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+        {/* Edge Vignettes (Subtle on mobile so cards stay fully readable) */}
+        <div className="absolute left-0 top-0 bottom-0 w-6 sm:w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-6 sm:w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
         <div
-          className={`animate-kinetic-stream flex gap-6 ${isPaused ? '[animation-play-state:paused]' : ''}`}
+          className={`animate-kinetic-stream flex gap-4 sm:gap-6 ${isPaused ? '[animation-play-state:paused]' : ''}`}
         >
           {loopedTestimonials.map((item, index) => (
             <div
               key={`${item.id}-${index}`}
               onClick={() => setSelectedTestimonial(item)}
-              className="w-[360px] sm:w-[420px] shrink-0 bg-[#FFFFFF] border border-[#D9D9D9] p-7 hover:border-[#1D1D1F] hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col justify-between group"
+              className="w-[285px] sm:w-[380px] md:w-[420px] shrink-0 bg-[#FFFFFF] border border-[#D9D9D9] p-5 sm:p-7 hover:border-[#1D1D1F] hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col justify-between group"
             >
               <div>
                 <div className="flex items-center justify-between pb-3 border-b border-[#D9D9D9] text-xs font-editorial-mono">
