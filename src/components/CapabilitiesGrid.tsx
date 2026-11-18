@@ -76,7 +76,7 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
 
               {activeExpanded === SERVICES_CAPABILITIES[0].id && (
                 <div className="mt-4 pt-4 border-t border-white/10 space-y-2 animate-in fade-in duration-200">
-                  <span className="text-[10px] font-bold tracking-widest uppercase text-white/50 font-editorial-mono">
+                  <span className="text-[10px] font-bold tracking-widest uppercase text-neutral-300 font-editorial-mono">
                     TECHNICAL DELIVERABLES:
                   </span>
                   {SERVICES_CAPABILITIES[0].deliverables.slice(0, 3).map((item, idx) => (
@@ -277,7 +277,7 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
 
               {activeExpanded === SERVICES_CAPABILITIES[3].id && (
                 <div className="mt-4 pt-4 border-t border-white/10 space-y-2 animate-in fade-in duration-200">
-                  <span className="text-[10px] font-bold tracking-widest uppercase text-white/50 font-editorial-mono">
+                  <span className="text-[10px] font-bold tracking-widest uppercase text-neutral-300 font-editorial-mono">
                     MIGRATION INTEGRITY SPECS:
                   </span>
                   {SERVICES_CAPABILITIES[3].deliverables.slice(0, 3).map((item, idx) => (

@@ -44,11 +44,11 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
           <div className="flex items-center gap-2.5 text-xs font-bold font-editorial-mono text-[#0071E3] uppercase">
             <BrandLogo theme="light" className="w-4 h-4 shrink-0" />
             <span>{caseStudy.index}</span>
-            <span className="text-white/40">•</span>
+            <span className="text-neutral-300" aria-hidden="true">•</span>
             <span className="text-white">{caseStudy.cmsEngine}</span>
             {caseStudy.badge && (
               <>
-                <span className="text-white/40">•</span>
+                <span className="text-neutral-300" aria-hidden="true">•</span>
                 <span className="text-[#0F766E] font-bold">{caseStudy.badge}</span>
               </>
             )}
@@ -102,7 +102,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
                 className={`px-3 py-1.5 text-xs font-editorial-mono font-bold uppercase transition-all ${
                   !isLive3DMode && activeView?.id === v.id
                     ? 'bg-white text-[#1D1D1F] shadow-sm'
-                    : 'bg-white/5 text-neutral-400 hover:text-white hover:bg-white/10'
+                    : 'bg-white/5 text-neutral-300 hover:text-white hover:bg-white/10'
                 }`}
               >
                 {v.label}
@@ -130,13 +130,13 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
                 <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]/80 inline-block" />
                 <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]/80 inline-block" />
               </div>
-              <div className="flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-black/50 border border-white/10 text-neutral-400 text-[10px]">
+              <div className="flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-black/50 border border-white/10 text-neutral-300 text-[10px]">
                 <Lock className="w-2.5 h-2.5 text-[#0F766E]" />
                 <span className="text-neutral-300 font-medium tracking-wider uppercase">
                   CONFIDENTIAL ARCHIVE // {caseStudy.index}
                 </span>
               </div>
-              <div className="text-[10px] text-neutral-500 font-bold uppercase hidden sm:block">
+              <div className="text-[10px] text-neutral-300 font-bold uppercase hidden sm:block">
                 {activeView?.id.toUpperCase()}
               </div>
             </div>

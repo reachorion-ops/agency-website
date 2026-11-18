@@ -48,7 +48,7 @@ export const ProcessDocket: React.FC = () => {
             >
               {/* Stage Index & Timeline */}
               <div className="md:col-span-3 flex items-start gap-4">
-                <span className="text-2xl sm:text-3xl font-black text-white/30 group-hover:text-[#0071E3] transition-colors font-editorial-mono">
+                <span className="text-2xl sm:text-3xl font-black text-neutral-300 group-hover:text-[#0071E3] transition-colors font-editorial-mono">
                   {stage.number}
                 </span>
                 <div>
@@ -71,7 +71,7 @@ export const ProcessDocket: React.FC = () => {
               {/* Key Deliverable */}
               <div className="md:col-span-3 md:text-right flex flex-col md:items-end justify-between self-stretch">
                 <div>
-                  <span className="text-[10px] font-bold tracking-widest uppercase font-editorial-mono text-neutral-400">
+                  <span className="text-[10px] font-bold tracking-widest uppercase font-editorial-mono text-neutral-300">
                     OUTPUT:
                   </span>
                   <div className="text-xs font-bold text-white font-editorial-mono mt-0.5">

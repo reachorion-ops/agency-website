@@ -40,7 +40,7 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
             <div className="flex items-center justify-between pb-3.5 border-b border-white/10 text-xs font-editorial-mono">
               <div className="flex items-center gap-2">
                 <span className="text-[#CCFF00] font-black">{CASE_STUDIES[0].index}</span>
-                <span className="text-neutral-500">•</span>
+                <span className="text-neutral-300" aria-hidden="true">•</span>
                 <span className="text-white font-medium">{CASE_STUDIES[0].cmsEngine}</span>
               </div>
               <div className="flex items-center gap-1.5 px-2 py-0.5 bg-[#CCFF00]/10 border border-[#CCFF00]/30 text-[#CCFF00] text-[10px] font-bold tracking-wider uppercase">
@@ -59,13 +59,13 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]/80 inline-block" />
                   <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]/80 inline-block" />
                 </div>
-                <div className="flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-black/50 border border-white/10 text-neutral-400 text-[10px]">
+                <div className="flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-black/50 border border-white/10 text-neutral-300 text-[10px]">
                   <Lock className="w-2.5 h-2.5 text-[#0F766E]" />
                   <span className="truncate max-w-[140px] sm:max-w-[200px] text-neutral-300 font-medium tracking-wider uppercase">
                     CONFIDENTIAL ARCHIVE // COMM-01
                   </span>
                 </div>
-                <div className="text-[10px] text-neutral-500 font-bold uppercase hidden sm:block">
+                <div className="text-[10px] text-neutral-300 font-bold uppercase hidden sm:block">
                   EDGE: BLR-01
                 </div>
               </div>
@@ -121,7 +121,7 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                     <div className="text-base font-black text-white font-editorial-mono leading-none">
                       {m.value}
                     </div>
-                    <div className="text-[8px] tracking-widest text-neutral-400 font-editorial-mono uppercase mt-1">
+                    <div className="text-[8px] tracking-widest text-neutral-300 font-editorial-mono uppercase mt-1">
                       {m.label}
                     </div>
                   </div>
@@ -141,7 +141,7 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
               <div className="flex items-center justify-between pb-3 border-b border-white/10 text-xs font-editorial-mono">
                 <div className="flex items-center gap-2">
                   <span className="text-[#0071E3] font-black">{CASE_STUDIES[1].index}</span>
-                  <span className="text-neutral-500">•</span>
+                  <span className="text-neutral-300" aria-hidden="true">•</span>
                   <span className="text-white font-medium">{CASE_STUDIES[1].cmsEngine}</span>
                 </div>
                 <div className="flex items-center gap-1.5 px-2 py-0.5 bg-[#0071E3]/15 border border-[#0071E3]/40 text-[#0071E3] text-[10px] font-bold tracking-wider uppercase">
@@ -158,7 +158,7 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                     <span className="w-2 h-2 rounded-full bg-[#FFBD2E]/80 inline-block" />
                     <span className="w-2 h-2 rounded-full bg-[#27C93F]/80 inline-block" />
                   </div>
-                  <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-black/50 border border-white/10 text-neutral-400 text-[9px]">
+                  <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-black/50 border border-white/10 text-neutral-300 text-[9px]">
                     <Lock className="w-2 h-2 text-[#0F766E]" />
                     <span className="truncate max-w-[150px] text-neutral-300 font-medium tracking-wider uppercase">
                       CONFIDENTIAL ARCHIVE // COMM-02
@@ -198,7 +198,7 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   <h3 className="text-xl font-bold uppercase tracking-tight text-white mt-0.5 group-hover:text-[#0071E3] transition-colors">
                     {CASE_STUDIES[1].client}
                   </h3>
-                  <p className="text-xs text-neutral-400 mt-0.5">
+                  <p className="text-xs text-neutral-300 mt-0.5">
                     Worli Sea Face Waterfront Sky Residences
                   </p>
                 </div>
@@ -206,7 +206,7 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   <div className="text-base font-extrabold text-[#0071E3] font-editorial-mono leading-none">
                     {CASE_STUDIES[1].metrics[0].value}
                   </div>
-                  <div className="text-[8px] tracking-widest text-neutral-400 font-editorial-mono uppercase mt-1">
+                  <div className="text-[8px] tracking-widest text-neutral-300 font-editorial-mono uppercase mt-1">
                     {CASE_STUDIES[1].metrics[0].label}
                   </div>
                 </div>
@@ -221,7 +221,7 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
               <div className="flex items-center justify-between pb-3 border-b border-white/10 text-xs font-editorial-mono">
                 <div className="flex items-center gap-2">
                   <span className="text-[#DC2626] font-black">{CASE_STUDIES[2].index}</span>
-                  <span className="text-neutral-500">•</span>
+                  <span className="text-neutral-300" aria-hidden="true">•</span>
                   <span className="text-white font-medium">{CASE_STUDIES[2].cmsEngine}</span>
                 </div>
                 <div className="flex items-center gap-1.5 px-2 py-0.5 bg-[#DC2626]/15 border border-[#DC2626]/40 text-[#DC2626] text-[10px] font-bold tracking-wider uppercase">
@@ -238,7 +238,7 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                     <span className="w-2 h-2 rounded-full bg-[#FFBD2E]/80 inline-block" />
                     <span className="w-2 h-2 rounded-full bg-[#27C93F]/80 inline-block" />
                   </div>
-                  <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-black/50 border border-white/10 text-neutral-400 text-[9px]">
+                  <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-black/50 border border-white/10 text-neutral-300 text-[9px]">
                     <Lock className="w-2 h-2 text-[#0F766E]" />
                     <span className="truncate max-w-[150px] text-neutral-300 font-medium tracking-wider uppercase">
                       CONFIDENTIAL ARCHIVE // COMM-03
@@ -278,7 +278,7 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   <h3 className="text-xl font-bold uppercase tracking-tight text-white mt-0.5 group-hover:text-[#DC2626] transition-colors">
                     {CASE_STUDIES[2].client}
                   </h3>
-                  <p className="text-xs text-neutral-400 mt-0.5">
+                  <p className="text-xs text-neutral-300 mt-0.5">
                     Pritzker Masterplan & Vector CAD Blueprint
                   </p>
                 </div>
@@ -286,7 +286,7 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   <div className="text-base font-extrabold text-[#DC2626] font-editorial-mono leading-none">
                     {CASE_STUDIES[2].metrics[0].value}
                   </div>
-                  <div className="text-[8px] tracking-widest text-neutral-400 font-editorial-mono uppercase mt-1">
+                  <div className="text-[8px] tracking-widest text-neutral-300 font-editorial-mono uppercase mt-1">
                     {CASE_STUDIES[2].metrics[0].label}
                   </div>
                 </div>

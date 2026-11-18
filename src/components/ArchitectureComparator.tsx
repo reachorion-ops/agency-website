@@ -35,7 +35,7 @@ export const ArchitectureComparator: React.FC = () => {
                 <th className="p-4 text-xs font-black tracking-wider uppercase font-editorial-mono text-[#0071E3] w-5/12 bg-blue-50/50 border-x border-[#D9D9D9]">
                   Reach Orion Headless Standard
                 </th>
-                <th className="p-4 text-xs font-black tracking-wider uppercase font-editorial-mono text-neutral-600 w-1/3">
+                <th className="p-4 text-xs font-black tracking-wider uppercase font-editorial-mono text-neutral-700 w-1/3">
                   Legacy Monolith (WordPress / Drupal)
                 </th>
               </tr>
@@ -52,7 +52,7 @@ export const ArchitectureComparator: React.FC = () => {
                   {/* Dimension */}
                   <td className="p-4 font-bold text-[#1D1D1F]">
                     <div className="flex items-center gap-2">
-                      <span className="text-xs font-editorial-mono text-neutral-600">0{idx + 1}</span>
+                      <span className="text-xs font-editorial-mono text-neutral-700">0{idx + 1}</span>
                       <span>{comp.feature}</span>
                     </div>
                   </td>
@@ -73,9 +73,9 @@ export const ArchitectureComparator: React.FC = () => {
                   </td>
 
                   {/* Legacy Monolith */}
-                  <td className="p-4 text-neutral-500">
+                  <td className="p-4 text-neutral-700">
                     <div className="flex items-start gap-2.5">
-                      <div className="mt-0.5 p-1 rounded-full bg-neutral-200 text-neutral-600 shrink-0">
+                      <div className="mt-0.5 p-1 rounded-full bg-neutral-200 text-neutral-800 shrink-0">
                         <X className="w-3 h-3 stroke-[2.5]" />
                       </div>
                       <div className="text-xs sm:text-sm">{comp.legacyMonolith}</div>
