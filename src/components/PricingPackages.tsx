@@ -27,7 +27,7 @@ export const PricingPackages: React.FC<PricingPackagesProps> = ({ onSelectPackag
               <span className="sr-only"> — Transparent Headless CMS Development Rates</span>
             </h2>
           </div>
-          <div className="text-xs font-editorial-mono text-neutral-700 max-w-md">
+          <div className="text-xs font-editorial-mono text-neutral-600 max-w-md">
             CUSTOM CMS PLATFORMS, WEBSITES AND SAAS MVPS, ENGINEERED FOR TEAMS IN INDIA AND WORLDWIDE.
           </div>
         </div>
@@ -49,13 +49,13 @@ export const PricingPackages: React.FC<PricingPackagesProps> = ({ onSelectPackag
                 {/* Top Package Identification & Recommended Badge */}
                 <div>
                   <div className="flex items-center justify-between min-h-[28px] mb-4">
-                    <h3
+                    <span
                       className={`text-xs font-extrabold font-editorial-mono tracking-widest uppercase ${
                         isHighlighted ? 'text-white' : 'text-[#0F766E]'
                       }`}
                     >
                       {pkg.name}
-                    </h3>
+                    </span>
                     {pkg.badge && (
                       <span className="px-2.5 py-0.5 rounded-none bg-[#0071E3] text-white text-[10px] font-bold tracking-wider uppercase font-editorial-mono">
                         {pkg.badge}
@@ -83,7 +83,7 @@ export const PricingPackages: React.FC<PricingPackagesProps> = ({ onSelectPackag
                     </div>
                     <div
                       className={`text-xs font-editorial-mono mt-2 ${
-                        isHighlighted ? 'text-neutral-400' : 'text-neutral-700'
+                        isHighlighted ? 'text-neutral-400' : 'text-neutral-600'
                       }`}
                     >
                       {pkg.timeline}
@@ -133,10 +133,10 @@ export const PricingPackages: React.FC<PricingPackagesProps> = ({ onSelectPackag
         </div>
 
         {/* Footnote / Commercial Terms (Strictly Page 6 Footnote) */}
-        <div className="mt-8 p-4 bg-[#F5F5F7] border border-[#D9D9D9] text-[11px] font-editorial-mono text-neutral-700 leading-relaxed flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
+        <div className="mt-8 p-4 bg-[#F5F5F7] border border-[#D9D9D9] text-[11px] font-editorial-mono text-neutral-600 leading-relaxed flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
           <div>
             <span>{PRICING_FOOTNOTE.taxNote}</span>
-            <span className="mx-2 hidden md:inline text-neutral-500">/</span>
+            <span className="mx-2 hidden md:inline text-neutral-400">/</span>
             <span className="text-[#1D1D1F] font-bold">{PRICING_FOOTNOTE.billingTerms}</span>
           </div>
           <div className="text-neutral-700 font-bold">

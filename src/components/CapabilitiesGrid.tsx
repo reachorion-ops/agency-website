@@ -46,8 +46,7 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
                 <button
                   onClick={() => toggleExpand(SERVICES_CAPABILITIES[0].id)}
                   className="p-1.5 rounded-full hover:bg-white/10 text-white transition-colors"
-                  aria-expanded={activeExpanded === SERVICES_CAPABILITIES[0].id}
-                  aria-label={activeExpanded === SERVICES_CAPABILITIES[0].id ? "Collapse service details" : "Expand service details"}
+                  aria-label="Expand service details"
                 >
                   {activeExpanded === SERVICES_CAPABILITIES[0].id ? (
                     <Minus className="w-4 h-4 text-[#0071E3]" />
@@ -114,8 +113,7 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
                 <button
                   onClick={() => toggleExpand(SERVICES_CAPABILITIES[1].id)}
                   className="p-1.5 rounded-full hover:bg-neutral-100 text-[#1D1D1F] transition-colors"
-                  aria-expanded={activeExpanded === SERVICES_CAPABILITIES[1].id}
-                  aria-label={activeExpanded === SERVICES_CAPABILITIES[1].id ? "Collapse service details" : "Expand service details"}
+                  aria-label="Expand service details"
                 >
                   {activeExpanded === SERVICES_CAPABILITIES[1].id ? (
                     <Minus className="w-4 h-4 text-[#0071E3]" />
@@ -182,8 +180,7 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
                 <button
                   onClick={() => toggleExpand(SERVICES_CAPABILITIES[2].id)}
                   className="p-1.5 rounded-full hover:bg-neutral-200 text-[#1D1D1F] transition-colors"
-                  aria-expanded={activeExpanded === SERVICES_CAPABILITIES[2].id}
-                  aria-label={activeExpanded === SERVICES_CAPABILITIES[2].id ? "Collapse service details" : "Expand service details"}
+                  aria-label="Expand service details"
                 >
                   {activeExpanded === SERVICES_CAPABILITIES[2].id ? (
                     <Minus className="w-4 h-4 text-[#0071E3]" />
@@ -250,8 +247,7 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
                 <button
                   onClick={() => toggleExpand(SERVICES_CAPABILITIES[3].id)}
                   className="p-1.5 rounded-full hover:bg-white/10 text-white transition-colors"
-                  aria-expanded={activeExpanded === SERVICES_CAPABILITIES[3].id}
-                  aria-label={activeExpanded === SERVICES_CAPABILITIES[3].id ? "Collapse service details" : "Expand service details"}
+                  aria-label="Expand service details"
                 >
                   {activeExpanded === SERVICES_CAPABILITIES[3].id ? (
                     <Minus className="w-4 h-4 text-[#0071E3]" />

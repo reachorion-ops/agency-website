@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowUp } from 'lucide-react';
 import { AGENCY_SPECS } from '../data/agencyData';
+import { BrandWordmark } from './BrandWordmark';
 import { BrandLogo } from './BrandLogo';
 import wordmarkLightSvg from '../assets/wordmark-light.svg';
 
@@ -14,17 +15,13 @@ export const Footer: React.FC = () => {
 
   useEffect(() => {
     const updateClocks = () => {
-      try {
-        const now = new Date();
-        setTimes({
-          zurich: now.toLocaleTimeString('en-US', { timeZone: 'Europe/Zurich', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }),
-          london: now.toLocaleTimeString('en-US', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }),
-          newYork: now.toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }),
-          tokyo: now.toLocaleTimeString('en-US', { timeZone: 'Asia/Tokyo', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }),
-        });
-      } catch {
-        // Fallback for environments with non-standard ICU timezone tables
-      }
+      const now = new Date();
+      setTimes({
+        zurich: now.toLocaleTimeString('en-US', { timeZone: 'Europe/Zurich', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }),
+        london: now.toLocaleTimeString('en-US', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }),
+        newYork: now.toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }),
+        tokyo: now.toLocaleTimeString('en-US', { timeZone: 'Asia/Tokyo', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }),
+      });
     };
 
     updateClocks();

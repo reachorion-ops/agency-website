@@ -47,7 +47,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
           >
             <BrandWordmark
               theme="light"
-              aria-hidden="true"
               className="h-5 lg:h-5.5 w-auto transition-transform duration-300 group-hover:scale-105"
             />
           </a>
@@ -85,7 +84,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiry }) => {
           }`}
         >
           <a href="#" className="flex items-center" aria-label="Reach Orion Home">
-            <BrandWordmark theme="light" aria-hidden="true" className="h-4.5 w-auto" />
+            <BrandWordmark theme="light" className="h-4.5 w-auto" />
           </a>
 
           <div className="flex items-center gap-2.5">

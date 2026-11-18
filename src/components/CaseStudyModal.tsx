@@ -87,7 +87,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
                     : 'bg-white/10 text-neutral-300 border border-white/20 hover:bg-white/20 hover:text-white'
                 }`}
               >
-                <Sparkles className="w-3.5 h-3.5 text-[#0071E3]" />
+                <Sparkles className="w-3.5 h-3.5 animate-pulse text-[#0071E3]" />
                 <span>{caseStudy.interactiveLabel || '✦ Live Interactive Experience'}</span>
               </button>
             )}
