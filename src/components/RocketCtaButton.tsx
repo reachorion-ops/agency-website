@@ -58,21 +58,21 @@ export const RocketCtaButton: React.FC<RocketCtaButtonProps> = ({ onClick, class
               <path
                 d="M 67 31 Q 67 34 70 34 Q 67 34 67 37 Q 67 34 64 34 Q 67 34 67 31 Z"
                 fill="white"
-                className="animate-star-twinkle-fast-1 opacity-75 group-hover:opacity-100 transition-opacity duration-300"
+                className="opacity-75 group-hover:animate-star-twinkle-fast-1 group-hover:opacity-100 transition-opacity duration-300"
                 style={{ transformOrigin: '67px 34px' }}
               />
               {/* Sparkle Star 2 (Bottom Right) */}
               <path
                 d="M 75 97 Q 75 99 77 99 Q 75 99 75 101 Q 75 99 73 99 Q 75 99 75 97 Z"
                 fill="white"
-                className="animate-star-twinkle-fast-2 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                className="opacity-70 group-hover:animate-star-twinkle-fast-2 group-hover:opacity-100 transition-opacity duration-300"
                 style={{ transformOrigin: '75px 99px' }}
               />
               {/* Sparkle Star 3 (Mid-Left) */}
               <path
                 d="M 37 73 Q 37 74.5 38.5 74.5 Q 37 74.5 37 76 Q 37 74.5 35.5 74.5 Q 37 74.5 37 73 Z"
                 fill="white"
-                className="opacity-50 animate-pulse"
+                className="opacity-50 group-hover:opacity-100 transition-opacity duration-300"
               />
               {/* Celestial Micro Ring 1 (Top Left) */}
               <circle
@@ -100,7 +100,7 @@ export const RocketCtaButton: React.FC<RocketCtaButtonProps> = ({ onClick, class
 
             {/* Vector Rocket Ship with Zero-g Drift & Butter-Smooth Hover Lift */}
             <g className="transition-transform duration-300 ease-out group-hover:translate-x-1.5 group-hover:-translate-y-1.5">
-              <g className="animate-float-drift-fast">
+              <g className="group-hover:animate-float-drift-fast">
                 {/* Rotated Rocket Body & Wings (Angled at 45° towards top-right launch) */}
                 <g transform="translate(65, 65) rotate(45) translate(-65, -65)">
                   
@@ -112,7 +112,7 @@ export const RocketCtaButton: React.FC<RocketCtaButtonProps> = ({ onClick, class
                     strokeWidth="1.6"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="animate-thruster-pulse opacity-75 group-hover:opacity-100 transition-opacity duration-300"
+                    className="opacity-75 group-hover:animate-thruster-pulse group-hover:opacity-100 transition-opacity duration-300"
                     style={{ transformOrigin: '65px 77px' }}
                   />
 

@@ -75,6 +75,9 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                 <img
                   src={CASE_STUDIES[0].image}
                   alt={CASE_STUDIES[0].client}
+                  width={1832}
+                  height={975}
+                  decoding="async"
                   className="w-full h-full object-cover object-top contrast-110 group-hover:scale-[1.03] transition-all duration-700 ease-out"
                   loading="lazy"
                 />
@@ -170,6 +173,9 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   <img
                     src={CASE_STUDIES[1].image}
                     alt={CASE_STUDIES[1].client}
+                    width={1832}
+                    height={975}
+                    decoding="async"
                     className="w-full h-full object-cover object-top contrast-110 group-hover:scale-[1.03] transition-all duration-700 ease-out"
                     loading="lazy"
                   />
@@ -247,6 +253,9 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   <img
                     src={CASE_STUDIES[2].image}
                     alt={CASE_STUDIES[2].client}
+                    width={1832}
+                    height={975}
+                    decoding="async"
                     className="w-full h-full object-cover object-top contrast-110 group-hover:scale-[1.03] transition-all duration-700 ease-out"
                     loading="lazy"
                   />

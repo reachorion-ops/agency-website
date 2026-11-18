@@ -29,7 +29,7 @@ export const HeroMetricsOdometer: React.FC = () => {
   const m3Bar = useRef<HTMLDivElement>(null);
   const m3Ast = useRef<HTMLSpanElement>(null);
 
-  const DURATION = 2200; // ms (smooth, snappy and completely lag-free)
+  const DURATION = 1200; // ms (snappy, smooth and zero main-thread stall)
 
   // Cubic Ease-Out deceleration formula matching mechanical odometer physics
   const ease = (t: number) => 1 - Math.pow(1 - t, 3.2);
@@ -126,30 +126,36 @@ export const HeroMetricsOdometer: React.FC = () => {
       return;
     }
 
-    // Set initial frame (0)
-    renderAll(0, false);
-
     let rafId = 0;
-    let t0: number | null = null;
+    let timerId: ReturnType<typeof setTimeout>;
 
-    const frame = (ts: number) => {
-      if (t0 === null) t0 = ts;
-      const elapsed = ts - t0;
-      const t = Math.min(1, elapsed / DURATION);
-      const p = ease(t);
+    // Pre-lock target numbers immediately to guarantee zero initial CLS and zero main-thread stall
+    renderAll(1, true);
 
-      if (t < 1) {
-        renderAll(p, false);
-        rafId = requestAnimationFrame(frame);
-      } else {
-        renderAll(1, true);
-      }
-    };
+    // Defer the rolling animation until after critical initial paint has completed
+    timerId = setTimeout(() => {
+      renderAll(0, false);
+      let t0: number | null = null;
 
-    // Slight initial tick before starting to ensure smooth compositor warm-up
-    rafId = requestAnimationFrame(frame);
+      const frame = (ts: number) => {
+        if (t0 === null) t0 = ts;
+        const elapsed = ts - t0;
+        const t = Math.min(1, elapsed / DURATION);
+        const p = ease(t);
+
+        if (t < 1) {
+          renderAll(p, false);
+          rafId = requestAnimationFrame(frame);
+        } else {
+          renderAll(1, true);
+        }
+      };
+
+      rafId = requestAnimationFrame(frame);
+    }, 350);
 
     return () => {
+      clearTimeout(timerId);
       cancelAnimationFrame(rafId);
     };
   }, []);

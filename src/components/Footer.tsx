@@ -65,6 +65,9 @@ export const Footer: React.FC = () => {
             <img
               src={wordmarkLightSvg}
               alt="Reach Orion Wordmark"
+              width={841}
+              height={129}
+              decoding="async"
               className="h-7 sm:h-8 w-auto mb-2"
             />
             <p className="text-xs sm:text-sm text-[#D9D9D9] max-w-sm leading-relaxed">
@@ -109,6 +112,10 @@ export const Footer: React.FC = () => {
           <img
             src={wordmarkLightSvg}
             alt="Reach Orion Wordmark"
+            width={841}
+            height={129}
+            loading="lazy"
+            decoding="async"
             className="w-full max-w-4xl h-auto"
           />
         </div>

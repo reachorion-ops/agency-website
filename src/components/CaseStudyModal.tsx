@@ -146,6 +146,9 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
               <img
                 src={activeView?.image || caseStudy.image}
                 alt={activeView?.label || caseStudy.client}
+                width={1832}
+                height={975}
+                decoding="async"
                 className="w-full h-full object-cover object-top contrast-110"
               />
             </div>
