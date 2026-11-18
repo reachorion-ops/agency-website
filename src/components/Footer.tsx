@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowUp } from 'lucide-react';
 import { AGENCY_SPECS } from '../data/agencyData';
-import { BrandWordmark } from './BrandWordmark';
 import { BrandLogo } from './BrandLogo';
 import wordmarkLightSvg from '../assets/wordmark-light.svg';
 
