@@ -44,7 +44,7 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                 <span className="text-white font-medium">{CASE_STUDIES[0].cmsEngine}</span>
               </div>
               <div className="flex items-center gap-1.5 px-2 py-0.5 bg-[#CCFF00]/10 border border-[#CCFF00]/30 text-[#CCFF00] text-[10px] font-bold tracking-wider uppercase">
-                <Sparkles className="w-3 h-3 animate-pulse" />
+                <Sparkles className="w-3 h-3" />
                 <span>INTERACTIVE 3D WEBGL</span>
               </div>
             </div>
@@ -145,7 +145,7 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   <span className="text-white font-medium">{CASE_STUDIES[1].cmsEngine}</span>
                 </div>
                 <div className="flex items-center gap-1.5 px-2 py-0.5 bg-[#0071E3]/15 border border-[#0071E3]/40 text-[#0071E3] text-[10px] font-bold tracking-wider uppercase">
-                  <Sparkles className="w-3 h-3 animate-pulse" />
+                  <Sparkles className="w-3 h-3" />
                   <span>LIVE WATERFRONT</span>
                 </div>
               </div>
@@ -225,7 +225,7 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
                   <span className="text-white font-medium">{CASE_STUDIES[2].cmsEngine}</span>
                 </div>
                 <div className="flex items-center gap-1.5 px-2 py-0.5 bg-[#DC2626]/15 border border-[#DC2626]/40 text-[#DC2626] text-[10px] font-bold tracking-wider uppercase">
-                  <Sparkles className="w-3 h-3 animate-pulse" />
+                  <Sparkles className="w-3 h-3" />
                   <span>LIVE VECTOR CAD</span>
                 </div>
               </div>

@@ -118,8 +118,7 @@ export const HeroMetricsOdometer: React.FC = () => {
     // Pre-lock target numbers immediately to guarantee zero initial CLS and zero main-thread stall
     renderAll(1, true);
 
-    // Defer the rolling animation until after critical initial paint has completed
-    timerId = setTimeout(() => {
+    const startRoll = () => {
       renderAll(0, false);
       let t0: number | null = null;
 
@@ -138,12 +137,29 @@ export const HeroMetricsOdometer: React.FC = () => {
       };
 
       rafId = requestAnimationFrame(frame);
-    }, 350);
-
-    return () => {
-      clearTimeout(timerId);
-      cancelAnimationFrame(rafId);
     };
+
+    // Defer the rolling animation until browser main thread is completely idle after FCP/LCP
+    if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+      const idleId = (window as unknown as { requestIdleCallback: (cb: () => void, opts: { timeout: number }) => number })
+        .requestIdleCallback(() => {
+          timerId = setTimeout(startRoll, 400);
+        }, { timeout: 2500 });
+
+      return () => {
+        clearTimeout(timerId);
+        cancelAnimationFrame(rafId);
+        if ('cancelIdleCallback' in window) {
+          (window as unknown as { cancelIdleCallback: (id: number) => void }).cancelIdleCallback(idleId);
+        }
+      };
+    } else {
+      timerId = setTimeout(startRoll, 800);
+      return () => {
+        clearTimeout(timerId);
+        cancelAnimationFrame(rafId);
+      };
+    }
   }, []);
 
   const digitStrip = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0];

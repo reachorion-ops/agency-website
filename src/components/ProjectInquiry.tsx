@@ -110,7 +110,7 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
               <h3 className="text-xl sm:text-2xl font-bold uppercase tracking-tight text-[#1D1D1F]">
                 Scoped Plan & Quote in 48 Hours
               </h3>
-              <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+              <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed">
                 Book a free 30-minute discovery call. We'll examine your CMS goals, editorial requirements, and integrations, and send you a scoped roadmap with fixed milestone pricing.
               </p>
 
@@ -137,7 +137,7 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
             {/* Architectural Guarantee Badge */}
             <div className="p-5 border border-[#D9D9D9] flex items-start gap-3">
               <Sparkles className="w-4 h-4 text-[#0071E3] shrink-0 mt-0.5" />
-              <div className="text-xs text-neutral-600 leading-relaxed">
+              <div className="text-xs text-neutral-700 leading-relaxed">
                 <strong className="text-[#1D1D1F] font-bold uppercase block mb-0.5">
                   Production Performance & IP Warranty
                 </strong>
@@ -160,7 +160,7 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
                   <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-[#1D1D1F]">
                     Inquiry Logged: {dossierRef}
                   </h3>
-                  <p className="text-xs sm:text-sm text-neutral-600 max-w-md mx-auto">
+                  <p className="text-xs sm:text-sm text-neutral-700 max-w-md mx-auto">
                     Thank you, <strong className="text-[#1D1D1F]">{formData.name}</strong>. Our Principal Architectural Partner will review your brief for <strong className="text-[#1D1D1F]">{formData.organization || 'your organization'}</strong> and deliver a customized technical proposal within 12 hours.
                   </p>
                 </div>
@@ -183,10 +183,10 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
                 
                 {/* CMS Selection Matrix */}
                 <div className="space-y-2">
-                  <label className="text-xs font-black tracking-wider uppercase font-editorial-mono text-[#1D1D1F] flex items-center justify-between">
+                  <div className="text-xs font-black tracking-wider uppercase font-editorial-mono text-[#1D1D1F] flex items-center justify-between">
                     <span>01 // Select Preferred CMS Architecture</span>
-                    <span className="text-neutral-400 font-normal text-[10px]">(Or ask for advice)</span>
-                  </label>
+                    <span className="text-neutral-700 font-semibold text-[10px]">(Or ask for advice)</span>
+                  </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {cmsOptions.map((cms) => (
                       <button
@@ -207,10 +207,10 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
 
                 {/* Target Budget & Package Tiers */}
                 <div className="space-y-2">
-                  <label className="text-xs font-black tracking-wider uppercase font-editorial-mono text-[#1D1D1F] flex items-center justify-between">
+                  <div className="text-xs font-black tracking-wider uppercase font-editorial-mono text-[#1D1D1F] flex items-center justify-between">
                     <span>02 // Select Package / Investment Target</span>
-                    <span className="text-neutral-400 font-normal text-[10px]">(INR / USD accepted)</span>
-                  </label>
+                    <span className="text-neutral-700 font-semibold text-[10px]">(INR / USD accepted)</span>
+                  </div>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                     {budgetOptions.map((b) => (
                       <button
@@ -232,10 +232,11 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
                 {/* Identity Inputs */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <label className="text-[11px] font-bold tracking-wider uppercase font-editorial-mono text-neutral-600">
+                    <label htmlFor="inquiry-name" className="text-[11px] font-bold tracking-wider uppercase font-editorial-mono text-neutral-700">
                       Your Name *
                     </label>
                     <input
+                      id="inquiry-name"
                       type="text"
                       required
                       placeholder="e.g. Jean-Luc Moreau"
@@ -246,10 +247,11 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-[11px] font-bold tracking-wider uppercase font-editorial-mono text-neutral-600">
+                    <label htmlFor="inquiry-email" className="text-[11px] font-bold tracking-wider uppercase font-editorial-mono text-neutral-700">
                       Corporate Email *
                     </label>
                     <input
+                      id="inquiry-email"
                       type="email"
                       required
                       placeholder="e.g. j.moreau@brand.com"
@@ -261,10 +263,11 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
                 </div>
 
                 <div className="space-y-1.5">
-                  <label className="text-[11px] font-bold tracking-wider uppercase font-editorial-mono text-neutral-600">
+                  <label htmlFor="inquiry-org" className="text-[11px] font-bold tracking-wider uppercase font-editorial-mono text-neutral-700">
                     Organization / Brand Name
                   </label>
                   <input
+                    id="inquiry-org"
                     type="text"
                     placeholder="e.g. Atelier Vaneau Paris"
                     value={formData.organization}
@@ -275,10 +278,11 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
 
                 {/* Project Brief */}
                 <div className="space-y-1.5">
-                  <label className="text-[11px] font-bold tracking-wider uppercase font-editorial-mono text-neutral-600">
+                  <label htmlFor="inquiry-brief" className="text-[11px] font-bold tracking-wider uppercase font-editorial-mono text-neutral-700">
                     Project Scope & Objectives
                   </label>
                   <textarea
+                    id="inquiry-brief"
                     rows={3}
                     placeholder="Describe your current CMS stack, challenges, and target launch timeline..."
                     value={formData.brief}

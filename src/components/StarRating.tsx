@@ -16,8 +16,8 @@ export const StarRating: React.FC<StarRatingProps> = ({
   const scoreTextSize = size === 'md' ? 'text-xs' : 'text-[11px]';
 
   return (
-    <div className="inline-flex items-center gap-1.5">
-      <div className="flex items-center text-amber-400 gap-0.5">
+    <div className="inline-flex items-center gap-1.5" aria-label={`Rating: ${rating.toFixed(1)} out of 5 stars`}>
+      <div className="flex items-center text-amber-400 gap-0.5" aria-hidden="true">
         {[1, 2, 3, 4, 5].map((starIdx) => {
           if (rating >= starIdx) {
             return (

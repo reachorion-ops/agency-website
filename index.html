@@ -45,15 +45,16 @@
     <meta name="theme-color" content="#1D1D1F" />
     <meta name="color-scheme" content="dark light" />
 
-    <!-- Preconnect to Font CDN & Inlined Non-Blocking Font-Face Declarations -->
+    <!-- Preconnect to Font CDN, Preload Critical Heading Font & Inlined Non-Blocking Font-Face Declarations -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2" crossorigin>
     <style>
       @font-face {
         font-family: 'Bitter';
         font-style: italic;
         font-weight: 400;
         font-display: swap;
-        src: url(https://fonts.gstatic.com/s/bitter/v42/raxjHiqOu8IVPmn7epZnDMyKBvHf5D6c4Pz-X3By.woff2) format('woff2');
+        src: url('https://fonts.gstatic.com/s/bitter/v42/raxjHiqOu8IVPmn7epZnDMyKBvHf5D6c4Pz-X3By.woff2') format('woff2');
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       }
       @font-face {
@@ -61,7 +62,7 @@
         font-style: normal;
         font-weight: 400 600;
         font-display: swap;
-        src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2) format('woff2');
+        src: url('https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2') format('woff2');
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       }
       @font-face {
@@ -70,7 +71,7 @@
         font-weight: 400 700;
         font-stretch: 100%;
         font-display: swap;
-        src: url(https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2) format('woff2');
+        src: url('https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2') format('woff2');
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       }
       @font-face {
@@ -78,7 +79,7 @@
         font-style: normal;
         font-weight: 600 800;
         font-display: swap;
-        src: url(https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2) format('woff2');
+        src: url('https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2') format('woff2');
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       }
     </style>
@@ -241,10 +242,10 @@
     <!-- Semantic Crawler & Noscript Fallback -->
     <noscript>
       <div style="padding: 40px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 900px; margin: 0 auto; color: #1D1D1F; background: #FFFFFF; line-height: 1.6;">
-        <h1>Reach Orion — Next-Gen Headless CMS &amp; Digital Architecture Studio</h1>
+        <div style="font-size: 28px; font-weight: 900; margin-bottom: 16px; text-transform: uppercase;">Reach Orion — Next-Gen Headless CMS &amp; Digital Architecture Studio</div>
         <p><strong>Reach Orion</strong> is an IT development studio delivering custom headless CMS platforms, high-performance websites, and SaaS MVPs. We engineer decoupled web architectures that replace brittle monolithic templates with clean, fast, and scalable digital flagships.</p>
         
-        <h2>Core Capabilities &amp; Services</h2>
+        <div style="font-size: 20px; font-weight: 700; margin-top: 24px; margin-bottom: 8px; text-transform: uppercase;">Core Capabilities &amp; Services</div>
         <ul>
           <li><strong>Websites &amp; Editorial Platforms:</strong> Built on Sanity.io, Payload CMS 3.0, and Next.js App Router. Instant publishing velocity, sub-second speeds (&lt;0.9s LCP, &lt;400ms TTFB).</li>
           <li><strong>SaaS MVPs &amp; App Frontends:</strong> Agile sprint delivery with weekly demos, authentication, dashboards, and API integrations.</li>
@@ -252,10 +253,10 @@
           <li><strong>Ongoing Maintenance &amp; Retainers:</strong> 99.9% uptime guarantee, performance monitoring, security patches, and SLA coverage.</li>
         </ul>
 
-        <h2>Architectural Benchmarks</h2>
+        <div style="font-size: 20px; font-weight: 700; margin-top: 24px; margin-bottom: 8px; text-transform: uppercase;">Architectural Benchmarks</div>
         <p>Core Web Vitals: 90+ | Largest Contentful Paint (LCP): &lt;0.9s | TTFB Response: &lt;400ms | Hosting Uptime: 99.9%.</p>
 
-        <h2>Direct Inquiries</h2>
+        <div style="font-size: 20px; font-weight: 700; margin-top: 24px; margin-bottom: 8px; text-transform: uppercase;">Direct Inquiries</div>
         <p>Email: <a href="mailto:reachorion.official@gmail.com">reachorion.official@gmail.com</a> | Website: <a href="https://reachorion.net/">reachorion.net</a></p>
       </div>
     </noscript>

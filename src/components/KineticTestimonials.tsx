@@ -37,7 +37,7 @@ export const KineticTestimonials: React.FC<KineticTestimonialsProps> = ({ onInqu
           </div>
 
           <div className="flex items-center gap-2 text-xs font-editorial-mono text-neutral-700">
-            <span className="inline-block w-2 h-2 rounded-full bg-[#0F766E] animate-pulse" />
+            <span className="inline-block w-2 h-2 rounded-full bg-[#0F766E] animate-pulse will-change-[opacity]" />
             <span>AUTHENTIC CLIENT DOSSIERS • 4.7 AVG RATING</span>
           </div>
         </div>
@@ -88,9 +88,9 @@ export const KineticTestimonials: React.FC<KineticTestimonialsProps> = ({ onInqu
                     {item.avatarInitials}
                   </div>
                   <div>
-                    <div className="text-xs font-bold uppercase tracking-tight text-[#1D1D1F]">
+                    <h3 className="text-xs font-bold uppercase tracking-tight text-[#1D1D1F]">
                       {item.author}
-                    </div>
+                    </h3>
                     <div className="text-[10px] text-neutral-700 font-medium">
                       {item.company} • {item.location}
                     </div>
@@ -112,19 +112,19 @@ export const KineticTestimonials: React.FC<KineticTestimonialsProps> = ({ onInqu
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full mt-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-5 bg-[#F5F5F7] border border-[#D9D9D9] text-xs font-editorial-mono text-neutral-700">
           <div>
-            <span className="text-neutral-400 block text-[10px]">CLIENT FEEDBACK SCORE</span>
+            <span className="text-neutral-700 block text-[10px] font-bold">CLIENT FEEDBACK SCORE</span>
             <strong className="text-base text-[#1D1D1F] font-bold">4.7 / 5.0 Average</strong>
           </div>
           <div>
-            <span className="text-neutral-400 block text-[10px]">MIGRATION DOWNTIME</span>
+            <span className="text-neutral-700 block text-[10px] font-bold">MIGRATION DOWNTIME</span>
             <strong className="text-base text-[#0F766E] font-bold">0.00 Seconds</strong>
           </div>
           <div>
-            <span className="text-neutral-400 block text-[10px]">AVERAGE LCP GAIN</span>
+            <span className="text-neutral-700 block text-[10px] font-bold">AVERAGE LCP GAIN</span>
             <strong className="text-base text-[#0071E3] font-bold">+310% Faster</strong>
           </div>
           <div>
-            <span className="text-neutral-400 block text-[10px]">HEADLESS COMPLIANCE</span>
+            <span className="text-neutral-700 block text-[10px] font-bold">HEADLESS COMPLIANCE</span>
             <strong className="text-base text-[#1D1D1F] font-bold">100% Verified</strong>
           </div>
         </div>
