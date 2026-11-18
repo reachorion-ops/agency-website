@@ -81,7 +81,7 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
         {/* Technical Architecture Dossier */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="p-4 border border-[#D9D9D9] bg-white">
-            <span className="text-[10px] font-bold tracking-widest uppercase font-editorial-mono text-neutral-500">
+            <span className="text-[10px] font-bold tracking-widest uppercase font-editorial-mono text-neutral-700">
               IMPLEMENTED CMS STACK
             </span>
             <div className="text-sm font-bold text-[#1D1D1F] mt-1 flex items-center gap-1.5">
@@ -91,7 +91,7 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
           </div>
 
           <div className="p-4 border border-[#D9D9D9] bg-white">
-            <span className="text-[10px] font-bold tracking-widest uppercase font-editorial-mono text-neutral-500">
+            <span className="text-[10px] font-bold tracking-widest uppercase font-editorial-mono text-neutral-700">
               MEASURED BUSINESS RESULT
             </span>
             <div className="text-sm font-bold text-[#0F766E] mt-1 flex items-center gap-1.5">
@@ -102,14 +102,14 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
         </div>
 
         {/* Industry Sector Tag */}
-        <div className="mt-4 flex items-center justify-between text-xs font-editorial-mono text-neutral-500 pt-4 border-t border-[#D9D9D9]">
+        <div className="mt-4 flex items-center justify-between text-xs font-editorial-mono text-neutral-700 pt-4 border-t border-[#D9D9D9]">
           <span>INDUSTRY: {testimonial.industry.toUpperCase()}</span>
-          <span className="text-[#0071E3]">DECOUPLED VERIFICATION ✓</span>
+          <span className="text-[#0071E3] font-bold">DECOUPLED VERIFICATION ✓</span>
         </div>
 
         {/* Action Button */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-[#D9D9D9]">
-          <span className="text-xs text-neutral-500 font-editorial-mono">
+          <span className="text-xs text-neutral-700 font-editorial-mono font-medium">
             Require similar headless architecture?
           </span>
           <button

@@ -20,7 +20,7 @@ export const BrandManifesto: React.FC = () => {
               We architect decoupled web experiences that scale with you.
             </h2>
           </div>
-          <p className="text-xs sm:text-sm font-editorial-mono text-neutral-600 max-w-sm tracking-wide">
+          <p className="text-xs sm:text-sm font-editorial-mono text-neutral-700 max-w-sm tracking-wide">
             INDIA AND INTERNATIONAL CLIENTS / INR AND USD BILLING. FAST TO LAUNCH, SIMPLE TO MANAGE AND READY TO SCALE.
           </p>
         </div>
@@ -33,10 +33,10 @@ export const BrandManifesto: React.FC = () => {
               Why high-growth teams and founders choose decoupled CMS architecture.
             </h3>
             <div className="h-[2px] w-16 bg-[#0071E3]" />
-            <p className="text-neutral-600 leading-relaxed text-sm sm:text-base">
+            <p className="text-neutral-700 leading-relaxed text-sm sm:text-base">
               Legacy monolithic platforms lock your content, design, and hosting into a singular, brittle template. Every redesign breaks formatting, every plugin update threatens security, and every editorial edit requires engineer intervention.
             </p>
-            <p className="text-neutral-600 leading-relaxed text-sm sm:text-base">
+            <p className="text-neutral-700 leading-relaxed text-sm sm:text-base">
               <strong className="font-bold text-[#1D1D1F]">Reach Orion</strong> is an IT development studio delivering headless CMS platforms, websites and SaaS MVPs. We replace brittle monolithic templates with clean, decoupled architecture: fast to launch, simple for your team to manage and ready to scale.
             </p>
           </div>
@@ -46,7 +46,7 @@ export const BrandManifesto: React.FC = () => {
             <div className="bg-[#FFFFFF] p-7 space-y-3 hover:bg-[#F5F5F7] transition-colors">
               <span className="text-xs font-bold font-editorial-mono text-[#0071E3]">[ 01 ] WEBSITES</span>
               <h4 className="text-base font-bold text-[#1D1D1F]">Fast, SEO + AIO-Ready</h4>
-              <p className="text-xs text-neutral-600 leading-relaxed">
+              <p className="text-xs text-neutral-700 leading-relaxed">
                 Engineered for maximum conversion with AI Optimization (AIO), semantic schemas, and sub-second rendering across global devices.
               </p>
             </div>
@@ -54,7 +54,7 @@ export const BrandManifesto: React.FC = () => {
             <div className="bg-[#FFFFFF] p-7 space-y-3 hover:bg-[#F5F5F7] transition-colors">
               <span className="text-xs font-bold font-editorial-mono text-[#0F766E]">[ 02 ] SAAS MVPS</span>
               <h4 className="text-base font-bold text-[#1D1D1F]">Idea to Paying Users in Weeks</h4>
-              <p className="text-xs text-neutral-600 leading-relaxed">
+              <p className="text-xs text-neutral-700 leading-relaxed">
                 Agile sprints with weekly demos. Modular, secure, tested code on a staging link so your product team validates early and iterates fast.
               </p>
             </div>
@@ -62,7 +62,7 @@ export const BrandManifesto: React.FC = () => {
             <div className="bg-[#FFFFFF] p-7 space-y-3 hover:bg-[#F5F5F7] transition-colors">
               <span className="text-xs font-bold font-editorial-mono text-[#1D1D1F]">[ 03 ] CMS PLATFORMS</span>
               <h4 className="text-base font-bold text-[#1D1D1F]">Headless or Custom Publishing</h4>
-              <p className="text-xs text-neutral-600 leading-relaxed">
+              <p className="text-xs text-neutral-700 leading-relaxed">
                 Intuitive workspaces (Sanity, Payload, Contentful) tailored so non-technical marketing and editorial teams publish with total ease.
               </p>
             </div>
@@ -70,7 +70,7 @@ export const BrandManifesto: React.FC = () => {
             <div className="bg-[#FFFFFF] p-7 space-y-3 hover:bg-[#F5F5F7] transition-colors">
               <span className="text-xs font-bold font-editorial-mono text-[#0071E3]">[ 04 ] GUARANTEES</span>
               <h4 className="text-base font-bold text-[#1D1D1F]">Production Uptime & Speed</h4>
-              <p className="text-xs text-neutral-600 leading-relaxed">
+              <p className="text-xs text-neutral-700 leading-relaxed">
                 Targeting 90+ Lighthouse, &lt;0.9s LCP, &lt;400ms TTFB response, and 99.9% hosting uptime. Full IP ownership on payment.
               </p>
             </div>

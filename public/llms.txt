@@ -1,28 +1,30 @@
 # Reach Orion
 
-> Next-Generation Headless CMS Platforms, Digital Architecture & SaaS MVP Studio.
+> Next-generation headless CMS architectures, bespoke digital flagships, and sub-second web experiences.
 
-Reach Orion is an IT development studio delivering custom headless CMS platforms, websites, and SaaS MVPs. We replace brittle monolithic templates with clean, decoupled architecture: fast to launch, simple to manage, and engineered to scale.
+Reach Orion is an IT development studio delivering custom headless CMS platforms, websites, and SaaS MVPs. We engineer clean, decoupled architecture: fast to launch, simple to manage, and built to scale with sub-second performance (<0.9s LCP, <400ms TTFB).
 
-## Core Capabilities
-- **Websites & Editorial Platforms**: Sanity.io, Payload CMS 3.0, Next.js App Router, React 18. Fast, SEO + AIO-ready with <0.9s LCP.
-- **SaaS MVPs & App Frontends**: Rapid sprint delivery from validated idea to first paying users in weeks.
-- **CMS Migration & Decoupled Architecture**: Zero-downtime migration from legacy WordPress/Drupal to headless architectures.
-- **Ongoing Architecture Maintenance**: Retainers with 99.9% uptime SLA, security monitoring, and continuous performance tuning.
+## Core Capabilities & Services
+- [Websites & Editorial Platforms](https://reachorion.net/#capabilities): Fast, SEO + AIO-ready platforms with Sanity.io, Payload 3.0, Next.js App Router, and React 18.
+- [SaaS MVPs & App Frontends](https://reachorion.net/#capabilities): Rapid agile sprint delivery from validated idea to first paying users in weeks.
+- [CMS Migration & Decoupled Architecture](https://reachorion.net/#capabilities): Zero-downtime replatforming from legacy WordPress or Drupal monoliths to modern headless stacks.
+- [Ongoing Architecture Maintenance](https://reachorion.net/#capabilities): Dedicated engineering retainers with 99.9% uptime SLA, security patches, and performance tuning.
 
-## Performance Benchmarks
-- **Lighthouse Core Web Vitals**: 90+
-- **Largest Contentful Paint (LCP)**: <0.9s
-- **Time to First Byte (TTFB)**: <400ms
-- **Hosting Uptime**: 99.9%
+## Architectural Topology & Audits
+- [Decoupled Headless vs Legacy Monolith Architecture](https://reachorion.net/#architecture): Technical audit comparing API-first headless architectures against monolithic WordPress and Drupal.
 
-## Pricing & Packages (USD / INR)
-- **Essential Foundation**: From $600 / ₹50,000 (Fast, lightweight headless setup for MVPs and single-market sites)
-- **Flagship Decoupled Platform**: From $1,500 / ₹1,25,000 (Multi-market editorial, custom component system, sub-second LCP)
-- **Enterprise Re-Architecture**: Custom quote (Zero-downtime migration, SLA coverage, high-scale traffic handling)
+## Selected Case Studies & Flagships
+- [The Aranya Promenade](https://reachorion.net/#archive): Biophilic Luxury Retail Sanctuary built with Sanity Studio v3, Next.js App Router, and interactive 3D WebGL canvas.
+- [The Quarter Sea Face](https://reachorion.net/#archive): Luxury Real Estate Architectural Flagship engineered with Payload CMS 3.0 and sub-second response times.
+- [The Rotunda Royale Tower](https://reachorion.net/#archive): High-density luxury CAD blueprint portal powered by Contentful Enterprise and vector floorplans.
 
-## Contact & Location
-- **Website**: https://reachorion.net/
-- **Inquiries Email**: reachorion.official@gmail.com
-- **Locations**: New York • Zurich • London (Global Delivery, INR & USD Billing)
+## Investment Packages & Commercial Terms
+- [Pricing Packages & Retainers](https://reachorion.net/#packages): Transparent fixed pricing in USD and INR for Foundation ($600 / ₹50k), Flagship ($1,500 / ₹1.25L), and Enterprise builds.
 
+## Discovery & Engagement
+- [Book a 30-Minute Discovery Call](https://reachorion.net/#inquiry): Principal-led advisory call with scoped roadmap and fixed-price quote delivered within 48 hours.
+- [Primary Agency Flagship](https://reachorion.net/): Official Reach Orion web experience.
+- [Direct Inquiries](mailto:reachorion.official@gmail.com): Direct RFPs, architectural advisory, and technical inquiries.
+
+## Optional
+- [Full LLM Context Dossier](https://reachorion.net/llms-full.txt): Comprehensive uncompressed technical specifications, performance benchmarks, and delivery protocols.

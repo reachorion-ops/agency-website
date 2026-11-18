@@ -36,7 +36,7 @@ export const KineticTestimonials: React.FC<KineticTestimonialsProps> = ({ onInqu
             </h2>
           </div>
 
-          <div className="flex items-center gap-2 text-xs font-editorial-mono text-neutral-500">
+          <div className="flex items-center gap-2 text-xs font-editorial-mono text-neutral-700">
             <span className="inline-block w-2 h-2 rounded-full bg-[#0F766E] animate-pulse" />
             <span>AUTHENTIC CLIENT DOSSIERS • 4.7 AVG RATING</span>
           </div>
@@ -72,7 +72,7 @@ export const KineticTestimonials: React.FC<KineticTestimonialsProps> = ({ onInqu
 
                 <div className="mt-3 flex items-center justify-between">
                   <StarRating rating={item.rating} showScore size="sm" />
-                  <span className="text-[10px] font-editorial-mono text-neutral-400 uppercase">
+                  <span className="text-[10px] font-editorial-mono text-neutral-700 uppercase font-bold">
                     Verified Commission
                   </span>
                 </div>
@@ -91,7 +91,7 @@ export const KineticTestimonials: React.FC<KineticTestimonialsProps> = ({ onInqu
                     <div className="text-xs font-bold uppercase tracking-tight text-[#1D1D1F]">
                       {item.author}
                     </div>
-                    <div className="text-[10px] text-neutral-500 font-medium">
+                    <div className="text-[10px] text-neutral-700 font-medium">
                       {item.company} • {item.location}
                     </div>
                   </div>

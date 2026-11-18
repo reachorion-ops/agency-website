@@ -143,7 +143,7 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
 
               {activeExpanded === SERVICES_CAPABILITIES[1].id && (
                 <div className="mt-4 pt-4 border-t border-[#D9D9D9] space-y-2 animate-in fade-in duration-200">
-                  <span className="text-[10px] font-bold tracking-widest uppercase text-neutral-500 font-editorial-mono">
+                  <span className="text-[10px] font-bold tracking-widest uppercase text-neutral-700 font-editorial-mono">
                     DESIGN SPECIFICATIONS:
                   </span>
                   {SERVICES_CAPABILITIES[1].deliverables.slice(0, 3).map((item, idx) => (
@@ -210,7 +210,7 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
 
               {activeExpanded === SERVICES_CAPABILITIES[2].id && (
                 <div className="mt-4 pt-4 border-t border-[#D9D9D9] space-y-2 animate-in fade-in duration-200">
-                  <span className="text-[10px] font-bold tracking-widest uppercase text-neutral-500 font-editorial-mono">
+                  <span className="text-[10px] font-bold tracking-widest uppercase text-neutral-700 font-editorial-mono">
                     EDGE PERFORMANCE SPECS:
                   </span>
                   {SERVICES_CAPABILITIES[2].deliverables.slice(0, 3).map((item, idx) => (

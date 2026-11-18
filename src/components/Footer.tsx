@@ -40,19 +40,19 @@ export const Footer: React.FC = () => {
         {/* World Time Hubs (Luxury agency hallmark) */}
         <div className="pb-12 border-b border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-6 font-editorial-mono text-xs">
           <div>
-            <div className="text-neutral-400">ZURICH [ CET ]</div>
+            <div className="text-neutral-300">ZURICH [ CET ]</div>
             <div className="text-sm font-bold text-white mt-1">{times.zurich || '--:--:--'}</div>
           </div>
           <div>
-            <div className="text-neutral-400">LONDON [ GMT ]</div>
+            <div className="text-neutral-300">LONDON [ GMT ]</div>
             <div className="text-sm font-bold text-white mt-1">{times.london || '--:--:--'}</div>
           </div>
           <div>
-            <div className="text-neutral-400">NEW YORK [ EST ]</div>
+            <div className="text-neutral-300">NEW YORK [ EST ]</div>
             <div className="text-sm font-bold text-white mt-1">{times.newYork || '--:--:--'}</div>
           </div>
           <div>
-            <div className="text-neutral-400">TOKYO [ JST ]</div>
+            <div className="text-neutral-300">TOKYO [ JST ]</div>
             <div className="text-sm font-bold text-white mt-1">{times.tokyo || '--:--:--'}</div>
           </div>
         </div>
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
 
           {/* Quick Nav */}
           <div className="md:col-span-3 space-y-3 text-xs font-editorial-mono">
-            <span className="text-neutral-400 font-bold tracking-widest uppercase block mb-4">
+            <span className="text-neutral-300 font-bold tracking-widest uppercase block mb-4">
               INDEX
             </span>
             <div><a href="#capabilities" className="hover:text-[#0071E3] transition-colors">CAPABILITIES</a></div>
@@ -95,7 +95,7 @@ export const Footer: React.FC = () => {
 
           {/* Technology Standards */}
           <div className="md:col-span-4 space-y-3 text-xs font-editorial-mono">
-            <span className="text-neutral-400 font-bold tracking-widest uppercase block mb-4">
+            <span className="text-neutral-300 font-bold tracking-widest uppercase block mb-4">
               ARCHITECTURAL ECOSYSTEM
             </span>
             <div className="text-neutral-300">SANITY.IO • PAYLOAD CMS 3.0</div>
@@ -121,13 +121,14 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Legal & Back to Top */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 text-[11px] font-editorial-mono text-neutral-400">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 text-[11px] font-editorial-mono text-neutral-300">
           <div>
             © {AGENCY_SPECS.foundedYear} {AGENCY_SPECS.legal}. ALL RIGHTS RESERVED.
           </div>
           <button
             onClick={scrollToTop}
             className="flex items-center gap-1.5 hover:text-white transition-colors"
+            aria-label="Scroll back to top"
           >
             <span>BACK TO TOP</span>
             <ArrowUp className="w-3.5 h-3.5" />

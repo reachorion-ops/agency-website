@@ -50,25 +50,11 @@ export const HeroMetricsOdometer: React.FC = () => {
       if (m2Col1.current) m2Col1.current.style.transform = 'translateY(-1.15em) translateZ(0)';
       if (m2Col0.current) m2Col0.current.style.transform = 'translateY(-9.2em) translateZ(0)'; // 8 * 1.15em
 
-      // 4. Progress bars to 100% (GPU scaleX)
+      // 4. Progress bars to 100% (GPU scaleX only, zero forced reflow)
       const fullScale = 'scaleX(1) translateZ(0)';
-      if (m1Bar.current) {
-        m1Bar.current.style.transform = fullScale;
-        m1Bar.current.style.backgroundColor = '#0071E3';
-      }
-      if (m2Bar.current) {
-        m2Bar.current.style.transform = fullScale;
-        m2Bar.current.style.backgroundColor = '#0071E3';
-      }
-      if (m3Bar.current) {
-        m3Bar.current.style.transform = fullScale;
-        m3Bar.current.style.backgroundColor = '#0071E3';
-      }
-
-      // 5. Asterisk accent highlights in unison
-      if (m1Ast.current) m1Ast.current.style.color = '#0071E3';
-      if (m2Ast.current) m2Ast.current.style.color = '#0071E3';
-      if (m3Ast.current) m3Ast.current.style.color = '#0071E3';
+      if (m1Bar.current) m1Bar.current.style.transform = fullScale;
+      if (m2Bar.current) m2Bar.current.style.transform = fullScale;
+      if (m3Bar.current) m3Bar.current.style.transform = fullScale;
     } else {
       // Metric 1 & 3: value 0 to 100
       const v100 = 100 * p;
@@ -168,7 +154,7 @@ export const HeroMetricsOdometer: React.FC = () => {
       {/* 1. Metric: Core Web Vitals (*100) */}
       <div className="group cursor-default">
         <div className="flex items-baseline text-lg sm:text-2xl font-extrabold tracking-tight font-editorial-mono text-white leading-none">
-          <span ref={m1Ast} className="transition-colors duration-300 mr-0.5 text-white/60">
+          <span ref={m1Ast} className="mr-0.5 text-[#0071E3]">
             *
           </span>
           <div className="inline-flex items-center" style={{ fontVariantNumeric: 'tabular-nums' }}>
@@ -225,7 +211,7 @@ export const HeroMetricsOdometer: React.FC = () => {
         <div className="w-full max-w-[120px] h-[1.5px] bg-white/10 rounded-full overflow-hidden mt-2 relative">
           <div
             ref={m1Bar}
-            className="h-full bg-white/40 transition-colors duration-300"
+            className="h-full bg-[#0071E3]"
             style={{ width: '100%', transform: 'scaleX(0) translateZ(0)', transformOrigin: 'left' }}
           />
         </div>
@@ -234,7 +220,7 @@ export const HeroMetricsOdometer: React.FC = () => {
       {/* 2. Metric: Global Edge TTFB (*0.18s) */}
       <div className="group cursor-default">
         <div className="flex items-baseline text-lg sm:text-2xl font-extrabold tracking-tight font-editorial-mono text-white leading-none">
-          <span ref={m2Ast} className="transition-colors duration-300 mr-0.5 text-white/60">
+          <span ref={m2Ast} className="mr-0.5 text-[#0071E3]">
             *
           </span>
           <span className="text-white tracking-tighter">0.</span>
@@ -280,7 +266,7 @@ export const HeroMetricsOdometer: React.FC = () => {
         <div className="w-full max-w-[120px] h-[1.5px] bg-white/10 rounded-full overflow-hidden mt-2 relative">
           <div
             ref={m2Bar}
-            className="h-full bg-white/40 transition-colors duration-300"
+            className="h-full bg-[#0071E3]"
             style={{ width: '100%', transform: 'scaleX(0) translateZ(0)', transformOrigin: 'left' }}
           />
         </div>
@@ -289,7 +275,7 @@ export const HeroMetricsOdometer: React.FC = () => {
       {/* 3. Metric: Headless Decoupled (*100%) */}
       <div className="group cursor-default">
         <div className="flex items-baseline text-lg sm:text-2xl font-extrabold tracking-tight font-editorial-mono text-white leading-none">
-          <span ref={m3Ast} className="transition-colors duration-300 mr-0.5 text-white/60">
+          <span ref={m3Ast} className="mr-0.5 text-[#0071E3]">
             *
           </span>
           <div className="inline-flex items-center" style={{ fontVariantNumeric: 'tabular-nums' }}>
@@ -347,7 +333,7 @@ export const HeroMetricsOdometer: React.FC = () => {
         <div className="w-full max-w-[120px] h-[1.5px] bg-white/10 rounded-full overflow-hidden mt-2 relative">
           <div
             ref={m3Bar}
-            className="h-full bg-white/40 transition-colors duration-300"
+            className="h-full bg-[#0071E3]"
             style={{ width: '100%', transform: 'scaleX(0) translateZ(0)', transformOrigin: 'left' }}
           />
         </div>

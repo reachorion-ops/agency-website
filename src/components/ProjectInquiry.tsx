@@ -116,19 +116,19 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
 
               <div className="pt-3 border-t border-[#D9D9D9] space-y-2.5 text-xs font-editorial-mono">
                 <div>
-                  <span className="text-neutral-400">EMAIL:</span>
+                  <span className="text-neutral-700 font-bold">EMAIL:</span>
                   <div className="text-[#1D1D1F] font-bold mt-0.5">{AGENCY_SPECS.contactEmail}</div>
                 </div>
                 <div>
-                  <span className="text-neutral-400">WEB:</span>
+                  <span className="text-neutral-700 font-bold">WEB:</span>
                   <div className="text-[#0071E3] font-bold mt-0.5">{AGENCY_SPECS.web}</div>
                 </div>
                 <div>
-                  <span className="text-neutral-400">DELIVERY & BILLING:</span>
+                  <span className="text-neutral-700 font-bold">DELIVERY & BILLING:</span>
                   <div className="text-[#1D1D1F] font-bold mt-0.5">India & Global Clients / INR & USD</div>
                 </div>
                 <div>
-                  <span className="text-neutral-400">MILESTONE TERMS:</span>
+                  <span className="text-neutral-700 font-bold">MILESTONE TERMS:</span>
                   <div className="text-[#0F766E] font-bold mt-0.5">40% Kickoff / 40% Staging / 20% Launch</div>
                 </div>
               </div>
@@ -289,7 +289,7 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
 
                 {/* Submit Action */}
                 <div className="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                  <span className="text-[10px] text-neutral-500 font-editorial-mono">
+                  <span className="text-[10px] text-neutral-700 font-editorial-mono font-semibold">
                     ✦ NDAS • OVERLAP HOURS • FIXED QUOTE WITHIN 48 HOURS
                   </span>
                   <button

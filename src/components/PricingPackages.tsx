@@ -64,7 +64,7 @@ export const PricingPackages: React.FC<PricingPackagesProps> = ({ onSelectPackag
                     {pkg.subtitle && !pkg.badge && (
                       <span
                         className={`text-[10px] font-semibold tracking-wider uppercase font-editorial-mono ${
-                          isHighlighted ? 'text-neutral-400' : 'text-neutral-500'
+                          isHighlighted ? 'text-neutral-400' : 'text-neutral-700'
                         }`}
                       >
                         {pkg.subtitle}
@@ -139,7 +139,7 @@ export const PricingPackages: React.FC<PricingPackagesProps> = ({ onSelectPackag
             <span className="mx-2 hidden md:inline text-neutral-400">/</span>
             <span className="text-[#1D1D1F] font-bold">{PRICING_FOOTNOTE.billingTerms}</span>
           </div>
-          <div className="text-neutral-500 font-bold">
+          <div className="text-neutral-700 font-bold">
             {PRICING_FOOTNOTE.acronymNote}
           </div>
         </div>
@@ -162,7 +162,7 @@ export const PricingPackages: React.FC<PricingPackagesProps> = ({ onSelectPackag
                     <div className="text-xs font-bold font-editorial-mono text-[#1D1D1F]">
                       {item.title}
                     </div>
-                    <div className="text-[11px] text-neutral-500 mt-0.5 leading-snug">
+                    <div className="text-[11px] text-neutral-700 mt-0.5 leading-snug">
                       {item.desc}
                     </div>
                   </div>
@@ -183,7 +183,7 @@ export const PricingPackages: React.FC<PricingPackagesProps> = ({ onSelectPackag
                 Why teams choose Reach Orion.
               </h3>
             </div>
-            <div className="text-xs font-editorial-mono text-neutral-500">
+            <div className="text-xs font-editorial-mono text-neutral-700">
               PRAGMATIC EXECUTION • GLOBAL STANDARDS • PROVEN VELOCITY
             </div>
           </div>
@@ -197,7 +197,7 @@ export const PricingPackages: React.FC<PricingPackagesProps> = ({ onSelectPackag
                 <h4 className="text-sm font-bold text-[#1D1D1F]">
                   {reason.title}
                 </h4>
-                <p className="text-xs text-neutral-600 leading-relaxed">
+                <p className="text-xs text-neutral-700 leading-relaxed">
                   {reason.desc}
                 </p>
               </div>

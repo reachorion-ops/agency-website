@@ -1,0 +1,48 @@
+# Reach Orion — Full LLM Context Dossier
+
+> Premier IT development studio engineering high-performance headless CMS architectures, bespoke digital flagships, and sub-second web experiences.
+
+## Agency Overview
+- **Legal Entity**: Reach Orion Agency Ltd.
+- **Founded**: 2026
+- **Global Hubs**: New York • Zurich • London
+- **Delivery Scope**: Global / India & International Clients (Dual billing in USD and INR)
+- **Primary Domain**: [https://reachorion.net/](https://reachorion.net/)
+- **Contact Email**: [mailto:reachorion.official@gmail.com](mailto:reachorion.official@gmail.com)
+
+## Verified Performance Benchmarks
+- **Lighthouse Core Web Vitals**: 90+ Target
+- **Largest Contentful Paint (LCP)**: <0.9s
+- **Time to First Byte (TTFB)**: <400ms
+- **Hosting Uptime SLA**: 99.9% on edge CDN infrastructure
+
+## Core Service Capabilities
+1. [Websites & Editorial Platforms](https://reachorion.net/#capabilities):
+   - Decoupled architecture using Sanity Studio v3, Payload CMS 3.0, and Next.js App Router.
+   - Core Web Vitals tuning, structured schema modeling, and global CDN delivery.
+2. [SaaS MVPs & App Frontends](https://reachorion.net/#capabilities):
+   - Fast sprint-based engineering delivering validated MVPs to paying users in weeks.
+   - Authentication, SaaS-grade analytics dashboards, and billing integrations (Stripe, Lemon Squeezy, Razorpay).
+3. [CMS Migration & Decoupled Re-architecture](https://reachorion.net/#capabilities):
+   - Complete zero-downtime migration from brittle monolithic setups (WordPress, Drupal, custom PHP) to modern API-first headless stacks.
+4. [Ongoing Architecture Maintenance & Retainers](https://reachorion.net/#capabilities):
+   - SLA guarantees, scheduled security audits, dependency updates, and continuous performance tuning.
+
+## Technical Comparisons: Headless vs Legacy Monolith
+- [Architecture Comparator](https://reachorion.net/#architecture):
+  - **Performance**: Headless provides sub-second edge TTFB (<400ms) and static prerendering vs Monolithic server-side PHP bottlenecks (>1,200ms).
+  - **Security**: Headless completely isolates content repositories behind API boundaries with zero public database exposure vs Monolithic vulnerability to plugin exploits.
+  - **Scalability**: Headless scales infinitely across global CDNs with zero compute spikes during traffic surges vs Monolithic server crashes under high concurrent load.
+
+## Packages & Pricing
+- [Package Rates](https://reachorion.net/#packages):
+  - **Essential Foundation**: From $600 / ₹50,000 (1–2 weeks delivery, single-market editorial setup).
+  - **Flagship Decoupled Platform**: From $1,500 / ₹1,25,000 (3–4 weeks delivery, custom component library, high-concurrency architecture).
+  - **Enterprise Architecture**: Custom scoped milestone pricing (dedicated enterprise retainers, multi-region failover, custom integrations).
+
+## Engagement Process
+- [Methodology & Timelines](https://reachorion.net/#methodology):
+  - Phase 1: Architectural Discovery & Schema Modeling (Week 1)
+  - Phase 2: Component Library & Design Tokens (Weeks 2–3)
+  - Phase 3: Integration, Dynamic Data & Preview Workflows (Weeks 3–4)
+  - Phase 4: Performance Tuning, Security Audit & Global Launch (Weeks 5–6)

@@ -19,7 +19,7 @@ export const ArchitectureComparator: React.FC = () => {
               Decoupled Headless vs Legacy Monolith
             </h2>
           </div>
-          <p className="text-xs sm:text-sm font-editorial-mono text-neutral-500 max-w-md">
+          <p className="text-xs sm:text-sm font-editorial-mono text-neutral-700 max-w-md">
             AN OBJECTIVE TECHNICAL AUDIT FOR ENTERPRISE LEADERSHIP EVALUATING DIGITAL REPLATFORMING.
           </p>
         </div>
@@ -29,13 +29,13 @@ export const ArchitectureComparator: React.FC = () => {
           <table className="w-full text-left border-collapse min-w-[700px]">
             <thead>
               <tr className="border-b border-[#D9D9D9] bg-[#F5F5F7]">
-                <th className="p-4 text-xs font-black tracking-wider uppercase font-editorial-mono text-neutral-500 w-1/4">
+                <th className="p-4 text-xs font-black tracking-wider uppercase font-editorial-mono text-neutral-700 w-1/4">
                   Evaluation Dimension
                 </th>
                 <th className="p-4 text-xs font-black tracking-wider uppercase font-editorial-mono text-[#0071E3] w-5/12 bg-blue-50/50 border-x border-[#D9D9D9]">
                   Reach Orion Headless Standard
                 </th>
-                <th className="p-4 text-xs font-black tracking-wider uppercase font-editorial-mono text-neutral-400 w-1/3">
+                <th className="p-4 text-xs font-black tracking-wider uppercase font-editorial-mono text-neutral-600 w-1/3">
                   Legacy Monolith (WordPress / Drupal)
                 </th>
               </tr>
@@ -52,7 +52,7 @@ export const ArchitectureComparator: React.FC = () => {
                   {/* Dimension */}
                   <td className="p-4 font-bold text-[#1D1D1F]">
                     <div className="flex items-center gap-2">
-                      <span className="text-xs font-editorial-mono text-neutral-400">0{idx + 1}</span>
+                      <span className="text-xs font-editorial-mono text-neutral-600">0{idx + 1}</span>
                       <span>{comp.feature}</span>
                     </div>
                   </td>
@@ -116,11 +116,11 @@ export const ArchitectureComparator: React.FC = () => {
 
               {/* Legacy Monolith */}
               <div className="p-3.5 bg-[#F5F5F7] border border-[#D9D9D9] space-y-1">
-                <div className="flex items-center gap-2 text-xs font-bold font-editorial-mono text-neutral-500 uppercase">
+                <div className="flex items-center gap-2 text-xs font-bold font-editorial-mono text-neutral-700 uppercase">
                   <X className="w-3.5 h-3.5 stroke-[2.5]" />
                   <span>Legacy Monolith</span>
                 </div>
-                <p className="text-xs text-neutral-600 leading-relaxed pl-5">
+                <p className="text-xs text-neutral-700 leading-relaxed pl-5">
                   {comp.legacyMonolith}
                 </p>
               </div>
@@ -139,7 +139,7 @@ export const ArchitectureComparator: React.FC = () => {
                 {ARCHITECTURE_COMPARISONS[selectedRow].highlight}
               </span>
             </div>
-            <div className="text-xs font-editorial-mono text-neutral-500">
+            <div className="text-xs font-editorial-mono text-neutral-700">
               ARCHITECTURE PRINCIPLE {selectedRow + 1} OF {ARCHITECTURE_COMPARISONS.length}
             </div>
           </div>

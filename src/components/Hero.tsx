@@ -121,7 +121,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
         </div>
 
         {/* Trust & Modern Stack Bar (Clean hairline badges, strictly no AI pills) */}
-        <div className="mt-14 pt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-6 text-xs font-editorial-mono text-[#D9D9D9]/60">
+        <div className="mt-14 pt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-6 text-xs font-editorial-mono text-neutral-300">
           <div className="flex items-center gap-2 text-white font-bold">
             <Zap className="w-4 h-4 text-[#0071E3]" />
             <span>CERTIFIED ARCHITECTURES</span>
