@@ -176,48 +176,49 @@ export const RocketCtaButton: React.FC<RocketCtaButtonProps> = ({ onClick, class
           </g>
         </svg>
 
-        {/* Layer 3: Dedicated Separated Layer for Ultra-Crisp Rotating Perimeter Text Ring */}
-        <svg
-          viewBox="0 0 500 500"
-          className="w-full h-full absolute inset-0 animate-spin-cta pointer-events-none select-none"
-          style={{
-            overflow: 'visible',
-            textRendering: 'geometricPrecision',
-            shapeRendering: 'geometricPrecision',
-            transformOrigin: '50% 50%',
-          }}
-        >
-          <defs>
-            {/* Clockwise circular path for perimeter text with 500x500 high-precision coordinates */}
-            <path
-              id="startProjectCirclePath"
-              d={`M 250, ${250 - r} a ${r},${r} 0 1,1 0,${2 * r} a ${r},${r} 0 1,1 0,${-2 * r}`}
-              fill="none"
-            />
-          </defs>
-
-          <text
-            fontFamily="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
-            fontSize="23.5"
-            fontWeight="700"
-            fill="#FFFFFF"
-            letterSpacing="2.8"
-            className="uppercase"
+        {/* Layer 3: Dedicated Hardware-Accelerated Container for Rotating Perimeter Text Ring */}
+        <div className="w-full h-full absolute inset-0 animate-spin-cta pointer-events-none select-none will-change-transform">
+          <svg
+            viewBox="0 0 500 500"
+            className="w-full h-full"
             style={{
+              overflow: 'visible',
               textRendering: 'geometricPrecision',
-              WebkitFontSmoothing: 'antialiased',
-              MozOsxFontSmoothing: 'grayscale',
+              shapeRendering: 'geometricPrecision',
             }}
           >
-            <textPath
-              href="#startProjectCirclePath"
-              textLength={circumference.toFixed(1)}
-              lengthAdjust="spacing"
+            <defs>
+              {/* Clockwise circular path for perimeter text with 500x500 high-precision coordinates */}
+              <path
+                id="startProjectCirclePath"
+                d={`M 250, ${250 - r} a ${r},${r} 0 1,1 0,${2 * r} a ${r},${r} 0 1,1 0,${-2 * r}`}
+                fill="none"
+              />
+            </defs>
+
+            <text
+              fontFamily="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+              fontSize="23.5"
+              fontWeight="700"
+              fill="#FFFFFF"
+              letterSpacing="2.8"
+              className="uppercase"
+              style={{
+                textRendering: 'geometricPrecision',
+                WebkitFontSmoothing: 'antialiased',
+                MozOsxFontSmoothing: 'grayscale',
+              }}
             >
-              START A PROJECT • START A PROJECT • START A PROJECT • START A PROJECT • 
-            </textPath>
-          </text>
-        </svg>
+              <textPath
+                href="#startProjectCirclePath"
+                textLength={circumference.toFixed(1)}
+                lengthAdjust="spacing"
+              >
+                START A PROJECT • START A PROJECT • START A PROJECT • START A PROJECT • 
+              </textPath>
+            </text>
+          </svg>
+        </div>
       </button>
     </div>
   );
