@@ -1,0 +1,28 @@
+# Reach Orion
+
+> Next-Generation Headless CMS Platforms, Digital Architecture & SaaS MVP Studio.
+
+Reach Orion is an IT development studio delivering custom headless CMS platforms, websites, and SaaS MVPs. We replace brittle monolithic templates with clean, decoupled architecture: fast to launch, simple to manage, and engineered to scale.
+
+## Core Capabilities
+- **Websites & Editorial Platforms**: Sanity.io, Payload CMS 3.0, Next.js App Router, React 18. Fast, SEO + AIO-ready with <0.9s LCP.
+- **SaaS MVPs & App Frontends**: Rapid sprint delivery from validated idea to first paying users in weeks.
+- **CMS Migration & Decoupled Architecture**: Zero-downtime migration from legacy WordPress/Drupal to headless architectures.
+- **Ongoing Architecture Maintenance**: Retainers with 99.9% uptime SLA, security monitoring, and continuous performance tuning.
+
+## Performance Benchmarks
+- **Lighthouse Core Web Vitals**: 90+
+- **Largest Contentful Paint (LCP)**: <0.9s
+- **Time to First Byte (TTFB)**: <400ms
+- **Hosting Uptime**: 99.9%
+
+## Pricing & Packages (USD / INR)
+- **Essential Foundation**: From $600 / ₹50,000 (Fast, lightweight headless setup for MVPs and single-market sites)
+- **Flagship Decoupled Platform**: From $1,500 / ₹1,25,000 (Multi-market editorial, custom component system, sub-second LCP)
+- **Enterprise Re-Architecture**: Custom quote (Zero-downtime migration, SLA coverage, high-scale traffic handling)
+
+## Contact & Location
+- **Website**: https://reachorion.net/
+- **Inquiries Email**: reachorion.official@gmail.com
+- **Locations**: New York • Zurich • London (Global Delivery, INR & USD Billing)
+

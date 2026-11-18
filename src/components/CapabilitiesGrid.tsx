@@ -25,6 +25,7 @@ export const CapabilitiesGrid: React.FC<CapabilitiesGridProps> = ({ onSelectServ
             </div>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tighter uppercase leading-[0.95]">
               Everything your CMS needs, under one roof.
+              <span className="sr-only"> — Headless CMS Platforms, SaaS MVPs & Web Architecture Services</span>
             </h2>
           </div>
           <div className="text-xs font-editorial-mono text-[#D9D9D9]/70 text-left sm:text-right">

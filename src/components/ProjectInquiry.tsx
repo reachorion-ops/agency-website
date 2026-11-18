@@ -86,6 +86,7 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
             </div>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight uppercase mt-2">
               Let's build your CMS together.
+              <span className="sr-only"> — Book a Free Discovery Call with Reach Orion</span>
             </h2>
           </div>
           <div className="text-xs font-editorial-mono text-neutral-600 max-w-sm">

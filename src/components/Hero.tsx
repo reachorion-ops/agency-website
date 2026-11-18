@@ -32,8 +32,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
 
         {/* Massive Monumental Headline (Preserved Plus Jakarta Sans font with 0.8px letter spacing) */}
         <div className="pt-10 pb-12 sm:pt-14 sm:pb-16">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-headline font-black tracking-[0.8px] uppercase leading-[0.88] select-none break-words text-white">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-headline font-black tracking-[0.8px] uppercase leading-[0.88] break-words text-white">
             Reach Orion
+            <span className="sr-only"> — Next-Gen Headless CMS Platforms, Digital Architecture & SaaS MVP Studio</span>
           </h1>
           <div className="mt-4 flex items-center justify-between text-xs sm:text-sm font-editorial-mono text-[#D9D9D9]/70 tracking-widest uppercase">
             <span>[ IT DEVELOPMENT STUDIO ]</span>
@@ -51,7 +52,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
               CMS DEVELOPMENT PROPOSAL // 2026
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white">
-              A CMS that grows as fast as you do.
+              A Headless CMS that grows as fast as you do.
             </h2>
             <p className="text-sm sm:text-base text-neutral-300 font-medium">
               Custom CMS platforms, websites and SaaS MVPs, engineered for teams in India and worldwide.

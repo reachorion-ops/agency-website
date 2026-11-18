@@ -20,6 +20,7 @@ export const CaseArchive: React.FC<CaseArchiveProps> = ({ onOpenCase }) => {
             </div>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tighter uppercase leading-[0.95]">
               Look Here // Our Case Archive
+              <span className="sr-only"> — Production Headless CMS Flagships & Client Commissions</span>
             </h2>
           </div>
           <div className="text-xs font-editorial-mono text-[#D9D9D9]/70 max-w-sm text-left md:text-right">

@@ -15,6 +15,7 @@ export const ProcessDocket: React.FC = () => {
             </div>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tighter uppercase leading-[0.95]">
               From brief to launch in four clear phases.
+              <span className="sr-only"> — Agile Headless CMS Development Methodology & 6-Week Delivery</span>
             </h2>
           </div>
           <div className="text-xs font-editorial-mono text-[#D9D9D9]/70 max-w-sm">

@@ -24,6 +24,7 @@ export const PricingPackages: React.FC<PricingPackagesProps> = ({ onSelectPackag
             </div>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight uppercase leading-[0.95]">
               Simple packages. Clear pricing.
+              <span className="sr-only"> — Transparent Headless CMS Development Rates</span>
             </h2>
           </div>
           <div className="text-xs font-editorial-mono text-neutral-600 max-w-md">

@@ -32,6 +32,7 @@ export const KineticTestimonials: React.FC<KineticTestimonialsProps> = ({ onInqu
             </div>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight uppercase mt-2">
               Voices of // Leadership & Craft
+              <span className="sr-only"> — Client Reviews and Verified Technical Impact</span>
             </h2>
           </div>
 
