@@ -2,13 +2,13 @@
 
 > Next-generation headless CMS architectures, bespoke digital flagships, and sub-second web experiences.
 
-Reach Orion is an IT development studio delivering custom headless CMS platforms, websites, and SaaS MVPs. We engineer clean, decoupled architecture: fast to launch, simple to manage, and built to scale with sub-second performance (<0.9s LCP, <400ms TTFB).
+Reach Orion is an IT development studio delivering custom headless CMS platforms, websites, and SaaS MVPs. We engineer clean, decoupled architecture: fast to launch, simple to manage, and built to scale with sub-second performance (<0.4s LCP, <190ms TTFB).
 
 ## Core Capabilities & Services
 - [Websites & Editorial Platforms](https://reachorion.net/#capabilities): Fast, SEO + AIO-ready platforms with Sanity.io, Payload 3.0, Next.js App Router, and React 18.
 - [SaaS MVPs & App Frontends](https://reachorion.net/#capabilities): Rapid agile sprint delivery from validated idea to first paying users in weeks.
 - [CMS Migration & Decoupled Architecture](https://reachorion.net/#capabilities): Zero-downtime replatforming from legacy WordPress or Drupal monoliths to modern headless stacks.
-- [Ongoing Architecture Maintenance](https://reachorion.net/#capabilities): Dedicated engineering retainers with 99.9% uptime SLA, security patches, and performance tuning.
+- [Ongoing Architecture Maintenance](https://reachorion.net/#capabilities): Ongoing engineering support with security patches and performance tuning.
 
 ## Architectural Topology & Audits
 - [Decoupled Headless vs Legacy Monolith Architecture](https://reachorion.net/#architecture): Technical audit comparing API-first headless architectures against monolithic WordPress and Drupal.

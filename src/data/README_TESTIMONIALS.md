@@ -14,7 +14,7 @@ Each testimonial is a simple JSON object with the following schema:
   "id": "t6",                              // Unique identifier (e.g. t6, t7)
   "quote": "The quote from the client.",   // Full client quotation
   "author": "Client Full Name",            // Full name
-  "role": "Chief Operating Officer",       // Official corporate title
+  "role": "Founder / Owner",                // Founder or owner role
   "company": "Company Name",               // Company or brand name
   "location": "City, Country",             // Geographical origin
   "cmsStack": "Sanity + Next.js",          // The CMS stack implemented
@@ -30,4 +30,3 @@ Each testimonial is a simple JSON object with the following schema:
 - Visitors can hover or pause to inspect any testimonial.
 - Clicking on any testimonial immediately summons the **High-Fashion Inspection Dossier** modal displaying the verified client metadata, technical architecture stack, and quantified metrics.
 - No layout code or styling modifications are required when adding new items.
-

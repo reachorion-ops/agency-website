@@ -68,10 +68,10 @@ export const BrandManifesto: React.FC = () => {
             </div>
 
             <div className="bg-[#FFFFFF] p-7 space-y-3 hover:bg-[#F5F5F7] transition-colors">
-              <span className="text-xs font-bold font-editorial-mono text-[#0071E3]">[ 04 ] GUARANTEES</span>
+              <span className="text-xs font-bold font-editorial-mono text-[#0071E3]">[ 04 ] PERFORMANCE TARGETS</span>
               <h4 className="text-base font-bold text-[#1D1D1F]">Production Uptime & Speed</h4>
               <p className="text-xs text-neutral-700 leading-relaxed">
-                Targeting 90+ Lighthouse, &lt;0.9s LCP, &lt;400ms TTFB response, and 99.9% hosting uptime. Full IP ownership on payment.
+                100 Lighthouse score, &lt;0.4s LCP, ~180ms TTFB, and 99.9% hosting uptime. Full IP ownership on payment.
               </p>
             </div>
 

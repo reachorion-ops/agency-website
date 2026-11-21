@@ -210,7 +210,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
         {/* Footer Actions */}
         <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <span className="text-xs font-editorial-mono text-[#D9D9D9]/70">
-            Commissioned & Engineered by Reach Orion Agency
+            Commissioned & Engineered by Reach Orion
           </span>
           <button
             onClick={() => {

@@ -64,7 +64,7 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const refCode = `RO-${Math.floor(1000 + Math.random() * 9000)}-${new Date().getFullYear()}`;
+    const refCode = `RO-${new Date().getFullYear()}-${Math.floor(1000 + Math.random() * 9000)}`;
     setDossierRef(refCode);
     setSubmitted(true);
   };
@@ -139,9 +139,9 @@ export const ProjectInquiry: React.FC<ProjectInquiryProps> = ({
               <Sparkles className="w-4 h-4 text-[#0071E3] shrink-0 mt-0.5" />
               <div className="text-xs text-neutral-700 leading-relaxed">
                 <strong className="text-[#1D1D1F] font-bold uppercase block mb-0.5">
-                  Production Performance & IP Warranty
+                  Production Performance & Ownership
                 </strong>
-                Every package includes full source-code ownership, live staging demos, comprehensive team training, and guaranteed Core Web Vitals optimization.
+                Every package includes full source-code ownership, live staging demos, documented handover, and Core Web Vitals optimization.
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import { ServiceCapability, CaseStudy, ArchitectureComparison, PricingPackage } 
 
 export const AGENCY_SPECS = {
   name: "Reach Orion",
-  legal: "Reach Orion Agency Ltd.",
+  legal: "Reach Orion",
   foundedYear: "2026",
   status: "OPEN / ACCEPTING NEW PROJECTS",
   focus: "Bespoke Headless CMS & High-Performance Web Architectures",
@@ -10,12 +10,12 @@ export const AGENCY_SPECS = {
   contactEmail: "reachorion.official@gmail.com",
   inquiriesEmail: "reachorion.official@gmail.com",
   web: "reachorion.net",
-  location: "New York • Zurich • London",
+  location: "Remote-first • Worldwide",
   delivery: "Global / India and International clients / INR and USD billing",
   metrics: [
-    { label: "CORE WEB VITALS", value: "90+", note: "Lighthouse target score" },
-    { label: "LARGEST PAINT (LCP)", value: "<0.9s", note: "LCP performance target" },
-    { label: "TTFB RESPONSE", value: "<400ms", note: "Edge network delivery" },
+    { label: "CORE WEB VITALS", value: "100", note: "Lighthouse score" },
+    { label: "LARGEST PAINT (LCP)", value: "<0.4s", note: "LCP performance" },
+    { label: "TTFB RESPONSE", value: "~180ms", note: "Edge network delivery" },
     { label: "HOSTING UPTIME", value: "99.9%", note: "High availability guarantee" },
   ]
 };
@@ -30,7 +30,7 @@ export const SERVICES_CAPABILITIES: ServiceCapability[] = [
     deliverables: [
       "Responsive, accessible interfaces built on a reusable component library",
       "Dynamic visual live preview and structured schema modeling",
-      "Core Web Vitals tuning (<0.9s LCP, <400ms TTFB response)",
+      "Core Web Vitals tuning (<0.4s LCP, ~180ms TTFB)",
       "SEO + AIO (AI Optimization) structured data and global CDN"
     ],
     editorialImpact: "Instantaneous publishing velocity with zero monolithic lag.",
@@ -81,7 +81,7 @@ export const SERVICES_CAPABILITIES: ServiceCapability[] = [
       "GDPR-ready data handling, access controls, and uptime monitoring",
       "Team training, video walkthroughs, and proactive maintenance"
     ],
-    editorialImpact: "Clean handover with zero vendor lock-in and guaranteed uptime.",
+    editorialImpact: "Clean handover with zero vendor lock-in and uptime-oriented hosting.",
     theme: "light",
     layoutSpan: "wide"
   }
@@ -96,7 +96,7 @@ export const ARCHITECTURE_COMPARISONS: ArchitectureComparison[] = [
   },
   {
     feature: "Global Page Load Speed",
-    reachOrionWay: "Sub-200ms TTFB worldwide via edge network static generation",
+    reachOrionWay: "~180ms TTFB worldwide via edge network static generation",
     legacyMonolith: "1,800ms - 3,500ms server database rendering lag",
     highlight: "12x faster initial viewport rendering"
   },
@@ -135,7 +135,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     metrics: [
       { label: "TOTAL SCALE", value: "1.8M SQ.FT" },
       { label: "GLOBAL MAISONS", value: "240+" },
-      { label: "EDGE LCP", value: "<0.8s" }
+      { label: "EDGE LCP", value: "<0.4s" }
     ],
     image: "/archive/aranya/hero.png",
     aspect: "tall",
@@ -177,7 +177,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       "Decoupled Sanity Studio v3 with structured maison & atelier schemas",
       "Real-time client-side tier filtering with zero database latency",
       "Interactive WebGL vortex canvas with 60 FPS hardware acceleration",
-      "Edge-cached Next.js App Router frontend delivering <0.8s LCP worldwide"
+      "Edge-cached Next.js App Router frontend delivering <0.4s LCP worldwide"
     ]
   },
   {
@@ -194,7 +194,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     metrics: [
       { label: "STARTING PRICE", value: "₹14.50 CR*" },
       { label: "DENSITY", value: "2 / FLOOR" },
-      { label: "EDGE TTFB", value: "68ms" }
+      { label: "EDGE TTFB", value: "~180ms" }
     ],
     image: "/archive/quarter/hero.png",
     aspect: "wide",
@@ -219,12 +219,12 @@ export const CASE_STUDIES: CaseStudy[] = [
         description: "High-resolution architectural interior details and floorplate specifications."
       }
     ],
-    narrative: "An exclusive waterfront residential enclave at Worli Sea Face, Mumbai. Engineered for high net-worth buyers with seamless private visit scheduling, MahaRERA encrypted compliance docs, and sub-70ms global asset loading for international buyers in Dubai, London, and Singapore.",
+    narrative: "An exclusive waterfront residential enclave at Worli Sea Face, Mumbai. Engineered for high net-worth buyers with seamless private visit scheduling, MahaRERA encrypted compliance docs, and ~180ms global response times for international buyers in Dubai, London, and Singapore.",
     architecturalHighlights: [
       "Self-hosted Payload CMS 3.0 with role-based sales team permissions",
       "Instant lead ingestion and encrypted CRM synchronization",
       "Optimized WebP/AVIF architectural photography delivery",
-      "Edge network delivery ensuring 68ms global response times"
+      "Edge network delivery ensuring ~180ms global response times"
     ]
   },
   {
@@ -349,8 +349,8 @@ export const PRICING_PACKAGES: PricingPackage[] = [
     features: [
       "Multi-site or multi-language",
       "SaaS-grade dashboards and APIs",
-      "SSO, compliance and SLAs",
-      "Dedicated team and MVP roadmap",
+      "SSO, compliance and scoped support",
+      "Personalized delivery plan and MVP roadmap",
       "Free discovery workshop"
     ],
     ctaText: "REQUEST A QUOTE",
@@ -411,8 +411,7 @@ export const WHY_CHOOSE_ORION = [
 ];
 
 export const PRICING_FOOTNOTE = {
-  taxNote: "INDICATIVE STARTING PRICES, EXCL. APPLICABLE TAXES (CURRENTLY GST-EXEMPT UNDER MSME THRESHOLD)",
+  taxNote: "INDICATIVE STARTING PRICES, EXCL. APPLICABLE TAXES",
   billingTerms: "BILLING 40% KICKOFF, 40% STAGING, 20% LAUNCH",
   acronymNote: "AIO = AI OPTIMIZATION"
 };
-

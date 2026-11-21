@@ -21,7 +21,7 @@
     "company": "Richter & Kraft Architekten",
     "location": "Zurich, Switzerland",
     "cmsStack": "Payload CMS + Cloudflare Edge",
-    "keyMetric": "68ms Worldwide TTFB",
+    "keyMetric": "~180ms Worldwide TTFB",
     "date": "September 2026",
     "industry": "Spatial & Architectural Design",
     "avatarInitials": "JR",

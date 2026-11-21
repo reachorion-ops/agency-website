@@ -85,7 +85,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-white/10">
               <div>
                 <div className="text-2xl sm:text-3xl font-extrabold text-white font-editorial-mono">
-                  90+
+                  100
                 </div>
                 <div className="text-[10px] tracking-wider text-[#D9D9D9]/70 uppercase mt-1">
                   Lighthouse Score
@@ -93,7 +93,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
               </div>
               <div>
                 <div className="text-2xl sm:text-3xl font-extrabold text-white font-editorial-mono">
-                  &lt;0.9s
+                  &lt;0.4s
                 </div>
                 <div className="text-[10px] tracking-wider text-[#D9D9D9]/70 uppercase mt-1">
                   Largest Paint (LCP)
@@ -101,7 +101,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenInquiry }) => {
               </div>
               <div>
                 <div className="text-2xl sm:text-3xl font-extrabold text-[#0071E3] font-editorial-mono">
-                  &lt;400ms
+                  ~180ms
                 </div>
                 <div className="text-[10px] tracking-wider text-[#D9D9D9]/70 uppercase mt-1">
                   TTFB Response
